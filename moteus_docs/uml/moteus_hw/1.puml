@@ -1,0 +1,11 @@
+@startuml moteus_hw
+
+title moteus_hw.cc
+
+actor moteus.cc 
+moteus.cc -> moteus_hw
+activate moteus_hw
+
+participant "DetectMoteusFamily()" as DetectMoteusFamily
+
+@enduml

@@ -1,0 +1,23 @@
+name: fw
+id: 64737d3b-ea06-4d8a-9b0d-07aa94639efe
+languages:
+  - Python
+extensions:
+  - .py
+  - .cgi
+  - .fcgi
+  - .gyp
+  - .gypi
+  - .lmi
+  - .py3
+  - .pyde
+  - .pyi
+  - .pyp
+  - .pyt
+  - .pyw
+  - .rpy
+  - .smk
+  - .spec
+  - .tac
+  - .wsgi
+  - .xpy
