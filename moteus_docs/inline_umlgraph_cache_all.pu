@@ -1,0 +1,10 @@
+@startuml inline_umlgraph_1.svg
+actor User
+ User -> main: Open program
+...
+@enduml
+@startuml inline_umlgraph_2.png
+actor User
+ User -> main: Open program
+...
+@enduml

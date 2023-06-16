@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['enable_224',['Enable',['../da/dd3/classmoteus_1_1Drv8323.html#a470cf5fe07d4a6198613b7d2729da267',1,'moteus::Drv8323::Enable()'],['../df/d1e/classmoteus_1_1MotorDriver.html#a7db624a3d2beaaed6fa077838b8a816e',1,'moteus::MotorDriver::Enable()']]]
+  ['enable_224',['Enable',['../da/dd3/classmoteus_1_1Drv8323.html#a2d5ce1a15b943b3a69318e6a303aaca9',1,'moteus::Drv8323::Enable()'],['../df/d1e/classmoteus_1_1MotorDriver.html#a213c649ae7bc45c948450cc7ac2e5498',1,'moteus::MotorDriver::Enable()']]]
 ];

@@ -62,8 +62,6 @@ Collaboration diagram for moteus::BldcServoConfig:<para>
 </listitem>
             <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a57c255a3d342c3fb6521fa1dfd2b16f6"/>uint16_t <emphasis role="strong">adc_aux_cycles</emphasis> = 47</para>
 </listitem>
-            <listitem><para>uint16_t <emphasis role="strong">adc_prescale</emphasis></para>
-</listitem>
             <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a1eabd9ce975bd2a64e167c819d5e3795"/><link linkend="_structmoteus_1_1SimplePI_1_1Config">SimplePI::Config</link> <emphasis role="strong">pid_dq</emphasis></para>
 </listitem>
             <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a88c20d8ffd4c2e4143088ec2da314597"/><link linkend="_structmoteus_1_1PID_1_1Config">PID::Config</link> <emphasis role="strong">pid_position</emphasis></para>
@@ -112,15 +110,7 @@ Collaboration diagram for moteus::BldcServoConfig:<para>
 </simplesect>
 <section>
 <title>Member Data Documentation</title>
-<anchor xml:id="_structmoteus_1_1BldcServoConfig_1ae887905607f4aa585c17b6c8e02546ac"/>    <section>
-    <title>adc_prescale</title>
-<indexterm><primary>adc_prescale</primary><secondary>moteus::BldcServoConfig</secondary></indexterm>
-<indexterm><primary>moteus::BldcServoConfig</primary><secondary>adc_prescale</secondary></indexterm>
-<para><computeroutput>uint16_t moteus::BldcServoConfig::adc_prescale</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
-&#32;&#32;&#32;&#32;&#32;&#32;(g_measured_hw_family&#32;==&#32;0&#32;?&#32;8&#32;:
-&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?&#32;6&#32;:
-&#32;&#32;&#32;&#32;&#32;&#32;&#32;8)
-</programlisting>    </section><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a5242c3f79b55aceae245abcf42b7a7a9"/>    <section>
+<anchor xml:id="_structmoteus_1_1BldcServoConfig_1a5242c3f79b55aceae245abcf42b7a7a9"/>    <section>
     <title>flux_brake_min_voltage</title>
 <indexterm><primary>flux_brake_min_voltage</primary><secondary>moteus::BldcServoConfig</secondary></indexterm>
 <indexterm><primary>moteus::BldcServoConfig</primary><secondary>flux_brake_min_voltage</secondary></indexterm>

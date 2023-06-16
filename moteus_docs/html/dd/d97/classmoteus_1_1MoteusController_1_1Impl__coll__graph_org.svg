@@ -274,7 +274,7 @@
 <text text-anchor="start" x="946.5" y="-717.5" font-family="Helvetica,sans-Serif" font-size="10.00"> *telemetry_manager, MillisecondTimer</text>
 <text text-anchor="start" x="946.5" y="-706.5" font-family="Helvetica,sans-Serif" font-size="10.00"> *timer, const Options &amp;)</text>
 <text text-anchor="start" x="946.5" y="-695.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Drv8323()</text>
-<text text-anchor="start" x="946.5" y="-684.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Enable(bool) override</text>
+<text text-anchor="start" x="946.5" y="-684.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool Enable(bool) override</text>
 <text text-anchor="start" x="946.5" y="-673.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Power(bool) override</text>
 <text text-anchor="start" x="946.5" y="-662.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool fault() override</text>
 <text text-anchor="start" x="946.5" y="-651.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void PollMillisecond()</text>
@@ -299,7 +299,7 @@
 <polyline fill="none" stroke="black" points="979.5,-1150.5 1110.5,-1150.5 "/>
 <text text-anchor="middle" x="1045" y="-1138.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="979.5,-1131.5 1110.5,-1131.5 "/>
-<text text-anchor="start" x="987.5" y="-1119.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void Enable</text>
+<text text-anchor="start" x="987.5" y="-1119.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual bool Enable</text>
 <text text-anchor="start" x="987.5" y="-1108.5" font-family="Helvetica,sans-Serif" font-size="10.00">(bool)=0</text>
 <text text-anchor="start" x="987.5" y="-1097.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ virtual void Power</text>
 <text text-anchor="start" x="987.5" y="-1086.5" font-family="Helvetica,sans-Serif" font-size="10.00">(bool)=0</text>

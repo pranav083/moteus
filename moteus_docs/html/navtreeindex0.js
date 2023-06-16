@@ -153,7 +153,6 @@ var NAVTREEINDEX0 =
 "d1/dfb/classmoteus_1_1Stm32DigitalMonitor.html#ad4c9f7d5c1477010a608dda2b266863c":[0,0,1,39,1],
 "d2/d00/classmoteus_1_1Uuid.html":[0,0,1,53],
 "d2/d00/classmoteus_1_1Uuid.html#aa9363b60fcd0bcdb2b84151a27fa7873":[0,0,1,53,1],
-"d2/d00/classmoteus_1_1Uuid.html#ac0f6ceac888cac75a749a9a10cca7305":[0,0,1,53,2],
 "d2/d12/stm32__digital__monitor_8h_source.html":[1,0,33],
 "d2/d13/ccm_8h_source.html":[1,0,11],
 "d2/d47/classmoteus_1_1AuxADC.html":[0,0,1,4],
@@ -246,8 +245,9 @@ var NAVTREEINDEX0 =
 "d3/de9/structmoteus_1_1PID_1_1Config.html":[0,0,1,36,1],
 "d3/de9/structmoteus_1_1PID_1_1Config.html#a420f4bef353a2bb9ab2c651d5141aa6e":[0,0,1,36,1,3],
 "d3/de9/structmoteus_1_1PID_1_1Config.html#a6756b382b43cd6150a000b06fa8f34f5":[0,0,1,36,1,6],
-"d3/de9/structmoteus_1_1PID_1_1Config.html#a686e1ffa1af3aa47957902347859c867":[0,0,1,36,1,1],
 "d3/de9/structmoteus_1_1PID_1_1Config.html#a686e1ffa1af3aa47957902347859c867":[0,0,1,36,1,0],
+"d3/de9/structmoteus_1_1PID_1_1Config.html#a686e1ffa1af3aa47957902347859c867":[0,0,1,36,1,1],
 "d3/de9/structmoteus_1_1PID_1_1Config.html#a7efafccb394f7563a1e944077e6d17fd":[0,0,1,36,1,4],
-"d3/de9/structmoteus_1_1PID_1_1Config.html#a91fe1bb1769df091c37e7900f6c57097":[0,0,1,36,1,8]
+"d3/de9/structmoteus_1_1PID_1_1Config.html#a91fe1bb1769df091c37e7900f6c57097":[0,0,1,36,1,8],
+"d3/de9/structmoteus_1_1PID_1_1Config.html#a997e5d88da21ce99045874710d0063dc":[0,0,1,36,1,2]
 };

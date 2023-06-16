@@ -2,6 +2,14 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1MoteusHwPins" xml:lang="en-US">
 <title>moteus::MoteusHwPins Struct Reference</title>
 <indexterm><primary>moteus::MoteusHwPins</primary></indexterm>
+<para>
+
+<para>this is moteus hardware pin function </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;moteus_hw.h&gt;</computeroutput>
+</para>
 Collaboration diagram for moteus::MoteusHwPins:<para>
     <informalfigure>
         <mediaobject>
@@ -76,6 +84,25 @@ Collaboration diagram for moteus::MoteusHwPins:<para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>this is moteus hardware pin function </para>
+
+
+
+<para><para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="../../inline_umlgraph_2.png"></imagedata>
+            </imageobject>
+
+        </mediaobject>
+    </informalfigure>
+</para>
+ </para>
 <para>
 The documentation for this struct was generated from the following file:</para>
 moteus_hw.h</section>
+</section>

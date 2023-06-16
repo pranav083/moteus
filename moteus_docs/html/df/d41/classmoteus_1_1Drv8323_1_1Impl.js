@@ -1,8 +1,8 @@
 var classmoteus_1_1Drv8323_1_1Impl =
 [
     [ "Impl", "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a29e30ecf7ec8ff9894846ba75faf3128", null ],
-    [ "Calibrate", "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a5077296094b0f7f542d1e61402992b15", null ],
-    [ "Enable", "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#ada2bf4098ce7a895a21cec9718d374df", null ],
+    [ "Calibrate", "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a532acb8373221bf31f67f3d97e979bf3", null ],
+    [ "Enable", "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a8821c12b817b04acf3d02ca676bd59a7", null ],
     [ "HandleConfigUpdate", "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#af9134c8bf18dbee89b6c0c1c3d35a503", null ],
     [ "PollMillisecond", "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#ae1c3a9c71b92f66a0b420db8a98889ca", null ],
     [ "Power", "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a219282369c1be7e07a3fb97a73bb47f0", null ],

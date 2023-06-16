@@ -20,7 +20,7 @@ var classmoteus_1_1Drv8323 =
     ] ],
     [ "Drv8323", "da/dd3/classmoteus_1_1Drv8323.html#a0974deb139f6aa176588c34580ab4357", null ],
     [ "~Drv8323", "da/dd3/classmoteus_1_1Drv8323.html#a54c1e3a607c069f00780e9c0e21c1eb7", null ],
-    [ "Enable", "da/dd3/classmoteus_1_1Drv8323.html#a470cf5fe07d4a6198613b7d2729da267", null ],
+    [ "Enable", "da/dd3/classmoteus_1_1Drv8323.html#a2d5ce1a15b943b3a69318e6a303aaca9", null ],
     [ "fault", "da/dd3/classmoteus_1_1Drv8323.html#a871eba5220da557df46cd9c8366c49cc", null ],
     [ "PollMillisecond", "da/dd3/classmoteus_1_1Drv8323.html#ac1acb4e36ea1b7abf13b910d9c96df38", null ],
     [ "Power", "da/dd3/classmoteus_1_1Drv8323.html#abf8e50e26d99721cb4cbb428ab4125b1", null ],

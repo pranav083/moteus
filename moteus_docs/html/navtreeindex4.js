@@ -1,7 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#a1030eab87f257ff383864885f711d544aff5ba207adf5051bad754a6e7629812f":[0,0,1,0,6,1,0,0],
-"dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#a1f30b1f90d150e204d7511c75de678f8":[0,0,1,0,6,1,3],
 "dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#a6f8cf132885153359391fea08dba4155":[0,0,1,0,6,1,1],
 "dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#abe2d59332efd1cdd6f5a97afc97f413b":[0,0,1,0,6,1,4],
 "dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#ad6efbd0bd9bed35cab57e8148f9c738c":[0,0,1,0,6,1,2],
@@ -169,7 +167,7 @@ var NAVTREEINDEX4 =
 "df/d13/structmoteus_1_1aux_1_1Index_1_1Config.html#ae5fb20b5095d9aec98cad17ceda03088":[0,0,1,0,4,0,1],
 "df/d1e/classmoteus_1_1MotorDriver.html":[0,0,1,34],
 "df/d1e/classmoteus_1_1MotorDriver.html#a07cd7ecf6865d65b959406c921b5d0af":[0,0,1,34,2],
-"df/d1e/classmoteus_1_1MotorDriver.html#a7db624a3d2beaaed6fa077838b8a816e":[0,0,1,34,0],
+"df/d1e/classmoteus_1_1MotorDriver.html#a213c649ae7bc45c948450cc7ac2e5498":[0,0,1,34,0],
 "df/d1e/classmoteus_1_1MotorDriver.html#a8fa678758c43a6ba59a3ee4397e4b355":[0,0,1,34,1],
 "df/d2b/structmoteus_1_1IcPz_1_1Options.html":[0,0,1,29,0],
 "df/d2b/structmoteus_1_1IcPz_1_1Options.html#ae44328e0302f960f5f4e58c94bdb952a":[0,0,1,29,0,0],
@@ -206,17 +204,17 @@ var NAVTREEINDEX4 =
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a1af854ff77c16864713151bd0353e80d":[0,0,1,16,1,17],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a219282369c1be7e07a3fb97a73bb47f0":[0,0,1,16,1,5],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a29e30ecf7ec8ff9894846ba75faf3128":[0,0,1,16,1,0],
-"df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a5077296094b0f7f542d1e61402992b15":[0,0,1,16,1,1],
+"df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a532acb8373221bf31f67f3d97e979bf3":[0,0,1,16,1,1],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a63c1585a6388e8d265210afe1cb35aaf":[0,0,1,16,1,11],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a7da2e353394533b2ca9ab6bcd0a57eaf":[0,0,1,16,1,9],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a7f776563c290ae957438d0ea00fa37a4":[0,0,1,16,1,7],
+"df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a8821c12b817b04acf3d02ca676bd59a7":[0,0,1,16,1,2],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#a92526e0f27cabca1f89d255b4d40c5d2":[0,0,1,16,1,8],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#aa2a22198a6c17d8d02c7c441aa3868dc":[0,0,1,16,1,16],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#aa3d1e4fb5ffcffadde0a5ed5c5c368b6":[0,0,1,16,1,18],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#aaf3d4b831ebb4c88c74c0612e88e40d8":[0,0,1,16,1,10],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#ab4d921f2c30f1216c462a1685b6ab92f":[0,0,1,16,1,6],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#acbe40c5d51f308ace35bb4a1be70f90b":[0,0,1,16,1,15],
-"df/d41/classmoteus_1_1Drv8323_1_1Impl.html#ada2bf4098ce7a895a21cec9718d374df":[0,0,1,16,1,2],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#ae1c3a9c71b92f66a0b420db8a98889ca":[0,0,1,16,1,4],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#ae2c2303c656b623bd2f62ddfa23b7a4f":[0,0,1,16,1,14],
 "df/d41/classmoteus_1_1Drv8323_1_1Impl.html#ae542492b4fd89e958dd91f3dd112ec94":[0,0,1,16,1,12],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "df/dbd/structmoteus_1_1FDCan_1_1Rate.html#a3f21d95c79c8641dc597982b53b3d2af":[0,0,1,17,4,2],
 "df/dbd/structmoteus_1_1FDCan_1_1Rate.html#a49fb339c99338dc59878558a5e81a795":[0,0,1,17,4,1],
 "df/dbd/structmoteus_1_1FDCan_1_1Rate.html#aa58e7930d4d686ffd3e14db514727df2":[0,0,1,17,4,0],
-"df/dcc/structmoteus_1_1aux_1_1Spi_1_1Config.html":[0,0,1,0,0,0]
+"df/dcc/structmoteus_1_1aux_1_1Spi_1_1Config.html":[0,0,1,0,0,0],
+"df/dcc/structmoteus_1_1aux_1_1Spi_1_1Config.html#a2b8b7333331448571f9d37be8d64b615":[0,0,1,0,0,0,0],
+"df/dcc/structmoteus_1_1aux_1_1Spi_1_1Config.html#a2b8b7333331448571f9d37be8d64b615a512de77e45168bfc65b8170f452544d8":[0,0,1,0,0,0,0,0]
 };

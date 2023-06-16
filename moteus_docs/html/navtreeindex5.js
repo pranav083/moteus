@@ -1,7 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"df/dcc/structmoteus_1_1aux_1_1Spi_1_1Config.html#a2b8b7333331448571f9d37be8d64b615":[0,0,1,0,0,0,0],
-"df/dcc/structmoteus_1_1aux_1_1Spi_1_1Config.html#a2b8b7333331448571f9d37be8d64b615a512de77e45168bfc65b8170f452544d8":[0,0,1,0,0,0,0,0],
 "df/dcc/structmoteus_1_1aux_1_1Spi_1_1Config.html#a2b8b7333331448571f9d37be8d64b615a7e217461d9384bd9b0a5e34e1e5d9763":[0,0,1,0,0,0,0,4],
 "df/dcc/structmoteus_1_1aux_1_1Spi_1_1Config.html#a2b8b7333331448571f9d37be8d64b615aaad83426b1c4b8736cdb58c7f7d8c851":[0,0,1,0,0,0,0,2],
 "df/dcc/structmoteus_1_1aux_1_1Spi_1_1Config.html#a2b8b7333331448571f9d37be8d64b615ab8a62ed6008558a9f640c1cff6a29a29":[0,0,1,0,0,0,0,3],

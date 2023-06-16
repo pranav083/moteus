@@ -25,13 +25,6 @@ Collaboration diagram for moteus::Uuid:<para>
 </listitem>
         </itemizedlist>
 </simplesect>
-<simplesect>
-    <title>Public Attributes    </title>
-        <itemizedlist>
-            <listitem><para><anchor xml:id="_classmoteus_1_1Uuid_1ac0f6ceac888cac75a749a9a10cca7305"/><link linkend="_structmoteus_1_1Uuid_1_1Data">Data</link> <emphasis role="strong">data_</emphasis></para>
-</listitem>
-        </itemizedlist>
-</simplesect>
 <para>
-The documentation for this class was generated from the following file:</para>
-uuid.h</section>
+The documentation for this class was generated from the following files:</para>
+uuid.huuid.cc</section>

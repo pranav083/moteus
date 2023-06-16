@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacemoteus" xml:lang="en-US">
+<title>moteus Namespace Reference</title>
+<indexterm><primary>moteus</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classmoteus_1_1Aksim2">Aksim2</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1AS5047">AS5047</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1AuxADC">AuxADC</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1AuxPort">AuxPort</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1BldcServo">BldcServo</link></para>
+
+<para>Implements a closed loop servo around a brushless DC motor. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1BldcServoPosition">BldcServoPosition</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Vec3">Vec3</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1BldcServoStatus">BldcServoStatus</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1BldcServoCommandData">BldcServoCommandData</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1BldcServoMotor">BldcServoMotor</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1BldcServoConfig">BldcServoConfig</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1BldcServoPositionConfig">BldcServoPositionConfig</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1BoardDebug">BoardDebug</link></para>
+
+<para>Utilities for bringing up the controller board. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1ClockManager">ClockManager</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Drv8323">Drv8323</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1FDCan">FDCan</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1FDCanMicroServer">FDCanMicroServer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1FirmwareInfo">FirmwareInfo</link></para>
+
+<para>Holds information about the firmare. </para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1SinCos">SinCos</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Cordic">Cordic</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1DqTransform">DqTransform</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1InverseDqTransform">InverseDqTransform</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1ClarkTransform">ClarkTransform</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1InverseClarkTransform">InverseClarkTransform</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1ParkTransform">ParkTransform</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1InverseParkTransform">InverseParkTransform</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1GitInfo">GitInfo</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1IcPz">IcPz</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1MoteusController">MoteusController</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1MoteusHwPins">MoteusHwPins</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1FamilyAndVersion">FamilyAndVersion</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1MotorDriver">MotorDriver</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1MotorPosition">MotorPosition</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1PID">PID</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1SimplePI">SimplePI</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Stm32BitbangSpi">Stm32BitbangSpi</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Stm32DigitalMonitor">Stm32DigitalMonitor</link></para>
+
+<para>Read a digital input, but without configuring it in any way. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Stm32Dma">Stm32Dma</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Stm32GpioInterruptIn">Stm32GpioInterruptIn</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Stm32I2c">Stm32I2c</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1TimingResult">TimingResult</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1TimingInput">TimingInput</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Stm32Serial">Stm32Serial</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Stm32Spi">Stm32Spi</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Stm32G4AsyncUart">Stm32G4AsyncUart</link></para>
+
+<para>Presents a single USART on the STM32G4 as an AsyncStream. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Stm32G4DmaUart">Stm32G4DmaUart</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Stm32G4Flash">Stm32G4Flash</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1StreamWriter">StreamWriter</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1SystemInfo">SystemInfo</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1TorqueModel">TorqueModel</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Uuid">Uuid</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_namespacemoteus_1aef8d146a9bcb90a3515b889743757c32"/>using <emphasis role="strong">Value</emphasis> = multiplex::MicroServer::Value</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a689c47fcf6b3c77a218660c0ba86faf8"/>enum <emphasis role="strong">BldcServoMode</emphasis> { 
+<emphasis role="strong">kStopped</emphasis> = 0
+, <emphasis role="strong">kFault</emphasis> = 1
+, <emphasis role="strong">kEnabling</emphasis> = 2
+, <emphasis role="strong">kCalibrating</emphasis> = 3
+, 
+<emphasis role="strong">kCalibrationComplete</emphasis> = 4
+, <emphasis role="strong">kPwm</emphasis> = 5
+, <emphasis role="strong">kVoltage</emphasis> = 6
+, <emphasis role="strong">kVoltageFoc</emphasis> = 7
+, 
+<emphasis role="strong">kVoltageDq</emphasis> = 8
+, <emphasis role="strong">kCurrent</emphasis> = 9
+, <emphasis role="strong">kPosition</emphasis> = 10
+, <emphasis role="strong">kPositionTimeout</emphasis> = 11
+, 
+<emphasis role="strong">kZeroVelocity</emphasis> = 12
+, <emphasis role="strong">kStayWithinBounds</emphasis> = 13
+, <emphasis role="strong">kMeasureInductance</emphasis> = 14
+, <emphasis role="strong">kBrake</emphasis> = 15
+, 
+<emphasis role="strong">kNumModes</emphasis>
+ }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a9e97ea425a9adf472a3340ea41fa1cfa"/>enum class <emphasis role="strong">errc</emphasis> { 
+<emphasis role="strong">kSuccess</emphasis> = 0
+, <emphasis role="strong">kDmaStreamTransferError</emphasis> = 1
+, <emphasis role="strong">kDmaStreamFifoError</emphasis> = 2
+, <emphasis role="strong">kUartOverrunError</emphasis> = 3
+, 
+<emphasis role="strong">kUartFramingError</emphasis> = 4
+, <emphasis role="strong">kUartNoiseError</emphasis> = 5
+, <emphasis role="strong">kUartBufferOverrunError</emphasis> = 6
+, <emphasis role="strong">kUartParityError</emphasis> = 7
+, 
+<emphasis role="strong">kCalibrationFault</emphasis> = 32
+, <emphasis role="strong">kMotorDriverFault</emphasis> = 33
+, <emphasis role="strong">kOverVoltage</emphasis> = 34
+, <emphasis role="strong">kEncoderFault</emphasis> = 35
+, 
+<emphasis role="strong">kMotorNotConfigured</emphasis> = 36
+, <emphasis role="strong">kPwmCycleOverrun</emphasis> = 37
+, <emphasis role="strong">kOverTemperature</emphasis> = 38
+, <emphasis role="strong">kStartOutsideLimit</emphasis> = 39
+, 
+<emphasis role="strong">kUnderVoltage</emphasis> = 40
+, <emphasis role="strong">kConfigChanged</emphasis> = 41
+, <emphasis role="strong">kThetaInvalid</emphasis> = 42
+, <emphasis role="strong">kPositionInvalid</emphasis> = 43
+, 
+<emphasis role="strong">kDriverEnableFault</emphasis> = 44
+ }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1ab00b4fbf8d0bb0469ca0d3eb5a61ddcc"/>enum class <emphasis role="strong">I2cMode</emphasis> { <emphasis role="strong">kStandard</emphasis>
+, <emphasis role="strong">kFast</emphasis>
+, <emphasis role="strong">kFastPlus</emphasis>
+ }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1ad86dc0f64492258a3e5e81ede60a70af"/>enum class <emphasis role="strong">AnalogFilter</emphasis> { <emphasis role="strong">kOff</emphasis>
+, <emphasis role="strong">kOn</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_namespacemoteus_1ae210687fa437d3fc835e93161ab526f7"/>mjlib::micro::error_code <emphasis role="strong">make_error_code</emphasis> (errc err)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a35b78ded062201739478ca3e9abb79ed"/>char kGitHash[41] <emphasis role="strong">__attribute__</emphasis> ((weak))</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a13a652814b7b55ec13a7c677acd96066"/>float <emphasis role="strong">WrapZeroToTwoPi</emphasis> (float) __attribute__((always_inline))</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1abd7b714163aa539e5c16de0e2543fd7e"/>int32_t <emphasis role="strong">RadiansToQ31</emphasis> (float) __attribute__((always_inline))</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1aa502aa36aeb5f300ad7cb37a7274810e"/>float <emphasis role="strong">my_frexpf</emphasis> (float x, int *pw2) __attribute((always_inline))</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a3eb222665d5d224c2808ba6813e5e268"/>float <emphasis role="strong">log2f_approx</emphasis> (float X) __attribute__((always_inline))</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1aaa0082d8f312642d0da91562aa4e8f1e"/>float <emphasis role="strong">pow2f_approx</emphasis> (float x) __attribute__((always_inline))</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a293dd04e71c6aa64016d8d06992105cd"/>float <emphasis role="strong">FastAtan2</emphasis> (float y, float x)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a0c849272ee6e9bb449b692ba2c35ab9d"/><link linkend="_structmoteus_1_1FamilyAndVersion">FamilyAndVersion</link> <emphasis role="strong">DetectMoteusFamily</emphasis> (<link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a256b1649c48d85b4efe8a7b4ad1b0fa7"/><link linkend="_structmoteus_1_1MoteusHwPins">MoteusHwPins</link> <emphasis role="strong">FindHardwarePins</emphasis> (<link linkend="_structmoteus_1_1FamilyAndVersion">FamilyAndVersion</link> fv)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a332a05ee9c75880deb508ffb8d318056"/><link linkend="_structmoteus_1_1TimingResult">TimingResult</link> <emphasis role="strong">CalculateI2cTiming</emphasis> (const <link linkend="_structmoteus_1_1TimingInput">TimingInput</link> &amp;i)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a240bb7c02945a498cf16a0cce0e5b052"/>void <emphasis role="strong">EnableAdc</emphasis> (<link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer, ADC_TypeDef *adc, int prescaler, int offset)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1aac2cc364bf4b3eeb02066e145498bc01"/>void <emphasis role="strong">DisableAdc</emphasis> (ADC_TypeDef *adc)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a141fdd5133634cababc80770f65e4bbb"/>constexpr float <emphasis role="strong">kCalibrationStep</emphasis> = 0.002</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a855d0fcaf597595def7f1feda399e278"/>constexpr float <emphasis role="strong">kMaxCalPoleCount</emphasis> = 50.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1ab6183e6ea54a554f9d3d56fce2cf7789"/>char <emphasis role="strong">kGitHash</emphasis> [41] = BUILD_SCM_REVISION</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a87aa27a6780ff3cca2260f2083148a18"/>char <emphasis role="strong">kGitDirty</emphasis> [10] = BUILD_SCM_STATUS</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1aa1c56604bde16a2f07090c46ece91013"/>uint64_t <emphasis role="strong">kGitTimestamp</emphasis> = BUILD_TIMESTAMP</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1ac8cff5671178ef51b4e65532a476b8c2"/>constexpr float <emphasis role="strong">k2Pi</emphasis> = 6.283185307179586f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a9aecebd6a1bc5e30258cf100712abbd0"/>constexpr float <emphasis role="strong">kPi</emphasis> = 3.141592653589793f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1abc5d52a2d78065bd05d8594baf24795d"/>constexpr float <emphasis role="strong">kSqrt3_4</emphasis> = 0.86602540378f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a519c0148af3090175cfc6b5ac71cc9d9"/>constexpr float <emphasis role="strong">kSqrt6</emphasis> = 2.449489742783178f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a623c1c0c0cf5580db1fc7c43ed065552"/>constexpr float <emphasis role="strong">kSqrt3</emphasis> = 1.7320508075688772f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a7cd53a12f61cb612e3369911ab54b51d"/>constexpr float <emphasis role="strong">kSqrt2</emphasis> = 1.4142135623730951f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1aed4b64481acce3c60c13edc08e0c3dbe"/>volatile uint8_t <emphasis role="strong">g_measured_hw_family</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1ab2e33a3ed87e8c8908011c16e3ea425e"/>volatile uint8_t <emphasis role="strong">g_measured_hw_rev</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1aaf0a53cf167f5759fc249552c9e64b08"/>volatile uint8_t <emphasis role="strong">g_measured_hw_pins</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1a5eb18cba57e26bea97f99c64997819d1"/><link linkend="_structmoteus_1_1MoteusHwPins">MoteusHwPins</link> <emphasis role="strong">g_hw_pins</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_namespacemoteus_1ad6621c62bd8f371430e1b40c2ed4217f"/>const uint8_t *const <emphasis role="strong">g_otp_uuid</emphasis> = reinterpret_cast&lt;const uint8_t*&gt;(0x1fff7000)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="../../inline_umlgraph_2.png"></imagedata>
+            </imageobject>
+
+        </mediaobject>
+    </informalfigure>
+</para>
+ </para>
+</section>
+</section>

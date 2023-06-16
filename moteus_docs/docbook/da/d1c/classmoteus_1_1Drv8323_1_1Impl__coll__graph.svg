@@ -29,14 +29,14 @@
 <text text-anchor="start" x="218" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00"> *config, micro::TelemetryManager</text>
 <text text-anchor="start" x="218" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00"> *telemetry_manager, MillisecondTimer</text>
 <text text-anchor="start" x="218" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00"> *timer, const Options &amp;options)</text>
-<text text-anchor="start" x="218" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Enable(bool value)</text>
+<text text-anchor="start" x="218" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool Enable(bool value)</text>
 <text text-anchor="start" x="218" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Power(bool value)</text>
 <text text-anchor="start" x="218" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ uint16_t Read(int reg)</text>
 <text text-anchor="start" x="218" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Write(int reg,</text>
 <text text-anchor="start" x="218" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00"> uint16_t value)</text>
 <text text-anchor="start" x="218" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void PollMillisecond()</text>
 <text text-anchor="start" x="218" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void HandleConfigUpdate()</text>
-<text text-anchor="start" x="218" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Calibrate()</text>
+<text text-anchor="start" x="218" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool Calibrate()</text>
 <text text-anchor="start" x="218" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void WriteConfig()</text>
 </a>
 </g>

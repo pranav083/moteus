@@ -16,7 +16,7 @@ Collaboration diagram for moteus::Drv8323::Impl:<para>
         <itemizedlist>
             <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a29e30ecf7ec8ff9894846ba75faf3128"/><emphasis role="strong">Impl</emphasis> (micro::PersistentConfig *config, micro::TelemetryManager *telemetry_manager, <link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer, const <link linkend="_structmoteus_1_1Drv8323_1_1Options">Options</link> &amp;options)</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1ada2bf4098ce7a895a21cec9718d374df"/>void <emphasis role="strong">Enable</emphasis> (bool value)</para>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a8821c12b817b04acf3d02ca676bd59a7"/>bool <emphasis role="strong">Enable</emphasis> (bool value)</para>
 </listitem>
             <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a219282369c1be7e07a3fb97a73bb47f0"/>void <emphasis role="strong">Power</emphasis> (bool value)</para>
 </listitem>
@@ -28,7 +28,7 @@ Collaboration diagram for moteus::Drv8323::Impl:<para>
 </listitem>
             <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1af9134c8bf18dbee89b6c0c1c3d35a503"/>void <emphasis role="strong">HandleConfigUpdate</emphasis> ()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a5077296094b0f7f542d1e61402992b15"/>void <emphasis role="strong">Calibrate</emphasis> ()</para>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a532acb8373221bf31f67f3d97e979bf3"/>bool <emphasis role="strong">Calibrate</emphasis> ()</para>
 </listitem>
             <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a92526e0f27cabca1f89d255b4d40c5d2"/>void <emphasis role="strong">WriteConfig</emphasis> ()</para>
 </listitem>

@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"d3/de9/structmoteus_1_1PID_1_1Config.html#a997e5d88da21ce99045874710d0063dc":[0,0,1,36,1,2],
 "d3/de9/structmoteus_1_1PID_1_1Config.html#adb4dba7b1db13f21cd393e8cdfdc9044":[0,0,1,36,1,7],
 "d3/de9/structmoteus_1_1PID_1_1Config.html#ae719cce53dec32bac2be1aaeba56689f":[0,0,1,36,1,5],
 "d3/deb/classmoteus_1_1aux_1_1Stm32Index.html":[0,0,1,0,16],
@@ -113,8 +112,8 @@ var NAVTREEINDEX1 =
 "d5/d56/classmoteus_1_1FirmwareInfo_1_1Impl.html#ab55389bf3c7405cd9ae0212efe3b6d06":[0,0,1,19,0,0],
 "d5/d56/classmoteus_1_1FirmwareInfo_1_1Impl.html#ade496880e4dc6445bd269939bec884d5":[0,0,1,19,0,1],
 "d5/d5f/structmoteus_1_1PID_1_1ApplyOptions.html":[0,0,1,36,0],
-"d5/d5f/structmoteus_1_1PID_1_1ApplyOptions.html#a053fb712fd14c29475b9454b69e5e909":[0,0,1,36,0,1],
 "d5/d5f/structmoteus_1_1PID_1_1ApplyOptions.html#a053fb712fd14c29475b9454b69e5e909":[0,0,1,36,0,0],
+"d5/d5f/structmoteus_1_1PID_1_1ApplyOptions.html#a053fb712fd14c29475b9454b69e5e909":[0,0,1,36,0,1],
 "d5/d5f/structmoteus_1_1PID_1_1ApplyOptions.html#a27356747fc8620f4f21ca36e09d74223":[0,0,1,36,0,4],
 "d5/d5f/structmoteus_1_1PID_1_1ApplyOptions.html#a6495cf4a1b62de183b0136fd62955460":[0,0,1,36,0,2],
 "d5/d5f/structmoteus_1_1PID_1_1ApplyOptions.html#a78bfd30b7f229da57d32efb169310ede":[0,0,1,36,0,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "d6/d55/structmoteus_1_1SimplePI_1_1Config.html#a369ece7af625a664bd5cd6bbdb498f37":[0,0,1,37,0,2],
 "d6/d55/structmoteus_1_1SimplePI_1_1Config.html#a7df71eae26fde84b21eadde24f701667":[0,0,1,37,0,1],
 "d6/d55/structmoteus_1_1SimplePI_1_1Config.html#ac99594571788f5d2497aec76f76c01bc":[0,0,1,37,0,0],
-"d6/d8a/bldc__servo_8h_source.html":[1,0,6]
+"d6/d8a/bldc__servo_8h_source.html":[1,0,6],
+"d6/de0/structmoteus_1_1ParkTransform.html":[0,0,1,26]
 };

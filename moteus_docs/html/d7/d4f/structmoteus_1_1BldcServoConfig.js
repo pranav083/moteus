@@ -4,7 +4,6 @@ var structmoteus_1_1BldcServoConfig =
     [ "Serialize", "d7/d4f/structmoteus_1_1BldcServoConfig.html#a1fcfe7801fbde383cc8880863408c551", null ],
     [ "adc_aux_cycles", "d7/d4f/structmoteus_1_1BldcServoConfig.html#a57c255a3d342c3fb6521fa1dfd2b16f6", null ],
     [ "adc_cur_cycles", "d7/d4f/structmoteus_1_1BldcServoConfig.html#a05b7fe7ba0dfd4d8040e342c0ac805ca", null ],
-    [ "adc_prescale", "d7/d4f/structmoteus_1_1BldcServoConfig.html#ae887905607f4aa585c17b6c8e02546ac", null ],
     [ "bemf_feedforward", "d7/d4f/structmoteus_1_1BldcServoConfig.html#aad1e7e1ef071285c37b0bc274392273b", null ],
     [ "cooldown_cycles", "d7/d4f/structmoteus_1_1BldcServoConfig.html#abba7d5907538e6717941dffcbc41a879", null ],
     [ "current_feedforward", "d7/d4f/structmoteus_1_1BldcServoConfig.html#ab3d5e4f2f57ae56f6299914b6838a694", null ],

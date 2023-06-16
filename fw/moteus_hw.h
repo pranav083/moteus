@@ -11,7 +11,13 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
+// 
+// @startuml
+// actor User
+// User -> main: Open program
+// ...
+// @enduml
+// 
 #pragma once
 
 #include "mbed.h"
@@ -32,7 +38,17 @@ namespace moteus {
 
 // This structure is filled in once the family and hardware version
 // are known.
+/**
+ * @brief this is moteus hardware pin function
+ * @startuml
+ * actor User
+ *  User -> main: Open program
+ * ...
+ * @enduml
+ *  
+ */
 struct MoteusHwPins {
+
   PinName pwm1 = PA_0_ALT0;
   PinName pwm2 = PA_1_ALT0;
   PinName pwm3 = PA_2_ALT0;

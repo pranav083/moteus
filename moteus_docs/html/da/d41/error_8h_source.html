@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('da/d41/error_8h_source.html','../../')
 <div class="title">error.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2018-2022 Josh Pieper, jjp@pobox.com.</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2018-2023 Josh Pieper, jjp@pobox.com.</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
@@ -133,29 +133,30 @@ $(document).ready(function(){initNavTree('da/d41/error_8h_source.html','../../')
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  kConfigChanged = 41,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  kThetaInvalid = 42,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  kPositionInvalid = 43,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;mjlib::micro::error_code make_error_code(errc);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">namespace </span>mjlib {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">namespace </span>base {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../db/d6a/structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1errc_01_4.html">   56</a></span>&#160;<span class="keyword">struct </span>IsEnum&lt;moteus::errc&gt; {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> value = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">static</span> std::array&lt;std::pair&lt;moteus::errc, const char*&gt;, 0&gt; map() {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> {{}};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">namespace </span>micro {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../da/d33/structmjlib_1_1micro_1_1is__error__code__enum_3_01moteus_1_1errc_01_4.html">   67</a></span>&#160;<span class="keyword">struct </span>is_error_code_enum&lt;moteus::errc&gt; : std::true_type {};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  kDriverEnableFault = 44,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;mjlib::micro::error_code make_error_code(errc);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">namespace </span>mjlib {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">namespace </span>base {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../db/d6a/structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1errc_01_4.html">   57</a></span>&#160;<span class="keyword">struct </span>IsEnum&lt;moteus::errc&gt; {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> value = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> std::array&lt;std::pair&lt;moteus::errc, const char*&gt;, 0&gt; map() {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> {{}};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">namespace </span>micro {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../da/d33/structmjlib_1_1micro_1_1is__error__code__enum_3_01moteus_1_1errc_01_4.html">   68</a></span>&#160;<span class="keyword">struct </span>is_error_code_enum&lt;moteus::errc&gt; : std::true_type {};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

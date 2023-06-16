@@ -1,7 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"d9/d7e/classmoteus_1_1PID.html#a3626ca12b82d2ffbc59457473dbc2532":[0,0,1,36,4],
-"d9/d7e/classmoteus_1_1PID.html#a3626ca12b82d2ffbc59457473dbc2532":[0,0,1,36,3],
 "d9/d7e/classmoteus_1_1PID.html#a36e62d02700935586c6404326efeb606":[0,0,1,36,6],
 "d9/d7e/classmoteus_1_1PID.html#a36e62d02700935586c6404326efeb606":[0,0,1,36,5],
 "d9/d89/classmoteus_1_1AuxPort.html":[0,0,1,5],
@@ -105,7 +103,7 @@ var NAVTREEINDEX3 =
 "da/dcc/classmoteus_1_1IcPz.html#af803b1bf15ac5d9fa9231d60b013cd77":[0,0,1,29,12],
 "da/dd3/classmoteus_1_1Drv8323.html":[0,0,1,16],
 "da/dd3/classmoteus_1_1Drv8323.html#a0974deb139f6aa176588c34580ab4357":[0,0,1,16,6],
-"da/dd3/classmoteus_1_1Drv8323.html#a470cf5fe07d4a6198613b7d2729da267":[0,0,1,16,8],
+"da/dd3/classmoteus_1_1Drv8323.html#a2d5ce1a15b943b3a69318e6a303aaca9":[0,0,1,16,8],
 "da/dd3/classmoteus_1_1Drv8323.html#a4bc3820c2a52970bb709306c1ca05bb6":[0,0,1,16,12],
 "da/dd3/classmoteus_1_1Drv8323.html#a54c1e3a607c069f00780e9c0e21c1eb7":[0,0,1,16,7],
 "da/dd3/classmoteus_1_1Drv8323.html#a871eba5220da557df46cd9c8366c49cc":[0,0,1,16,9],
@@ -249,5 +247,7 @@ var NAVTREEINDEX3 =
 "dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#a1030eab87f257ff383864885f711d544":[0,0,1,0,6,1,0],
 "dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#a1030eab87f257ff383864885f711d544a8225d0fbcaf599aa460c6322580e86bd":[0,0,1,0,6,1,0,3],
 "dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#a1030eab87f257ff383864885f711d544a94041d889aed4137963256eb7235a1f8":[0,0,1,0,6,1,0,1],
-"dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#a1030eab87f257ff383864885f711d544a99280370b4686f018fb8a2e25f1b822e":[0,0,1,0,6,1,0,2]
+"dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#a1030eab87f257ff383864885f711d544a99280370b4686f018fb8a2e25f1b822e":[0,0,1,0,6,1,0,2],
+"dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#a1030eab87f257ff383864885f711d544aff5ba207adf5051bad754a6e7629812f":[0,0,1,0,6,1,0,0],
+"dd/d53/structmoteus_1_1aux_1_1I2C_1_1DeviceConfig.html#a1f30b1f90d150e204d7511c75de678f8":[0,0,1,0,6,1,3]
 };

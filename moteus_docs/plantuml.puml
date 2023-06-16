@@ -1,0 +1,39 @@
+@startuml
+!define AWSPUML https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+
+!define AWSPUML_SPRITESURL ${AWSPUML}/sprites/dist
+!define AWSPUML_SPRITES16URL ${AWSPUML}/sprites16/dist
+!define AWSPUML_COREURL ${AWSPUML}/core/dist
+
+!define AWSPUML_INCLUDE_SPRITESURL https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist/sprites/dist
+!define AWSPUML_INCLUDE_SPRITES16URL https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist/sprites16/dist
+!define AWSPUML_INCLUDE_COREURL https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist/core/dist
+
+!define SPRITESURL https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
+
+!define BOUNDARY_SPRITES_URL https://raw.githubusercontent.com/umple-ucsdlab/UmpleToPlantUML/641dbfb8675b277f04f0900a4b307532ba3dce6d/src/org/umple/to/plantUml/boundaryClass.puml
+
+!define BOUNDARY_SPRITES_DIR_URL https://raw.githubusercontent.com/umple-ucsdlab/UmpleToPlantUML/641dbfb8675b277f04f0900a4b307532ba3dce6d/src/org/umple/to/plantUml/boundaryClass.puml
+
+!define ENTITYRELATIONSHIP https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/bschwarz-entity-relationship.puml
+
+!define KUBERNETES https://raw.githubusercontent.com/Archi-Lab/awesome-saas-c4/master/samples/C4_PIM_Kubernetes.puml
+
+!define COMPONENT_PUML_URL https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.5.0/dist/C4_Component.puml
+
+!define DEPLOYMENT_PUML_URL https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.5.0/dist/C4_Deployment.puml
+
+!define ACTIVITY_PUML_URL https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.5.0/dist/C4_Activity.puml
+
+!define STATE_PUML_URL https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.5.0/dist/C4_State.puml
+
+
+
+
+skinparam sequenceArrowThickness 2
+skinparam sequenceLifeLineBorderColor #A9A9A9
+skinparam sequenceLifeLineBackgroundColor #E6E6FA
+skinparam sequenceLifeLineBorderThickness 2
+skinparam sequenceLifeLineFontSize 15
+skinparam sequenceLifeLineFontColor #333333
+@enduml
