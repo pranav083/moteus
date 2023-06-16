@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Stm32I2c" xml:lang="en-US">
+<title>moteus::Stm32I2c Class Reference</title>
+<indexterm><primary>moteus::Stm32I2c</primary></indexterm>
+Collaboration diagram for moteus::Stm32I2c:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d4/d14/classmoteus_1_1Stm32I2c__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Stm32I2c_1_1Options">Options</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32I2c_1afbe5ab354bab7f574da607e0b6227e74"/>enum class <emphasis role="strong">ReadStatus</emphasis> { <emphasis role="strong">kNoStatus</emphasis>
+, <emphasis role="strong">kComplete</emphasis>
+, <emphasis role="strong">kError</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32I2c_1aa30dff65e1ca09a3fa7a61bc071437bf"/><emphasis role="strong">Stm32I2c</emphasis> (const <link linkend="_structmoteus_1_1Stm32I2c_1_1Options">Options</link> &amp;options)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32I2c_1a7002c91b96785a25bd81497fcf652fbf"/>void <emphasis role="strong">Initialize</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32I2c_1a1da8d6f420098ef936400379da723013"/>void <emphasis role="strong">StartReadMemory</emphasis> (uint8_t slave_address, uint8_t address, mjlib::base::string_span data)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32I2c_1a2511683b9563a6865837ffb2c0a0b228"/>ReadStatus <emphasis role="strong">CheckRead</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32I2c_1aeacb26f49c1d01171137e44979dd1041"/>void <emphasis role="strong">Poll</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+stm32_i2c.h</section>

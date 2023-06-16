@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1AS5047" xml:lang="en-US">
+<title>moteus::AS5047 Class Reference</title>
+<indexterm><primary>moteus::AS5047</primary></indexterm>
+Collaboration diagram for moteus::AS5047:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d7/dc8/classmoteus_1_1AS5047__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AS5047_1a1e15cbe7556bc8fa477a59d60d502ee1"/>using <emphasis role="strong">Options</emphasis> = <link linkend="_structmoteus_1_1Stm32Spi_1_1Options">Stm32Spi::Options</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AS5047_1a7000207712f44b5f3377077df1798c1d"/><emphasis role="strong">AS5047</emphasis> (const <link linkend="_structmoteus_1_1Stm32Spi_1_1Options">Options</link> &amp;options)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AS5047_1a040931e84e2db9049f65d60433f5ff5e"/>uint16_t <emphasis role="strong">Sample</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AS5047_1a9788a46520efe8077665a4c178047502"/>void <emphasis role="strong">StartSample</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AS5047_1a5ade586ffa7bc1da86268c9a04c9df96"/>uint16_t <emphasis role="strong">FinishSample</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+as5047.h</section>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1AuxStatus" xml:lang="en-US">
+<title>moteus::aux::AuxStatus Struct Reference</title>
+<indexterm><primary>moteus::aux::AuxStatus</primary></indexterm>
+Collaboration diagram for moteus::aux::AuxStatus:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d7d/structmoteus_1_1aux_1_1AuxStatus__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1a7b744e26f8a6eb199875552da09eb376"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1a80495b565f016a0d88b5b457360c6f00"/>AuxError <emphasis role="strong">error</emphasis> = AuxError::kNone</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1a57745c400501ea6fa727c496a8987b3d"/><link linkend="_structmoteus_1_1aux_1_1I2C_1_1Status">I2C::Status</link> <emphasis role="strong">i2c</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1a9171fefeb5c3e06395c86fcaa5f9a5fc"/><link linkend="_structmoteus_1_1aux_1_1Spi_1_1Status">Spi::Status</link> <emphasis role="strong">spi</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1ae77ceae3135b06711be7c4ff2b5e22ea"/><link linkend="_structmoteus_1_1aux_1_1UartEncoder_1_1Status">UartEncoder::Status</link> <emphasis role="strong">uart</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1a97cdd89d738ce85c900dbaa953da202e"/><link linkend="_structmoteus_1_1aux_1_1Quadrature_1_1Status">Quadrature::Status</link> <emphasis role="strong">quadrature</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1a0925ce5d2d701ee18727aade6b804e93"/><link linkend="_structmoteus_1_1aux_1_1Hall_1_1Status">Hall::Status</link> <emphasis role="strong">hall</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1aa497f4ba8b54551611d0ca8666e14037"/><link linkend="_structmoteus_1_1aux_1_1Index_1_1Status">Index::Status</link> <emphasis role="strong">index</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1a0f72892259669ed79d66350b52a951f8"/><link linkend="_structmoteus_1_1aux_1_1SineCosine_1_1Status">SineCosine::Status</link> <emphasis role="strong">sine_cosine</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1a3361ebb7baed2cfaa673b5639ea9603d"/>uint8_t <emphasis role="strong">gpio_bit_active</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1a5e37e799098a7e129fc646947159f19c"/>std::array&lt; bool, 5 &gt; <emphasis role="strong">pins</emphasis> = { {} }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1a691165474624dbae24d106928ee04bad"/>uint8_t <emphasis role="strong">analog_bit_active</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxStatus_1ae21acdaf3d48273b769d65c4410f69e7"/>std::array&lt; float, 5 &gt; <emphasis role="strong">analog_inputs</emphasis> = { {} }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

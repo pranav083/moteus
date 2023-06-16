@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1InverseClarkTransform" xml:lang="en-US">
+<title>moteus::InverseClarkTransform Struct Reference</title>
+<indexterm><primary>moteus::InverseClarkTransform</primary></indexterm>
+Collaboration diagram for moteus::InverseClarkTransform:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d2/d5a/structmoteus_1_1InverseClarkTransform__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1InverseClarkTransform_1ad129043346bed4b1549a2c9e7bfd6516"/><emphasis role="strong">InverseClarkTransform</emphasis> (float x, float y)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1InverseClarkTransform_1a003655471225e35b82c99ad026709333"/>const float <emphasis role="strong">a</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1InverseClarkTransform_1aaf1cf0e85c247f7c4ca23173cb3cb5d0"/>const float <emphasis role="strong">b</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1InverseClarkTransform_1a37763b169b60abd996d2685cbb632a66"/>const float <emphasis role="strong">c</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+foc.h</section>

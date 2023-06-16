@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Drv8323" xml:lang="en-US">
+<title>moteus::Drv8323 Class Reference</title>
+<indexterm><primary>moteus::Drv8323</primary></indexterm>
+Inheritance diagram for moteus::Drv8323:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d6/d53/classmoteus_1_1Drv8323__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for moteus::Drv8323:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d0/de3/classmoteus_1_1Drv8323__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Drv8323_1_1Config">Config</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1Drv8323_1_1Impl">Impl</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Drv8323_1_1Options">Options</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Drv8323_1_1Status">Status</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1ad22d51db594175ad97037f3aff989798"/>enum <emphasis role="strong">PwmMode</emphasis> { 
+<emphasis role="strong">k6x</emphasis> = 0x0
+, <emphasis role="strong">k3x</emphasis> = 0x1
+, <emphasis role="strong">k1x</emphasis> = 0x2
+, <emphasis role="strong">kIndependent</emphasis> = 0x3
+, 
+<emphasis role="strong">kNumPwmModes</emphasis> = 4
+ }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1acb7a9286de9106002bd952843c51eefa"/>enum <emphasis role="strong">OcpMode</emphasis> { 
+<emphasis role="strong">kLatchedFault</emphasis>
+, <emphasis role="strong">kAutomaticRetry</emphasis>
+, <emphasis role="strong">kReportNoAction</emphasis>
+, <emphasis role="strong">kIgnored</emphasis>
+, 
+<emphasis role="strong">kNumOcpModes</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1a0974deb139f6aa176588c34580ab4357"/><emphasis role="strong">Drv8323</emphasis> (mjlib::micro::Pool *, mjlib::micro::PersistentConfig *persistent_config, mjlib::micro::TelemetryManager *telemetry_manager, <link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer, const <link linkend="_structmoteus_1_1Drv8323_1_1Options">Options</link> &amp;)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1a470cf5fe07d4a6198613b7d2729da267"/>void <link linkend="_classmoteus_1_1Drv8323_1a470cf5fe07d4a6198613b7d2729da267">Enable</link> (bool) override</para>
+
+<para>Turn on or off the driver. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1abf8e50e26d99721cb4cbb428ab4125b1"/>void <link linkend="_classmoteus_1_1Drv8323_1abf8e50e26d99721cb4cbb428ab4125b1">Power</link> (bool) override</para>
+
+<para>Enable power to the output stage. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1a871eba5220da557df46cd9c8366c49cc"/>bool <link linkend="_classmoteus_1_1Drv8323_1a871eba5220da557df46cd9c8366c49cc">fault</link> () override</para>
+
+<para>Return true if the driver is currently reporting a fault. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1ac1acb4e36ea1b7abf13b910d9c96df38"/>void <emphasis role="strong">PollMillisecond</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1a4bc3820c2a52970bb709306c1ca05bb6"/>const <link linkend="_structmoteus_1_1Drv8323_1_1Status">Status</link> * <emphasis role="strong">status</emphasis> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+drv8323.hdrv8323.cc</section>

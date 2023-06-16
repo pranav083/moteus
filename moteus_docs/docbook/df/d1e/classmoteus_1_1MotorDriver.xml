@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1MotorDriver" xml:lang="en-US">
+<title>moteus::MotorDriver Class Reference</title>
+<indexterm><primary>moteus::MotorDriver</primary></indexterm>
+Inheritance diagram for moteus::MotorDriver:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d1/d9e/classmoteus_1_1MotorDriver__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for moteus::MotorDriver:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/de9/classmoteus_1_1MotorDriver__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorDriver_1a7db624a3d2beaaed6fa077838b8a816e"/>virtual void <link linkend="_classmoteus_1_1MotorDriver_1a7db624a3d2beaaed6fa077838b8a816e">Enable</link> (bool)=0</para>
+
+<para>Turn on or off the driver. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorDriver_1a07cd7ecf6865d65b959406c921b5d0af"/>virtual void <link linkend="_classmoteus_1_1MotorDriver_1a07cd7ecf6865d65b959406c921b5d0af">Power</link> (bool)=0</para>
+
+<para>Enable power to the output stage. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorDriver_1a8fa678758c43a6ba59a3ee4397e4b355"/>virtual bool <link linkend="_classmoteus_1_1MotorDriver_1a8fa678758c43a6ba59a3ee4397e4b355">fault</link> ()=0</para>
+
+<para>Return true if the driver is currently reporting a fault. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+motor_driver.h</section>

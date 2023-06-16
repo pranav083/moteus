@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1MotorPosition_1_1Status_1_1Error_01_4" xml:lang="en-US">
+<title>mjlib::base::IsEnum&lt; moteus::MotorPosition::Status::Error &gt; Struct Reference</title>
+<indexterm><primary>mjlib::base::IsEnum&lt; moteus::MotorPosition::Status::Error &gt;</primary></indexterm>
+Collaboration diagram for mjlib::base::IsEnum&lt; moteus::MotorPosition::Status::Error &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/d52/structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1MotorPosition_1_1Status_1_1Error_01_4__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1MotorPosition_1_1Status_1_1Error_01_4_1a500b7ec48fb93605984967b1b7b6e847"/>using <emphasis role="strong">E</emphasis> = moteus::MotorPosition::Status::Error</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1MotorPosition_1_1Status_1_1Error_01_4_1ab9bda413b8cb0a8062609acae37ed1f9"/>static std::array&lt; std::pair&lt; E, const char * &gt;, E::kNumErrors &gt; <emphasis role="strong">map</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1MotorPosition_1_1Status_1_1Error_01_4_1acfb8952f7dc078ba56710c38cf5eb2da"/>static constexpr bool <emphasis role="strong">value</emphasis> = true</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+motor_position.h</section>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1AuxPort" xml:lang="en-US">
+<title>moteus::AuxPort Class Reference</title>
+<indexterm><primary>moteus::AuxPort</primary></indexterm>
+Collaboration diagram for moteus::AuxPort:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d2/d8e/classmoteus_1_1AuxPort__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1adb8b13b47c50c207dc986e3c0ea03ffb"/>enum <emphasis role="strong">SpiDefault</emphasis> { <emphasis role="strong">kNoDefaultSpi</emphasis>
+, <emphasis role="strong">kDefaultOnboardSpi</emphasis>
+ }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1a7c6fed849295431b6bf8d06fd162203b"/>using <emphasis role="strong">Config</emphasis> = <link linkend="_structmoteus_1_1aux_1_1AuxConfig">aux::AuxConfig</link></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1a6eaa94b6cc99570914f9efbf59590059"/>using <emphasis role="strong">Status</emphasis> = <link linkend="_structmoteus_1_1aux_1_1AuxStatus">aux::AuxStatus</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1a1786879a1df69a2691ca592ff7db7899"/><emphasis role="strong">AuxPort</emphasis> (const char *aux_name, const char *icpz_name, const <link linkend="_structmoteus_1_1aux_1_1AuxHardwareConfig">aux::AuxHardwareConfig</link> &amp;hw_config, <link linkend="_structmoteus_1_1AuxADC_1_1AuxInfo">AuxADC::AuxInfo</link> *adc_info, mjlib::micro::PersistentConfig *persistent_config, mjlib::micro::CommandManager *command_manager, mjlib::micro::TelemetryManager *telemetry_manager, mjlib::micro::AsyncStream *tunnel_stream, <link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer, SpiDefault spi_default, std::array&lt; DMA_Channel_TypeDef *, 4 &gt; dma_channels)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1a4846925328d05abd79db43464673a54d"/>void <emphasis role="strong">ISR_MaybeStartSample</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1a1eda6bb58afa99a883caee9dfcdfc2a4"/>void <emphasis role="strong">ISR_MaybeFinishSample</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1a1392e3702b7524347086816c94f8331b"/>void <emphasis role="strong">ISR_EndAnalogSample</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1a4ef9dd3b5c7bd67aa4bcfa9516f62b21"/>void <emphasis role="strong">PollMillisecond</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1a0f2bad7d6997adaacc9aaa0e2e9c708e"/>void <emphasis role="strong">Poll</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1a09c292ad09b265052cf8e5e85c311b44"/>void <emphasis role="strong">WriteDigitalOut</emphasis> (uint32_t value)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1ad205ccd34f8fbb0adef271c241ab4f65"/>USART_TypeDef * <emphasis role="strong">debug_uart</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1a8f5567a08eaaa51902f677cfe22cc326"/><link linkend="_structmoteus_1_1aux_1_1AuxStatus">Status</link> * <emphasis role="strong">status</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxPort_1aadda1bf69c42e239b8cac5daef27ac0b"/>const <link linkend="_structmoteus_1_1aux_1_1AuxConfig">Config</link> * <emphasis role="strong">config</emphasis> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+aux_port.h</section>

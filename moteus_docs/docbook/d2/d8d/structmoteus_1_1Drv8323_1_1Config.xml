@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1Drv8323_1_1Config" xml:lang="en-US">
+<title>moteus::Drv8323::Config Struct Reference</title>
+<indexterm><primary>moteus::Drv8323::Config</primary></indexterm>
+Collaboration diagram for moteus::Drv8323::Config:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/da0/structmoteus_1_1Drv8323_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a1410d6310bba5c59b30e538f1b40f0b5"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a190df1b37814f0bccaf8ee877a4831ce"/>static int <emphasis role="strong">invalid_int</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1ad710433a00f97ca3731aeb6ecb39357b"/>bool <emphasis role="strong">dis_cpuv</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a6a79c80a90c0e73d70cdfc51752080bb"/>bool <emphasis role="strong">dis_gdf</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a011674a2ae30df77dc1bedd351d0eda6"/>bool <emphasis role="strong">otw_rep</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1aa092fed5999e83ccc71cb49af276f3c9"/>PwmMode <emphasis role="strong">pwm_mode</emphasis> = PwmMode::k3x</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1afc8057f90a2ecd4362e38dfc02f7da51"/>bool <emphasis role="strong">pwm_1x_asynchronous</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a1e217a13aced85e1eaa9d86949ea19fb"/>bool <emphasis role="strong">pwm_1x_dir</emphasis> = false</para>
+</listitem>
+            <listitem><para>uint16_t <emphasis role="strong">idrivep_hs_ma</emphasis></para>
+</listitem>
+            <listitem><para>uint16_t <emphasis role="strong">idriven_hs_ma</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1afc2662e95c6b8252068b95df18cbe395"/>bool <emphasis role="strong">cbc</emphasis> = true</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1af77328827a6172eec7bccf073e8ba7b1"/>uint16_t <emphasis role="strong">tdrive_ns</emphasis> = 1000</para>
+</listitem>
+            <listitem><para>uint16_t <emphasis role="strong">idrivep_ls_ma</emphasis></para>
+</listitem>
+            <listitem><para>uint16_t <emphasis role="strong">idriven_ls_ma</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a93a75e350ac8ddc85603f367608bf664"/>bool <emphasis role="strong">tretry</emphasis> = false</para>
+</listitem>
+            <listitem><para>uint16_t <emphasis role="strong">dead_time_ns</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a8d807d4a2edc4dcedd3aa95cd8a83d75"/>OcpMode <emphasis role="strong">ocp_mode</emphasis> = OcpMode::kLatchedFault</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a570c19e2f4c9195a72678a613ff4c872"/>uint8_t <emphasis role="strong">ocp_deg_us</emphasis> = 4</para>
+</listitem>
+            <listitem><para>uint16_t <emphasis role="strong">vds_lvl_mv</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a38f1fd7f1676ada872767ea8d2be5b93"/>bool <emphasis role="strong">csa_fet</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1abe0f3a47e7aa5ea32573d08e2483a443"/>bool <emphasis role="strong">vref_div</emphasis> = true</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a82d4c4905bb81f9aab4299557a7adcf5"/>bool <emphasis role="strong">ls_ref</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a24d84f493c61fd46d4ff36b01f73399e"/>uint8_t <emphasis role="strong">csa_gain</emphasis> = 20</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a63bb90d0875614f00c9ac70901e14f3c"/>bool <emphasis role="strong">dis_sen</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1addd3f98e3a070168e985ebdc9bf379e3"/>uint16_t <emphasis role="strong">sen_lvl_mv</emphasis> = 500</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1af8f03c95bd14657b4c9333a343c56217"/>    <section>
+    <title>dead_time_ns</title>
+<indexterm><primary>dead_time_ns</primary><secondary>moteus::Drv8323::Config</secondary></indexterm>
+<indexterm><primary>moteus::Drv8323::Config</primary><secondary>dead_time_ns</secondary></indexterm>
+<para><computeroutput>uint16_t moteus::Drv8323::Config::dead_time_ns</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;0&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((g_measured_hw_rev&#32;&lt;=&#32;6)&#32;?&#32;50&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(g_measured_hw_rev&#32;&lt;=&#32;7)&#32;?&#32;200&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;50)&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;50&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid_int()
+</programlisting>    </section><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a8e987bd9fde3af4053960e6dba239eb7"/>    <section>
+    <title>idriven_hs_ma</title>
+<indexterm><primary>idriven_hs_ma</primary><secondary>moteus::Drv8323::Config</secondary></indexterm>
+<indexterm><primary>moteus::Drv8323::Config</primary><secondary>idriven_hs_ma</secondary></indexterm>
+<para><computeroutput>uint16_t moteus::Drv8323::Config::idriven_hs_ma</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;0&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((g_measured_hw_rev&#32;&lt;=&#32;6)&#32;?&#32;740&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(g_measured_hw_rev&#32;&lt;=&#32;7)&#32;?&#32;100&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;200)&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;300&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid_int()
+</programlisting>    </section><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1aca0a0a4f627e1bfcb365eb0b66068c27"/>    <section>
+    <title>idriven_ls_ma</title>
+<indexterm><primary>idriven_ls_ma</primary><secondary>moteus::Drv8323::Config</secondary></indexterm>
+<indexterm><primary>moteus::Drv8323::Config</primary><secondary>idriven_ls_ma</secondary></indexterm>
+<para><computeroutput>uint16_t moteus::Drv8323::Config::idriven_ls_ma</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;0&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((g_measured_hw_rev&#32;&lt;=&#32;6)&#32;?&#32;740&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(g_measured_hw_rev&#32;&lt;=&#32;7)&#32;?&#32;100&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;200)&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;300&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid_int()
+</programlisting>    </section><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1ac1301be18b0e2cd0f586589ca4342a0e"/>    <section>
+    <title>idrivep_hs_ma</title>
+<indexterm><primary>idrivep_hs_ma</primary><secondary>moteus::Drv8323::Config</secondary></indexterm>
+<indexterm><primary>moteus::Drv8323::Config</primary><secondary>idrivep_hs_ma</secondary></indexterm>
+<para><computeroutput>uint16_t moteus::Drv8323::Config::idrivep_hs_ma</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;0&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((g_measured_hw_rev&#32;&lt;=&#32;6)&#32;?&#32;370&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(g_measured_hw_rev&#32;&lt;=&#32;7)&#32;?&#32;50&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;100)&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;150&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid_int()
+</programlisting>    </section><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a10cec7abf1c57897ee8a43bf73cf99f1"/>    <section>
+    <title>idrivep_ls_ma</title>
+<indexterm><primary>idrivep_ls_ma</primary><secondary>moteus::Drv8323::Config</secondary></indexterm>
+<indexterm><primary>moteus::Drv8323::Config</primary><secondary>idrivep_ls_ma</secondary></indexterm>
+<para><computeroutput>uint16_t moteus::Drv8323::Config::idrivep_ls_ma</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;0&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((g_measured_hw_rev&#32;&lt;=&#32;6)&#32;?&#32;370&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(g_measured_hw_rev&#32;&lt;=&#32;7)&#32;?&#32;50&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;100)&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;150&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid_int()
+</programlisting>    </section><anchor xml:id="_structmoteus_1_1Drv8323_1_1Config_1a2b48200e491915b044016251e20fa210"/>    <section>
+    <title>vds_lvl_mv</title>
+<indexterm><primary>vds_lvl_mv</primary><secondary>moteus::Drv8323::Config</secondary></indexterm>
+<indexterm><primary>moteus::Drv8323::Config</primary><secondary>vds_lvl_mv</secondary></indexterm>
+<para><computeroutput>uint16_t moteus::Drv8323::Config::vds_lvl_mv</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;0&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((g_measured_hw_rev&#32;&lt;=&#32;5)&#32;?&#32;260&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(g_measured_hw_rev&#32;&lt;=&#32;7)&#32;?&#32;450&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;700)&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;700&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid_int()
+</programlisting></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+drv8323.h</section>
+</section>

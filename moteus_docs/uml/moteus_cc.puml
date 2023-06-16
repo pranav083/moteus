@@ -1,0 +1,26 @@
+@startuml
+
+Actor MicroController
+MicroController -> main: Open program
+activate main
+
+main -> SetupClock: Call SetupClock()
+activate SetupClock
+SetupClock --> main: Return
+deactivate SetupClock
+
+main -> DetectMoteusFamily: Call DetectMoteusFamily()
+alt if (family_and_version.hw_version < 0)
+    activate DetectMoteusFamily
+DetectMoteusFamily -->  MicroController : mbed_die() **Kill System**
+    ' DetectMoteusFamily --> main: Return family_and_version
+    deactivate DetectMoteusFamily
+end
+
+main -> FindHardwarePins: Call FindHardwarePins(family_and_version)
+activate FindHardwarePins
+FindHardwarePins --> main: Return g_hw_pins
+deactivate FindHardwarePins
+
+
+@enduml

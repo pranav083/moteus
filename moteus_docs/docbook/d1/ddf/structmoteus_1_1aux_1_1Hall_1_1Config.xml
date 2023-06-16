@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1Hall_1_1Config" xml:lang="en-US">
+<title>moteus::aux::Hall::Config Struct Reference</title>
+<indexterm><primary>moteus::aux::Hall::Config</primary></indexterm>
+Collaboration diagram for moteus::aux::Hall::Config:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d82/structmoteus_1_1aux_1_1Hall_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Hall_1_1Config_1af6ffbd52c8a14aaff91094396ae98215"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Hall_1_1Config_1ac40d8407557bf7f322a012aeb20c42be"/>bool <emphasis role="strong">enabled</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Hall_1_1Config_1ab82977875c36d10b67ea77800b71210c"/>uint8_t <emphasis role="strong">polarity</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

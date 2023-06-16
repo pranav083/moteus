@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1SpiPinOption" xml:lang="en-US">
+<title>moteus::aux::SpiPinOption Struct Reference</title>
+<indexterm><primary>moteus::aux::SpiPinOption</primary></indexterm>
+Collaboration diagram for moteus::aux::SpiPinOption:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dc/ddd/structmoteus_1_1aux_1_1SpiPinOption__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SpiPinOption_1aef18dc2ae8a413f411a69f6e82b3b799"/>SPI_TypeDef * <emphasis role="strong">spi</emphasis> = nullptr</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SpiPinOption_1a2b2da112e01009269e18706d0891d10d"/>PinName <emphasis role="strong">sck</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SpiPinOption_1acb93f9f2547c98e69029f62cad4fbb1a"/>PinName <emphasis role="strong">miso</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SpiPinOption_1a0f800f6869a5076ed0e4198520fbcff7"/>PinName <emphasis role="strong">mosi</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SpiPinOption_1a9f4ce6d2b10f4b484c8446d1a18783de"/>PinName <emphasis role="strong">cs</emphasis> = NC</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_mbed.h</section>

@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1BldcServoConfig" xml:lang="en-US">
+<title>moteus::BldcServoConfig Struct Reference</title>
+<indexterm><primary>moteus::BldcServoConfig</primary></indexterm>
+Collaboration diagram for moteus::BldcServoConfig:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d7/de7/structmoteus_1_1BldcServoConfig__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a1fcfe7801fbde383cc8880863408c551"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1ac0c6172bb3c628b3e438222f2ea578bf"/>static float <emphasis role="strong">invalid_float</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>uint16_t <emphasis role="strong">pwm_rate_hz</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1ac07a027b182f13453b78738266b02815"/>float <emphasis role="strong">i_gain</emphasis> = 20.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a85e1c58b2c071f638e315690796d2dfc"/>float <emphasis role="strong">current_sense_ohm</emphasis> = 0.0005f</para>
+</listitem>
+            <listitem><para>float <emphasis role="strong">pwm_comp_off</emphasis></para>
+</listitem>
+            <listitem><para>float <emphasis role="strong">pwm_comp_mag</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a72550276b20fb9bd8e815ae15f4eb240"/>float <emphasis role="strong">pwm_scale</emphasis> = 1.0f</para>
+</listitem>
+            <listitem><para>float <emphasis role="strong">max_voltage</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1ada9121c3d8add55a800c5b6377dc277b"/>float <emphasis role="strong">max_power_W</emphasis> = 450.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1ab606b1360c025abf0fdb4a8a9ac7eddf"/>float <emphasis role="strong">derate_temperature</emphasis> = 50.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a0142db2b9ce8d403ba10c8e1ea85817c"/>float <emphasis role="strong">fault_temperature</emphasis> = 75.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a208c6860c493fb8b1aea04d9a059833a"/>bool <emphasis role="strong">enable_motor_temperature</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a46c55888686a5274036170672e2e58c7"/>float <emphasis role="strong">motor_derate_temperature</emphasis> = 50.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a703c6ecf01624402c53041613e0d6464"/>float <emphasis role="strong">motor_fault_temperature</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1afd494f8a3ec73bad1306131989379c53"/>float <emphasis role="strong">velocity_threshold</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a9028a02f41fd8ae324911184af020a8d"/>float <emphasis role="strong">position_derate</emphasis> = 0.02f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a05b7fe7ba0dfd4d8040e342c0ac805ca"/>uint16_t <emphasis role="strong">adc_cur_cycles</emphasis> = 2</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a57c255a3d342c3fb6521fa1dfd2b16f6"/>uint16_t <emphasis role="strong">adc_aux_cycles</emphasis> = 47</para>
+</listitem>
+            <listitem><para>uint16_t <emphasis role="strong">adc_prescale</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a1eabd9ce975bd2a64e167c819d5e3795"/><link linkend="_structmoteus_1_1SimplePI_1_1Config">SimplePI::Config</link> <emphasis role="strong">pid_dq</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a88c20d8ffd4c2e4143088ec2da314597"/><link linkend="_structmoteus_1_1PID_1_1Config">PID::Config</link> <emphasis role="strong">pid_position</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1ab3d5e4f2f57ae56f6299914b6838a694"/>float <emphasis role="strong">current_feedforward</emphasis> = 1.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1aad1e7e1ef071285c37b0bc274392273b"/>float <emphasis role="strong">bemf_feedforward</emphasis> = 1.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a8679ec57f450b84fbfbab15148e22e7f"/>float <emphasis role="strong">default_velocity_limit</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a2dc69b173869eebe6608ac5c24b5795d"/>float <emphasis role="strong">default_accel_limit</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a0e3c9eec91fc2afb50d2036c5efe5c0e"/>bool <emphasis role="strong">voltage_mode_control</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1ab7717fab86c846c97be4c03d19e7b7a7"/>bool <emphasis role="strong">fixed_voltage_mode</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a74aae10feb0833d404e324935fb8650d"/>float <emphasis role="strong">fixed_voltage_control_V</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a99268b94568e00a60f2351c5f4592029"/>float <emphasis role="strong">max_position_slip</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1ad3b8bbd5e1b17031b28d77c3f69ba688"/>float <emphasis role="strong">default_timeout_s</emphasis> = 0.1f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a08b91c8db2185c2640b27a4b8cf9cce3"/>float <emphasis role="strong">timeout_max_torque_Nm</emphasis> = 5.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1ab82c009719e449770e59322bb0e1f52d"/>uint8_t <emphasis role="strong">timeout_mode</emphasis> = 12</para>
+</listitem>
+            <listitem><para>float <emphasis role="strong">flux_brake_min_voltage</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1aa7dd08e8606614698c4c8c8fef8c47ac"/>float <emphasis role="strong">flux_brake_resistance_ohm</emphasis> = 0.025f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1ab224a908e24c15133f3a4421e544495b"/>float <emphasis role="strong">max_current_A</emphasis> = 100.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a2549005cb79a7e43249824f8389fda86"/>float <emphasis role="strong">derate_current_A</emphasis> = -20.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a669cd9a82707e919375ecb48e1dfcf41"/>float <emphasis role="strong">max_velocity</emphasis> = 500.0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a436df23d04cfca87633f670d0b8b3279"/>float <emphasis role="strong">max_velocity_derate</emphasis> = 2.0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1abba7d5907538e6717941dffcbc41a879"/>uint16_t <emphasis role="strong">cooldown_cycles</emphasis> = 256</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1ab5b405b995bb21b09c96e24d19b7188e"/>float <emphasis role="strong">velocity_zero_capture_threshold</emphasis> = 0.05f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a167beb24f9cc521cecf11812a34424ce"/>uint32_t <emphasis role="strong">emit_debug</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structmoteus_1_1BldcServoConfig_1ae887905607f4aa585c17b6c8e02546ac"/>    <section>
+    <title>adc_prescale</title>
+<indexterm><primary>adc_prescale</primary><secondary>moteus::BldcServoConfig</secondary></indexterm>
+<indexterm><primary>moteus::BldcServoConfig</primary><secondary>adc_prescale</secondary></indexterm>
+<para><computeroutput>uint16_t moteus::BldcServoConfig::adc_prescale</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;(g_measured_hw_family&#32;==&#32;0&#32;?&#32;8&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?&#32;6&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;8)
+</programlisting>    </section><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a5242c3f79b55aceae245abcf42b7a7a9"/>    <section>
+    <title>flux_brake_min_voltage</title>
+<indexterm><primary>flux_brake_min_voltage</primary><secondary>moteus::BldcServoConfig</secondary></indexterm>
+<indexterm><primary>moteus::BldcServoConfig</primary><secondary>flux_brake_min_voltage</secondary></indexterm>
+<para><computeroutput>float moteus::BldcServoConfig::flux_brake_min_voltage</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;0&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;((g_measured_hw_rev&#32;&lt;=&#32;5)&#32;?&#32;34.5f&#32;:&#32;43.5f)&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;53.0f&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;invalid_float()
+</programlisting>    </section><anchor xml:id="_structmoteus_1_1BldcServoConfig_1adf1e325a07c7a5185ea59496ea9691f6"/>    <section>
+    <title>max_voltage</title>
+<indexterm><primary>max_voltage</primary><secondary>moteus::BldcServoConfig</secondary></indexterm>
+<indexterm><primary>moteus::BldcServoConfig</primary><secondary>max_voltage</secondary></indexterm>
+<para><computeroutput>float moteus::BldcServoConfig::max_voltage</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;0&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;((g_measured_hw_rev&#32;&lt;=&#32;5)&#32;?&#32;37.0f&#32;:&#32;46.0f)&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;56.0f&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;invalid_float()
+</programlisting>    </section><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a85650ac84b175a598eeefc302b45fafd"/>    <section>
+    <title>pwm_comp_mag</title>
+<indexterm><primary>pwm_comp_mag</primary><secondary>moteus::BldcServoConfig</secondary></indexterm>
+<indexterm><primary>moteus::BldcServoConfig</primary><secondary>pwm_comp_mag</secondary></indexterm>
+<para><computeroutput>float moteus::BldcServoConfig::pwm_comp_mag</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;0&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;((g_measured_hw_rev&#32;&lt;=&#32;6)&#32;?&#32;0.005f&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(g_measured_hw_rev&#32;&lt;=&#32;7)&#32;?&#32;0.005f&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;0.005f)&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;0.005f&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid_float()
+</programlisting>    </section><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a7ba2f54c6e6eb2be98e28bd645d4e325"/>    <section>
+    <title>pwm_comp_off</title>
+<indexterm><primary>pwm_comp_off</primary><secondary>moteus::BldcServoConfig</secondary></indexterm>
+<indexterm><primary>moteus::BldcServoConfig</primary><secondary>pwm_comp_off</secondary></indexterm>
+<para><computeroutput>float moteus::BldcServoConfig::pwm_comp_off</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;0&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;((g_measured_hw_rev&#32;&lt;=&#32;6)&#32;?&#32;0.015f&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(g_measured_hw_rev&#32;&lt;=&#32;7)&#32;?&#32;0.055f&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;0.027f)&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_family&#32;==&#32;1&#32;?
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;0.027f&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;invalid_float()
+</programlisting>    </section><anchor xml:id="_structmoteus_1_1BldcServoConfig_1a55b00b7bfec1de6527f05ea8cfff4ca3"/>    <section>
+    <title>pwm_rate_hz</title>
+<indexterm><primary>pwm_rate_hz</primary><secondary>moteus::BldcServoConfig</secondary></indexterm>
+<indexterm><primary>moteus::BldcServoConfig</primary><secondary>pwm_rate_hz</secondary></indexterm>
+<para><computeroutput>uint16_t moteus::BldcServoConfig::pwm_rate_hz</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=
+&#32;&#32;&#32;&#32;&#32;&#32;(g_measured_hw_family&#32;==&#32;0&#32;&amp;&amp;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;g_measured_hw_rev&#32;&lt;=&#32;2)&#32;?&#32;60000&#32;:
+&#32;&#32;&#32;&#32;&#32;&#32;30000
+</programlisting></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+bldc_servo_structs.h</section>
+</section>

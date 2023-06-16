@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Uuid" xml:lang="en-US">
+<title>moteus::Uuid Class Reference</title>
+<indexterm><primary>moteus::Uuid</primary></indexterm>
+Collaboration diagram for moteus::Uuid:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d4e/classmoteus_1_1Uuid__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Uuid_1_1Data">Data</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Uuid_1aa9363b60fcd0bcdb2b84151a27fa7873"/><emphasis role="strong">Uuid</emphasis> (mjlib::micro::PersistentConfig &amp;config)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Uuid_1ac0f6ceac888cac75a749a9a10cca7305"/><link linkend="_structmoteus_1_1Uuid_1_1Data">Data</link> <emphasis role="strong">data_</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+uuid.h</section>

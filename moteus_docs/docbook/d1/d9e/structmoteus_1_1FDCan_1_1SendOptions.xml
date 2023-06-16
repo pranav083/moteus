@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1FDCan_1_1SendOptions" xml:lang="en-US">
+<title>moteus::FDCan::SendOptions Struct Reference</title>
+<indexterm><primary>moteus::FDCan::SendOptions</primary></indexterm>
+Collaboration diagram for moteus::FDCan::SendOptions:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dc/d25/structmoteus_1_1FDCan_1_1SendOptions__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1SendOptions_1a2da3041dacb24cea2ebd49016c598df1"/>Override <emphasis role="strong">bitrate_switch</emphasis> = Override::kDefault</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1SendOptions_1a69281e0de4b5cc81186e9e3dad6a8e35"/>Override <emphasis role="strong">fdcan_frame</emphasis> = Override::kDefault</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1SendOptions_1afa1201f357ad18fe233a69c82bf1a7a7"/>Override <emphasis role="strong">remote_frame</emphasis> = Override::kDefault</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1SendOptions_1afa1d77807c482e42a431a4ff87c838b3"/>Override <emphasis role="strong">extended_id</emphasis> = Override::kDefault</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+fdcan.h</section>

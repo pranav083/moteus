@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1StreamWriter" xml:lang="en-US">
+<title>moteus::StreamWriter&lt; Size, NumCallbacks &gt; Class Template Reference</title>
+<indexterm><primary>moteus::StreamWriter&lt; Size, NumCallbacks &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;stream_writer.h&gt;</computeroutput>
+</para>
+Collaboration diagram for moteus::StreamWriter&lt; Size, NumCallbacks &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d0e/classmoteus_1_1StreamWriter__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1StreamWriter_1a0efacef1633aa09d6c987078bafdce66"/><emphasis role="strong">StreamWriter</emphasis> (mjlib::micro::AsyncWriteStream *stream)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1StreamWriter_1a84c1a2ab0ec0c40b29139242fa2c5813"/>void <emphasis role="strong">AsyncWrite</emphasis> (const std::string_view &amp;buffer, const mjlib::micro::ErrorCallback &amp;callback)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<simplesect><title>template&lt;size_t Size, size_t NumCallbacks = 14&gt;
+class moteus::StreamWriter&lt; Size, NumCallbacks &gt;</title></simplesect>
+
+
+<para>Supports writing to a stream where the buffer passed to AsyncWrite does not need to live past the call. It does this through an internal double buffer. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+stream_writer.h</section>
+</section>

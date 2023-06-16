@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1BldcServo_1_1Control" xml:lang="en-US">
+<title>moteus::BldcServo::Control Struct Reference</title>
+<indexterm><primary>moteus::BldcServo::Control</primary></indexterm>
+Collaboration diagram for moteus::BldcServo::Control:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d0/dbb/structmoteus_1_1BldcServo_1_1Control__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Control_1a9be3bc4dfcdf4fdc828189796107218a"/>void <emphasis role="strong">Clear</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Control_1ad37513d2157b1842e22c7b42134ef4b6"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Control_1a1b0f0b690b9ae0235dc9bbdfc9bcb11d"/><link linkend="_structmoteus_1_1Vec3">Vec3</link> <emphasis role="strong">pwm</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Control_1ae1318d7524582608b69e2f53f102e6d6"/><link linkend="_structmoteus_1_1Vec3">Vec3</link> <emphasis role="strong">voltage</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Control_1a888d72be8f02c0b862ff0b300428f6e7"/>float <emphasis role="strong">d_V</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Control_1a069dc562a88d8e10aff63ee07dfffc89"/>float <emphasis role="strong">q_V</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Control_1a2012a0c44d7680219d027cb2f0bf5914"/>float <emphasis role="strong">i_d_A</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Control_1adb78745bdd5799d08fa869bba74d2a92"/>float <emphasis role="strong">i_q_A</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Control_1aa9898f6c18583b66bd9d74af4dccbbb1"/>float <emphasis role="strong">q_comp_A</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Control_1ac583eabc7e5d8859d300b4c4bf4976f5"/>float <emphasis role="strong">torque_Nm</emphasis> = 0.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+bldc_servo.h</section>

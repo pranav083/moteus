@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1Stm32Serial_1_1Options" xml:lang="en-US">
+<title>moteus::Stm32Serial::Options Struct Reference</title>
+<indexterm><primary>moteus::Stm32Serial::Options</primary></indexterm>
+Collaboration diagram for moteus::Stm32Serial::Options:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dc/db1/structmoteus_1_1Stm32Serial_1_1Options__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Serial_1_1Options_1aec1fcd6f002b7a3a4d57648926231e1a"/>PinName <emphasis role="strong">tx</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Serial_1_1Options_1a05905e1a6210a09284b405e72a189017"/>PinName <emphasis role="strong">rx</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Serial_1_1Options_1af42149d48f187f6bfcd76a646659a37c"/>int <emphasis role="strong">baud_rate</emphasis> = 115200</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+stm32_serial.h</section>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1BldcServoCommandData" xml:lang="en-US">
+<title>moteus::BldcServoCommandData Struct Reference</title>
+<indexterm><primary>moteus::BldcServoCommandData</primary></indexterm>
+Collaboration diagram for moteus::BldcServoCommandData:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d4/d0f/structmoteus_1_1BldcServoCommandData__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1af5ef6c925575d7242787d80ae404122d"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a254e3b3fa5d2ab73f684a1e335ebbeb2"/>BldcServoMode <emphasis role="strong">mode</emphasis> = kStopped</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a382aa38fb32ab56a3120a26a217e22a6"/><link linkend="_structmoteus_1_1Vec3">Vec3</link> <emphasis role="strong">pwm</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a48a355a419c226799254fc61ec56f2a1"/><link linkend="_structmoteus_1_1Vec3">Vec3</link> <emphasis role="strong">phase_v</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a240b86b103764414c421253e33ecda64"/>float <emphasis role="strong">theta</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a53ee48130eb7f2cefddc828c1fc2fb06"/>float <emphasis role="strong">voltage</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1ad1ef1357601b7bfbea45221baee20816"/>float <emphasis role="strong">theta_rate</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a53c1034bb3db17328f9e47cdf5afb20b"/>float <emphasis role="strong">d_V</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1af35958e9bc3bd20543794c26f0700a22"/>float <emphasis role="strong">q_V</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a78b4dc1546880661be11bfda7b3ba2c3"/>float <emphasis role="strong">i_d_A</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1ab7331205a755aeb155b4a05ddab2b1aa"/>float <emphasis role="strong">i_q_A</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1ac08d9cd8f1ba51b4444ea26149c900e5"/>float <emphasis role="strong">position</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1ab64a5938f6372e86c7fedd934206628c"/>float <emphasis role="strong">velocity</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1aece27e6cadf776f2749d95afa14605ea"/>std::optional&lt; int64_t &gt; <emphasis role="strong">position_relative_raw</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a1849892c4ed73cc682780c16902b4505"/>float <emphasis role="strong">max_torque_Nm</emphasis> = 100.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1ab144efa1cc933d4cbe9c32aef68a11fb"/>float <emphasis role="strong">stop_position</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a3faadee29e0804fe641443f7834b53be"/>std::optional&lt; int64_t &gt; <emphasis role="strong">stop_position_relative_raw</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a166a98da54533bcada62c1a693b5647f"/>float <emphasis role="strong">feedforward_Nm</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1abf00bb6f6f58cf03f93d5a3cbcf34e6c"/>float <emphasis role="strong">kp_scale</emphasis> = 1.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1aaa2e3b2575ed74ad162fc830afed859f"/>float <emphasis role="strong">kd_scale</emphasis> = 1.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a302db07e9f0c3f5474feb886720eb974"/>float <emphasis role="strong">velocity_limit</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1ac88e3b95ef833ae4f9c247ff75bd703b"/>float <emphasis role="strong">accel_limit</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a216a5283becff54bb5507e1c727d701f"/>float <emphasis role="strong">fixed_voltage_override</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a81a0c42735aaed8532d9ee10fc3b2e40"/>float <emphasis role="strong">timeout_s</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a329036b8893751a255d478227a46bebf"/>float <emphasis role="strong">bounds_min</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1aaf47090dd84b32b3c427ba7ca6b4965f"/>float <emphasis role="strong">bounds_max</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoCommandData_1a40eb821c70a8d8120c046a899a8a6837"/>int8_t <emphasis role="strong">meas_ind_period</emphasis> = 4</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+bldc_servo_structs.h</section>

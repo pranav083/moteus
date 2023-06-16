@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1MoteusHwPins" xml:lang="en-US">
+<title>moteus::MoteusHwPins Struct Reference</title>
+<indexterm><primary>moteus::MoteusHwPins</primary></indexterm>
+Collaboration diagram for moteus::MoteusHwPins:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d06/structmoteus_1_1MoteusHwPins__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a200b77d004df3b34463b7fafe525e5b1"/>PinName <emphasis role="strong">pwm1</emphasis> = PA_0_ALT0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a88238692c1c0c23c009d30a1a7d00949"/>PinName <emphasis role="strong">pwm2</emphasis> = PA_1_ALT0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a741681de63ff21a995a9406690075e32"/>PinName <emphasis role="strong">pwm3</emphasis> = PA_2_ALT0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1aebf3ee51a9544073e3abb5f62e9bad84"/>PinName <emphasis role="strong">drv8323_enable</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1ae36c4a9cc5a374d6434d5e8a1829b1ed"/>PinName <emphasis role="strong">drv8323_hiz</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a3ff06aaeb6c02aa6b3824a7d4b4d62d4"/>PinName <emphasis role="strong">drv8323_cs</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a0b8e0a821700e3fdab5f8ef5e3c3180f"/>PinName <emphasis role="strong">drv8323_mosi</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a530bf863f5c5d0ec253c3f82cc4962f1"/>PinName <emphasis role="strong">drv8323_miso</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a4d4bf528ffd11edd277cfacc24aa8afb"/>PinName <emphasis role="strong">drv8323_sck</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1afa87547d2618b5d27a629f3a76413250"/>PinName <emphasis role="strong">drv8323_fault</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a80235b9a9bd7345c566e512c0d81ba27"/>PinName <emphasis role="strong">debug_led1</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a76bafe4a7b708f5ab3d8bdcafa1eec94"/>PinName <emphasis role="strong">power_led</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1ad1b5457d0ae07089327366630c9daa80"/>PinName <emphasis role="strong">current1</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1abb24ca13cd92c200eca407243b7c3814"/>PinName <emphasis role="strong">current2</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a9acab942205004f1671a491d57698f5c"/>PinName <emphasis role="strong">current3</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a09b4bc072c67aa421ce7f39e487315e0"/>PinName <emphasis role="strong">vsense</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a9d6b9d4416cc29f49249879ee6559ff5"/>PinName <emphasis role="strong">tsense</emphasis> = PA_9</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a58dfae8e6c4356778195982ddef40c91"/>PinName <emphasis role="strong">msense</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a6a54aeb77b85600564d3b995033302fb"/>float <emphasis role="strong">vsense_adc_scale</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a55e947edcfad45136e3eea18a9a6af0a"/>PinName <emphasis role="strong">uart_tx</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1af8ef0d81fd7f83b155590b082bfbbe09"/>PinName <emphasis role="strong">uart_rx</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a939cb428bee9154fc402719ee97c3a34"/>PinName <emphasis role="strong">uart_dir</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a557dbf313ed8281e4710fc00da2022b1"/>PinName <emphasis role="strong">as5047_cs</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a26042e3bad1f571f2ad2ac839af7ea4e"/>PinName <emphasis role="strong">can_td</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a6b70a473efd07332c929272dd8107610"/>PinName <emphasis role="strong">can_rd</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a5abf8538c4795b7f8feefb9d5e246140"/>PinName <emphasis role="strong">debug1</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1ac4cb33bc02843e7c15f47d515c835b4c"/>PinName <emphasis role="strong">debug2</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a533f1cbc6941e4dd33a9e986c5240f8f"/>PinName <emphasis role="strong">debug_dac</emphasis> = PA_4</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1a23701369dc7205bb7663167f0854617b"/>uint32_t <emphasis role="strong">model_number</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MoteusHwPins_1ac056eb021ecd0cd37cde068beed80e53"/>uint32_t <emphasis role="strong">firmware_version</emphasis> = 0x000105</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+moteus_hw.h</section>

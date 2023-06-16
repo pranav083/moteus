@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1MotorPosition_1_1Config_1_1Output" xml:lang="en-US">
+<title>moteus::MotorPosition::Config::Output Struct Reference</title>
+<indexterm><primary>moteus::MotorPosition::Config::Output</primary></indexterm>
+Collaboration diagram for moteus::MotorPosition::Config::Output:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/dfa/structmoteus_1_1MotorPosition_1_1Config_1_1Output__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Config_1_1Output_1a538f771977bd4cb84618415f3e8cddfe"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Config_1_1Output_1aa8e388e2c543e01cbfe61696768b505c"/>int8_t <emphasis role="strong">source</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Config_1_1Output_1a3d55cf002f33449311f4376a16ca695f"/>float <emphasis role="strong">offset</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Config_1_1Output_1aa77941c41af629bdb2df218ab7cfb263"/>int8_t <emphasis role="strong">sign</emphasis> = 1</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Config_1_1Output_1a6e651adbf28da3a6f03e69cecc333ccd"/>int8_t <emphasis role="strong">reference_source</emphasis> = -1</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+motor_position.h</section>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1IcPz_1_1Status" xml:lang="en-US">
+<title>moteus::IcPz::Status Struct Reference</title>
+<indexterm><primary>moteus::IcPz::Status</primary></indexterm>
+Collaboration diagram for moteus::IcPz::Status:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d4/d9b/structmoteus_1_1IcPz_1_1Status__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a642e61e941294decefcc273143b37fbe"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a625c637de9a351704fa7f6319f8477e8"/>bool <emphasis role="strong">active</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a4e314551fd3bd0a90d5aee5169bc1464"/>bool <emphasis role="strong">err</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a656a944b6f661aee7a46d68ae83cfa07"/>bool <emphasis role="strong">warn</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a6c703ef1225b384e8b1d07f8f8e33595"/>uint32_t <emphasis role="strong">value</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1aa4c0d1647303e3f53c8961b8f0b9abd2"/>uint8_t <emphasis role="strong">nonce</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a552c9213f8ac82fe667cc9e38c743f28"/>uint8_t <emphasis role="strong">cmd</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a4aa926ed2fd5f49008fcf316e9b3a8a8"/>uint8_t <emphasis role="strong">cmd_stat</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a3ff74ae7f6575333c78803af8bcae560"/>float <emphasis role="strong">ai_phases</emphasis> = 0.0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a6e933b89918ba849ab9683a206797c07"/>float <emphasis role="strong">ai_scales</emphasis> = 0.0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a1b27c77ffa980dce31936616abfc18ae"/>bool <emphasis role="strong">dig_sat</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1aec5ffd23e8e051d6e3a6997fea8329d5"/>bool <emphasis role="strong">led_cur_low</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a703cfb0572860e986dfa1dc69ac4b231"/>bool <emphasis role="strong">temp_not_steady</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a0b93d7b3b474e14ea9c5c60092d8b2ce"/>bool <emphasis role="strong">vddio_low</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a3de65e3445ab287026ce02e98b451cc8"/>bool <emphasis role="strong">interp_err</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1aecedd6cf12d3b444981a9eb66d61ec4b"/>bool <emphasis role="strong">abz_not_ready</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1ae1db2c158cb16c196cc585cfaa2501ee"/>bool <emphasis role="strong">uvw_not_ready</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a6b04828daeb5c8188cc2c8e31f05a223"/>bool <emphasis role="strong">pos_alpha</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a410d665541ddd756c88dc57310d11f5c"/>bool <emphasis role="strong">pos_omega</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a5848bcbb2c1000b49e3a058d7b371ae4"/>bool <emphasis role="strong">dig_not_steady</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a43d29d4e72b3eab9ae7b46941b18db28"/>bool <emphasis role="strong">prc_sync_failed</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1ae0f58703ff90f8d80f2128feefe19c1b"/>bool <emphasis role="strong">ana_bound</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1ad1b0e8716358429c7088bfd8b2a58792"/>bool <emphasis role="strong">dig_bound</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a00a7fab06fecda25dee92deba65777e0"/>bool <emphasis role="strong">temp1</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a7866502bbf20b04ec69154353117b588"/>bool <emphasis role="strong">temp2</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a94c8765d48b7cf57166faa20ecdff543"/>uint8_t <emphasis role="strong">adi</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Status_1a3efe704567f6d09acaafbdaa2d15402e"/>uint8_t <emphasis role="strong">dig</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+ic_pz.h</section>

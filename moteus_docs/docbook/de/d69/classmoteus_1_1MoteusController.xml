@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1MoteusController" xml:lang="en-US">
+<title>moteus::MoteusController Class Reference</title>
+<indexterm><primary>moteus::MoteusController</primary></indexterm>
+<para>
+<computeroutput>#include &lt;moteus_controller.h&gt;</computeroutput>
+</para>
+Collaboration diagram for moteus::MoteusController:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dc/d79/classmoteus_1_1MoteusController__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classmoteus_1_1MoteusController_1_1Impl">Impl</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1a83981148470ce33ca05d9d99db0aaee4"/><emphasis role="strong">MoteusController</emphasis> (mjlib::micro::Pool *, mjlib::micro::PersistentConfig *config, mjlib::micro::CommandManager *command_manager, mjlib::micro::TelemetryManager *telemetry_manager, mjlib::multiplex::MicroServer *multiplex_protocol, <link linkend="_classmoteus_1_1ClockManager">ClockManager</link> *, <link linkend="_classmoteus_1_1SystemInfo">SystemInfo</link> *, <link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *, <link linkend="_classmoteus_1_1FirmwareInfo">FirmwareInfo</link> *)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1a940bd1684fe82a0b3173f2b1f6fd16e3"/>void <emphasis role="strong">Start</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1a66c4aa42468f467d4bf990e0a94006bb"/>void <emphasis role="strong">Poll</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1a8bdcddc8f3229e9d6f919c53f563c0fe"/>void <emphasis role="strong">PollMillisecond</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1a681295eca2189a0b397812dbdf915aca"/><link linkend="_classmoteus_1_1BldcServo">BldcServo</link> * <emphasis role="strong">bldc_servo</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1a83eddef060059a599fe1ebe3fa7215d9"/>mjlib::multiplex::MicroServer::Server * <emphasis role="strong">multiplex_server</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Glues together the various pieces of hardware that make a moteus controller board. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+moteus_controller.hmoteus_controller.cc</section>
+</section>

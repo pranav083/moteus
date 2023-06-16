@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1MotorPosition" xml:lang="en-US">
+<title>moteus::MotorPosition Class Reference</title>
+<indexterm><primary>moteus::MotorPosition</primary></indexterm>
+Collaboration diagram for moteus::MotorPosition:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d4/d01/classmoteus_1_1MotorPosition__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1MotorPosition_1_1Config">Config</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1MotorPosition_1_1SourceConfig">SourceConfig</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1MotorPosition_1_1SourceStatus">SourceStatus</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1MotorPosition_1_1Status">Status</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1ae9cdce7e128e513245aae9575584e6fa"/><emphasis role="strong">MotorPosition</emphasis> (mjlib::micro::PersistentConfig *persistent_config, mjlib::micro::TelemetryManager *telemetry_manager, const <link linkend="_structmoteus_1_1aux_1_1AuxStatus">aux::AuxStatus</link> *aux1_status, const <link linkend="_structmoteus_1_1aux_1_1AuxStatus">aux::AuxStatus</link> *aux2_status, const <link linkend="_structmoteus_1_1aux_1_1AuxConfig">aux::AuxConfig</link> *aux1_config, const <link linkend="_structmoteus_1_1aux_1_1AuxConfig">aux::AuxConfig</link> *aux2_config)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1aa1dfae7e6a162e81decb759756204cc2"/>void <emphasis role="strong">ISR_Update</emphasis> (float dt) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1ae04e38b65a0e9f26e72209fee0975489"/>void <emphasis role="strong">RegisterConfigUpdated</emphasis> (mjlib::base::inplace_function&lt; void()&gt; handler)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1a4f4a5bf96da2c39e89eae5af1c56bb06"/>void <emphasis role="strong">ISR_SetOutputPosition</emphasis> (float value) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1a26db3870bd09ddba12b635f27e1206ae"/>void <emphasis role="strong">ISR_SetOutputPositionNearest</emphasis> (float value) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1a0bfc22aefb2d816ac30fb860e15b8252"/>void <emphasis role="strong">ISR_RequireReindex</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1a9557e804105b349bcba23264d15a8637"/>const <link linkend="_structmoteus_1_1MotorPosition_1_1Status">Status</link> &amp; <emphasis role="strong">status</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1ae3041be85ff82e479e956eecc4d27601"/><link linkend="_structmoteus_1_1MotorPosition_1_1Config">Config</link> * <emphasis role="strong">config</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1ab843410dccf4f3192dbefd64d01fbd6d"/><link linkend="_structmoteus_1_1BldcServoMotor">BldcServoMotor</link> * <emphasis role="strong">motor</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1a2bc9b92441ef16e7cc9544b405299804"/>static float <emphasis role="strong">IntToFloat</emphasis> (int64_t value) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1ab9cf2a10790cc506283b4719955c81c5"/>static int64_t <emphasis role="strong">FloatToInt</emphasis> (float value) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1a95cae059fe47888d9248cb3e046b82b4"/>static float <emphasis role="strong">WrapBalancedCpr</emphasis> (float value, float cpr) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1a127a9cc80e0d634d643aae788d4fb107"/>static float <emphasis role="strong">WrapCpr</emphasis> (float value, float cpr) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1abdf7e7ac846b565768e0bae9f95b23c7"/>static uint32_t <emphasis role="strong">WrapIntCpr</emphasis> (int32_t value, uint32_t cpr) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1a27a81525d47d72c9eb218f1812f1a569"/>std::atomic&lt; int32_t &gt; <emphasis role="strong">absolute_relative_delta</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1abcb831212b517d7fc17ba325db71d47c"/>static constexpr int <emphasis role="strong">kNumSources</emphasis> = 3</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1ada79b27e519a79ba0fbb2de0decc5aa9"/>static constexpr int <emphasis role="strong">kHallCounts</emphasis> = 6</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MotorPosition_1a50b72aa412ce4a3e7c91eba72ed9ddc7"/>static constexpr int <emphasis role="strong">kCompensationSize</emphasis> = 32</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+motor_position.h</section>

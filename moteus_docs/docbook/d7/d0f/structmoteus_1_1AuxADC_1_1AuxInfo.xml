@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1AuxADC_1_1AuxInfo" xml:lang="en-US">
+<title>moteus::AuxADC::AuxInfo Struct Reference</title>
+<indexterm><primary>moteus::AuxADC::AuxInfo</primary></indexterm>
+Collaboration diagram for moteus::AuxADC::AuxInfo:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dc/d24/structmoteus_1_1AuxADC_1_1AuxInfo__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1AuxADC_1_1AuxInfo_1a340c7306ac729b16b27c3d2c29324667"/>std::array&lt; <link linkend="_structmoteus_1_1AuxADC_1_1PinConfig">PinConfig</link>, kMaxPins &gt; <emphasis role="strong">config</emphasis> = {}</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1AuxADC_1_1AuxInfo_1a1bd494d4ceb32e3a122fdba49dbd55bb"/>std::array&lt; uint16_t, kMaxPins &gt; <emphasis role="strong">value</emphasis> = {}</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1AuxADC_1_1AuxInfo_1a7b2e898cd19ef00d6a8e9ef06636fc75"/>mjlib::base::inplace_function&lt; void()&gt; <emphasis role="strong">config_update</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_adc.h</section>

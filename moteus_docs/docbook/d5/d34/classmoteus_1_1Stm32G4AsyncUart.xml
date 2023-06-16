@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Stm32G4AsyncUart" xml:lang="en-US">
+<title>moteus::Stm32G4AsyncUart Class Reference</title>
+<indexterm><primary>moteus::Stm32G4AsyncUart</primary></indexterm>
+<para>
+
+<para>Presents a single USART on the STM32G4 as an AsyncStream. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32g4_async_uart.h&gt;</computeroutput>
+</para>
+Inheritance diagram for moteus::Stm32G4AsyncUart:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dc/d77/classmoteus_1_1Stm32G4AsyncUart__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for moteus::Stm32G4AsyncUart:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d7/d7c/classmoteus_1_1Stm32G4AsyncUart__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl">Impl</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Stm32G4AsyncUart_1_1Options">Options</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1a5d2de68f290d88250ffa3f4256403273"/><emphasis role="strong">Stm32G4AsyncUart</emphasis> (mjlib::micro::Pool *pool, <link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer, const <link linkend="_structmoteus_1_1Stm32G4AsyncUart_1_1Options">Options</link> &amp;)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1a1931203c6381f621286a37b83192d67d"/>void <emphasis role="strong">AsyncReadSome</emphasis> (const mjlib::base::string_span &amp;, const mjlib::micro::SizeCallback &amp;) override</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1ad2505587dc2638511f90fc52028ac94f"/>void <emphasis role="strong">AsyncWriteSome</emphasis> (const std::string_view &amp;, const mjlib::micro::SizeCallback &amp;) override</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1a49668da5539f142bef0e2d9b622d959f"/>void <emphasis role="strong">Poll</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Presents a single USART on the STM32G4 as an AsyncStream. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+stm32g4_async_uart.hstm32g4_async_uart.cc</section>
+</section>

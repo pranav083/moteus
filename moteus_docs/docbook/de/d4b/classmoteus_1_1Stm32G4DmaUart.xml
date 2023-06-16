@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Stm32G4DmaUart" xml:lang="en-US">
+<title>moteus::Stm32G4DmaUart Class Reference</title>
+<indexterm><primary>moteus::Stm32G4DmaUart</primary></indexterm>
+Collaboration diagram for moteus::Stm32G4DmaUart:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d4/d97/classmoteus_1_1Stm32G4DmaUart__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Stm32G4DmaUart_1_1Options">Options</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a13b9ee4f5c925a368e177254f31b7281"/><emphasis role="strong">Stm32G4DmaUart</emphasis> (const <link linkend="_structmoteus_1_1Stm32G4DmaUart_1_1Options">Options</link> &amp;options)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1ab2c5a3a784d024ad7d0b3814b8c4fcdc"/>USART_TypeDef * <emphasis role="strong">uart</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a7265b5920a4325c1ecdc9554b2cf3af6"/>void <emphasis role="strong">write_char</emphasis> (uint8_t data)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a1b7b9e98739a1bdba5ca33cd292b4d5b"/>void <emphasis role="strong">start_dma_read</emphasis> (mjlib::base::string_span output) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a0cdd4bc015812b84f26087d4c1cbca14"/>bool <emphasis role="strong">is_dma_read_finished</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a6396747972e86cb47241544601f0a607"/>int <emphasis role="strong">read_bytes_remaining</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a889d5f32c525a76e59db250a08c878f3"/>void <emphasis role="strong">finish_dma_read</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a74979a61e9eb55dbc15656108bde5787"/>void <emphasis role="strong">start_dma_write</emphasis> (std::string_view data) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1ae0a14327ef10267cfc374467c3f58b64"/>bool <emphasis role="strong">is_dma_write_finished</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a5b1896811b50ab204c253125ed8a9144"/>int <emphasis role="strong">write_bytes_remaining</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1ab305d53287caa6cb85eac0c5fa77503a"/>void <emphasis role="strong">finish_dma_write</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a25c2e2d9501c18cd7d37375abda2c29f"/>static uint32_t <emphasis role="strong">GetUartRxRequest</emphasis> (USART_TypeDef *uart)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a6bca0ce2cbbd69f7c45deebbb431a252"/>static uint32_t <emphasis role="strong">GetUartTxRequest</emphasis> (USART_TypeDef *uart)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a75f9a121d30caa087b30ca5c323f7b72"/>template&lt;typename T &gt; </para><para>static uint32_t <emphasis role="strong">u32</emphasis> (T value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a33ef70dc065aade1130754b46a58bfe5"/>const <link linkend="_structmoteus_1_1Stm32G4DmaUart_1_1Options">Options</link> <emphasis role="strong">options_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a89138b5854d48d8d4082e1bd161b24b7"/><link linkend="_classmoteus_1_1Stm32Serial">Stm32Serial</link> <emphasis role="strong">stm32_serial_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1a8297f0b9f7f4c937b4fc1413b153fa25"/>USART_TypeDef * <emphasis role="strong">uart_</emphasis> = nullptr</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1abbe5cfdc97a9536c0867bd1f604a65e7"/>DMAMUX_Channel_TypeDef * <emphasis role="strong">dmamux_rx_</emphasis> = nullptr</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4DmaUart_1ac5c9f55a454fc98ceddaf7ebc8e74e25"/>DMAMUX_Channel_TypeDef * <emphasis role="strong">dmamux_tx_</emphasis> = nullptr</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+stm32g4_dma_uart.h</section>

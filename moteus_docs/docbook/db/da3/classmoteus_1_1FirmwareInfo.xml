@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1FirmwareInfo" xml:lang="en-US">
+<title>moteus::FirmwareInfo Class Reference</title>
+<indexterm><primary>moteus::FirmwareInfo</primary></indexterm>
+<para>
+
+<para>Holds information about the firmare. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;firmware_info.h&gt;</computeroutput>
+</para>
+Collaboration diagram for moteus::FirmwareInfo:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d64/classmoteus_1_1FirmwareInfo__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classmoteus_1_1FirmwareInfo_1_1Impl">Impl</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1FirmwareInfo_1_1SerialNumber">SerialNumber</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FirmwareInfo_1af29d9b91cb7cd9bdaf43edf0edaefe80"/><emphasis role="strong">FirmwareInfo</emphasis> (mjlib::micro::Pool &amp;, mjlib::micro::TelemetryManager &amp;, uint32_t version, uint32_t model)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FirmwareInfo_1a8adba2a2399726d38699d588caa733a3"/>uint32_t <emphasis role="strong">model_number</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FirmwareInfo_1a3d9f220aff6640e1a387ade61365a20f"/>uint32_t <link linkend="_classmoteus_1_1FirmwareInfo_1a3d9f220aff6640e1a387ade61365a20f">firmware_version</link> () const</para>
+
+<para>Return the firmware version encoded as 0x010203 major.minor.micro. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FirmwareInfo_1a39bd5db038565183b38c4d93d10c1fbd"/><link linkend="_structmoteus_1_1FirmwareInfo_1_1SerialNumber">SerialNumber</link> <link linkend="_classmoteus_1_1FirmwareInfo_1a39bd5db038565183b38c4d93d10c1fbd">serial_number</link> () const</para>
+
+<para>Return the unique serial number for this device. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Holds information about the firmare. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+firmware_info.hfirmware_info.cc</section>
+</section>

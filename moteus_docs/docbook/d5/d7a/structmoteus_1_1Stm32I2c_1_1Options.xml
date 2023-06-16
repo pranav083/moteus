@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1Stm32I2c_1_1Options" xml:lang="en-US">
+<title>moteus::Stm32I2c::Options Struct Reference</title>
+<indexterm><primary>moteus::Stm32I2c::Options</primary></indexterm>
+Collaboration diagram for moteus::Stm32I2c::Options:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d6/d31/structmoteus_1_1Stm32I2c_1_1Options__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32I2c_1_1Options_1ae158890df6d4486202e4cc2cf0be123e"/>PinName <emphasis role="strong">sda</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32I2c_1_1Options_1ad0412258b18fb2fb04de5dd06b551022"/>PinName <emphasis role="strong">scl</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32I2c_1_1Options_1a0002d615a6e298e57e5971fd1c8495ee"/>int <emphasis role="strong">frequency</emphasis> = 400000</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32I2c_1_1Options_1a99584d07829b6fad8f6d3d7fa7dbd5ee"/>I2cMode <emphasis role="strong">i2c_mode</emphasis> = I2cMode::kFast</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+stm32_i2c.h</section>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1I2C_1_1DeviceStatus" xml:lang="en-US">
+<title>moteus::aux::I2C::DeviceStatus Struct Reference</title>
+<indexterm><primary>moteus::aux::I2C::DeviceStatus</primary></indexterm>
+Collaboration diagram for moteus::aux::I2C::DeviceStatus:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d3c/structmoteus_1_1aux_1_1I2C_1_1DeviceStatus__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1DeviceStatus_1adb624b90860814720523a35d8d44351e"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1DeviceStatus_1a9e427de91b7ece5e9bc31409edeacd92"/>bool <emphasis role="strong">active</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1DeviceStatus_1a201e788334f5530d1162add58ebcb878"/>uint16_t <emphasis role="strong">value</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1DeviceStatus_1a8f6a8bdb5b24dd00bbb43ff8cfd2e612"/>uint8_t <emphasis role="strong">nonce</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1DeviceStatus_1af2c62c6201f8ca9feeb0c74eefb0a61b"/>uint32_t <emphasis role="strong">error_count</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1DeviceStatus_1a7a77522af515ae45207cb6842d7b6ddd"/>uint8_t <emphasis role="strong">ams_agc</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1DeviceStatus_1a96ef854f6a3353d2f928de7aa300d293"/>uint8_t <emphasis role="strong">ams_diag</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1DeviceStatus_1a932e2704b5ead6cdb00189d69b89c19c"/>uint16_t <emphasis role="strong">ams_mag</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

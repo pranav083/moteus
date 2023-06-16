@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Stm32G4Flash" xml:lang="en-US">
+<title>moteus::Stm32G4Flash Class Reference</title>
+<indexterm><primary>moteus::Stm32G4Flash</primary></indexterm>
+Inheritance diagram for moteus::Stm32G4Flash:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d0/de6/classmoteus_1_1Stm32G4Flash__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for moteus::Stm32G4Flash:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d30/classmoteus_1_1Stm32G4Flash__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4Flash_1a5237558d7fd48e1a9ca353f533df593f"/>Info <emphasis role="strong">GetInfo</emphasis> () override</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4Flash_1a61f6f1dba077e108a4295a93dc1e82c2"/>void <emphasis role="strong">Erase</emphasis> () override</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4Flash_1a0a2e5b6c6f17f8813468a6b3f265c46f"/>void <emphasis role="strong">Unlock</emphasis> () override</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4Flash_1a8188b951c4d78e90e9fea2db99a909e1"/>void <emphasis role="strong">Lock</emphasis> () override</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4Flash_1a3e6da5e8f13d88b7c46632221ee987da"/>void <emphasis role="strong">ProgramByte</emphasis> (char *ptr, uint8_t value) override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+stm32g4_flash.h</section>

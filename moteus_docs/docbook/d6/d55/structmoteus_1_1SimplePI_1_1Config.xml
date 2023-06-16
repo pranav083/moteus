@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1SimplePI_1_1Config" xml:lang="en-US">
+<title>moteus::SimplePI::Config Struct Reference</title>
+<indexterm><primary>moteus::SimplePI::Config</primary></indexterm>
+Collaboration diagram for moteus::SimplePI::Config:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d47/structmoteus_1_1SimplePI_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1SimplePI_1_1Config_1ac99594571788f5d2497aec76f76c01bc"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1SimplePI_1_1Config_1a369ece7af625a664bd5cd6bbdb498f37"/>float <emphasis role="strong">kp</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1SimplePI_1_1Config_1a7df71eae26fde84b21eadde24f701667"/>float <emphasis role="strong">ki</emphasis> = 0.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+simple_pi.h</section>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Stm32Spi" xml:lang="en-US">
+<title>moteus::Stm32Spi Class Reference</title>
+<indexterm><primary>moteus::Stm32Spi</primary></indexterm>
+Collaboration diagram for moteus::Stm32Spi:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/dcb/classmoteus_1_1Stm32Spi__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Stm32Spi_1_1Options">Options</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Spi_1a64175e3d356d00e6544a21e3a5e62d62"/><emphasis role="strong">Stm32Spi</emphasis> (const <link linkend="_structmoteus_1_1Stm32Spi_1_1Options">Options</link> &amp;options)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Spi_1ad16faa7106a62f8a6e27c4b905b1663b"/>void <emphasis role="strong">set_cs</emphasis> (PinName cs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Spi_1a0fbb563024f687b17334ce108f71396c"/>uint16_t <emphasis role="strong">write</emphasis> (uint16_t value) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Spi_1a0814f90b93012d30f90cdc10e5b52920"/>void <emphasis role="strong">start_write</emphasis> (uint16_t value) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Spi_1aefa948d0846beaf162a86e9f9c513f8c"/>uint16_t <emphasis role="strong">finish_write</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Spi_1a26c732e4163660b133cda2978f3456cb"/>void <emphasis role="strong">start_dma_transfer</emphasis> (std::string_view tx_buffer, mjlib::base::string_span rx_buffer) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Spi_1a1e980dcf51210c491b90aeec109b5bbc"/>bool <emphasis role="strong">is_dma_finished</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Spi_1a4aae1635ed7f3848fc99c426cc141b68"/>void <emphasis role="strong">finish_dma_transfer</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+stm32_spi.h</section>

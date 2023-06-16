@@ -1,0 +1,6 @@
+<map id="moteus::BoardDebug::Impl" name="moteus::BoardDebug::Impl">
+<area shape="rect" id="node1" title=" " alt="" coords="188,659,431,1704"/>
+<area shape="rect" id="node2" href="$dd/deb/structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource.html" title=" " alt="" coords="5,218,184,369"/>
+<area shape="rect" id="node3" href="$d5/d01/structmoteus_1_1BoardDebug_1_1Impl_1_1Data.html" title=" " alt="" coords="208,240,411,347"/>
+<area shape="rect" id="node4" href="$d8/d03/classmoteus_1_1BldcServo.html" title="Implements a closed loop servo around a brushless DC motor." alt="" coords="435,5,693,581"/>
+</map>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1SystemInfo_1_1Impl" xml:lang="en-US">
+<title>moteus::SystemInfo::Impl Class Reference</title>
+<indexterm><primary>moteus::SystemInfo::Impl</primary></indexterm>
+Collaboration diagram for moteus::SystemInfo::Impl:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d4/d0b/classmoteus_1_1SystemInfo_1_1Impl__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1SystemInfo_1_1Impl_1a0296308a36b1659ffa262743f1790182"/><emphasis role="strong">Impl</emphasis> (mjlib::micro::Pool &amp;pool, mjlib::micro::TelemetryManager &amp;telemetry)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1SystemInfo_1_1Impl_1ab94600a3c095df6b16d8155d9fec392a"/>void <emphasis role="strong">PollMillsecond</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1SystemInfo_1_1Impl_1ac0f9bc34f74624f020fdd1f912bfe917"/>void <emphasis role="strong">SetCanResetCount</emphasis> (uint32_t value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1SystemInfo_1_1Impl_1a0a593d59d0c94e09c4715285a8b1ba90"/>mjlib::micro::Pool &amp; <emphasis role="strong">pool_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1SystemInfo_1_1Impl_1a49400bb819734f0217cc7111d22ab616"/>uint8_t <emphasis role="strong">ms_count_</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1SystemInfo_1_1Impl_1a008d9f394e5b735988e2ab17290451b0"/>uint32_t <emphasis role="strong">last_idle_count_</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1SystemInfo_1_1Impl_1ab59f7789bb02d676fd6d5d9769b063b6"/>SystemInfoData <emphasis role="strong">data_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1SystemInfo_1_1Impl_1ad6978b4af475711215d89a0f67876d22"/>mjlib::base::inplace_function&lt; void()&gt; <emphasis role="strong">data_updater_</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+system_info.cc</section>

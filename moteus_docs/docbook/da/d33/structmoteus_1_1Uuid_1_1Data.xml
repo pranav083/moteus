@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1Uuid_1_1Data" xml:lang="en-US">
+<title>moteus::Uuid::Data Struct Reference</title>
+<indexterm><primary>moteus::Uuid::Data</primary></indexterm>
+Collaboration diagram for moteus::Uuid::Data:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/d0c/structmoteus_1_1Uuid_1_1Data__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Uuid_1_1Data_1a73fc43602cb00210b48218c523386f83"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Uuid_1_1Data_1acb46842b20f741c26823973bde8cf82f"/>std::array&lt; uint8_t, 16 &gt; <emphasis role="strong">uuid</emphasis> = {}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+uuid.h</section>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1aux_1_1Stm32Quadrature" xml:lang="en-US">
+<title>moteus::aux::Stm32Quadrature Class Reference</title>
+<indexterm><primary>moteus::aux::Stm32Quadrature</primary></indexterm>
+Collaboration diagram for moteus::aux::Stm32Quadrature:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d4a/classmoteus_1_1aux_1_1Stm32Quadrature__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1aux_1_1Stm32Quadrature_1a3982c31e8e1eef660fcfe53fedf6ce9a"/>template&lt;typename PinArray &gt; </para><para><emphasis role="strong">Stm32Quadrature</emphasis> (const <link linkend="_structmoteus_1_1aux_1_1Quadrature_1_1Config">Quadrature::Config</link> &amp;config, <link linkend="_structmoteus_1_1aux_1_1Quadrature_1_1Status">aux::Quadrature::Status</link> *status, const PinArray &amp;array, const <link linkend="_structmoteus_1_1aux_1_1AuxHardwareConfig">AuxHardwareConfig</link> &amp;hw_config)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1aux_1_1Stm32Quadrature_1a9b5cec40db5efbe8c6b77911038560d9"/>aux::AuxError <emphasis role="strong">error</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1aux_1_1Stm32Quadrature_1ac4bf97e13246a945ef0fa9371ff2b8b0"/>void <emphasis role="strong">ISR_Update</emphasis> (<link linkend="_structmoteus_1_1aux_1_1Quadrature_1_1Status">aux::Quadrature::Status</link> *status) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1aux_1_1Stm32Quadrature_1a475687a3c0ca7c5871cce4440ff70a26"/>void <emphasis role="strong">ISR_Callback</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1aux_1_1Stm32Quadrature_1aaad7346609e085a0ebb9b6a6ae2346fd"/>static void <emphasis role="strong">ISR_CallbackDelegate</emphasis> (uint32_t my_this) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+aux_mbed.h</section>

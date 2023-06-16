@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1AuxExtraOptions" xml:lang="en-US">
+<title>moteus::aux::AuxExtraOptions Struct Reference</title>
+<indexterm><primary>moteus::aux::AuxExtraOptions</primary></indexterm>
+Collaboration diagram for moteus::aux::AuxExtraOptions:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d0/d88/structmoteus_1_1aux_1_1AuxExtraOptions__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxExtraOptions_1aae61cdd2374b88d1f41ebf52987a45de"/>PinName <emphasis role="strong">i2c_pullup</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxExtraOptions_1a670e3a9dd8e3ae860c8920d2b7d81643"/>PinName <emphasis role="strong">rs422_re</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxExtraOptions_1a853555f735644c4ac59caa5954d3e506"/>PinName <emphasis role="strong">rs422_de</emphasis> = NC</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_mbed.h</section>

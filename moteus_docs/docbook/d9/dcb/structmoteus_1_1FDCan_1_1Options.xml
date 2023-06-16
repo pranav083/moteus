@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1FDCan_1_1Options" xml:lang="en-US">
+<title>moteus::FDCan::Options Struct Reference</title>
+<indexterm><primary>moteus::FDCan::Options</primary></indexterm>
+Collaboration diagram for moteus::FDCan::Options:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/dd9/structmoteus_1_1FDCan_1_1Options__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1aacac1884d00db909d68be1dcd5d435c4"/>PinName <emphasis role="strong">td</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1a6d2a34f97f0277bc656674672f97e045"/>PinName <emphasis role="strong">rd</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1a5e6ed6e821986a8202ebfddf4ecae374"/>int <emphasis role="strong">slow_bitrate</emphasis> = 1000000</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1a969c03a38a892dabd103a958b8fe2a97"/>int <emphasis role="strong">fast_bitrate</emphasis> = 5000000</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1ac93239d9dabd2374272ca8e930a20564"/><link linkend="_structmoteus_1_1FDCan_1_1FilterConfig">FilterConfig</link> <emphasis role="strong">filters</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1a5e5723a5742406e520151bb1905e69da"/>bool <emphasis role="strong">automatic_retransmission</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1a49c74b022151d52b2f644d94a2e35ff5"/>bool <emphasis role="strong">remote_frame</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1aacbce28543b1aff42db8f870cb64e6ab"/>bool <emphasis role="strong">fdcan_frame</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1abf67f9ac3ef58a1297f147ec31d30439"/>bool <emphasis role="strong">bitrate_switch</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1a43cba0ed7b6730e6f08de7365f9c7c93"/>bool <emphasis role="strong">restricted_mode</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1acd0333a9af7605f4d51fafdb61b97d1e"/>bool <emphasis role="strong">bus_monitor</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1a7002caade36284942ed2ad6b9e9ff9ea"/>bool <emphasis role="strong">delay_compensation</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1ad45aef8eab4018e929c59c40d10ab415"/>uint32_t <emphasis role="strong">tdc_offset</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1abcffe5a057d49f48db431f40dae3491d"/>uint32_t <emphasis role="strong">tdc_filter</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1abaf3abc7484127bea6135d08e69778c5"/><link linkend="_structmoteus_1_1FDCan_1_1Rate">Rate</link> <emphasis role="strong">rate_override</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Options_1a2ad8a1b5ffc64ecfc17f8d559667feaf"/><link linkend="_structmoteus_1_1FDCan_1_1Rate">Rate</link> <emphasis role="strong">fdrate_override</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+fdcan.h</section>

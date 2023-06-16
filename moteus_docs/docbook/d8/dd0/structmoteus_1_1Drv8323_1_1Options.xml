@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1Drv8323_1_1Options" xml:lang="en-US">
+<title>moteus::Drv8323::Options Struct Reference</title>
+<indexterm><primary>moteus::Drv8323::Options</primary></indexterm>
+Collaboration diagram for moteus::Drv8323::Options:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d95/structmoteus_1_1Drv8323_1_1Options__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Options_1a320fef994f3d92ffe0c3afe40e81dded"/>PinName <emphasis role="strong">mosi</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Options_1a1d1e6a1d760b75888a57c61c308e91bd"/>PinName <emphasis role="strong">miso</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Options_1aac73d0c9da66cb1dd3ddee6b3839e29e"/>PinName <emphasis role="strong">sck</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Options_1ab472ad6254d3ed1e95837fd097898a62"/>PinName <emphasis role="strong">cs</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Options_1a8202a3ab899762fb1fe1323696181699"/>PinName <emphasis role="strong">enable</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Options_1a33675ada90809b0ec7bd9d7ddb19e4aa"/>PinName <emphasis role="strong">fault</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Options_1a24c568ef730681882234fe4c1e215126"/>PinName <emphasis role="strong">hiz</emphasis> = NC</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+drv8323.h</section>

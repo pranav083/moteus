@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1ClockManager" xml:lang="en-US">
+<title>moteus::ClockManager Class Reference</title>
+<indexterm><primary>moteus::ClockManager</primary></indexterm>
+Collaboration diagram for moteus::ClockManager:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d1/d5b/classmoteus_1_1ClockManager__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1ClockManager_1aebf1bf12f4af87a05de66eb4be34da85"/><emphasis role="strong">ClockManager</emphasis> (<link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer, mjlib::micro::PersistentConfig &amp;persistent_config, mjlib::micro::CommandManager &amp;command_manager)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1ClockManager_1a693b18b8ea059925d398121da42c182f"/>void <emphasis role="strong">UpdateConfig</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1ClockManager_1a4012b21648706abedbd99acb475cd831"/>void <emphasis role="strong">SetTrim</emphasis> (int extra_trim)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1ClockManager_1a6a622b58cb8ba3f5ee25324817c4aec7"/>int <emphasis role="strong">trim</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1ClockManager_1ae48594f21ca0c3533a661cc698489557"/>void <emphasis role="strong">Command</emphasis> (const std::string_view &amp;command, const mjlib::micro::CommandManager::Response &amp;response)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1ClockManager_1ada946caa7c286974f207f31727e4ebc1"/>void <emphasis role="strong">WriteMessage</emphasis> (const std::string_view &amp;message, const mjlib::micro::CommandManager::Response &amp;response)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1ClockManager_1a56ee27114270d0c0b68bca4fa9af303d"/>static constexpr int <emphasis role="strong">kMaxExtraTrim</emphasis> = 8</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+clock_manager.h</section>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Stm32Dma" xml:lang="en-US">
+<title>moteus::Stm32Dma Class Reference</title>
+<indexterm><primary>moteus::Stm32Dma</primary></indexterm>
+Collaboration diagram for moteus::Stm32Dma:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/dac/classmoteus_1_1Stm32Dma__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Dma_1addba5c6ec87644b6c36ed2210ae1273e"/>static uint32_t <emphasis role="strong">FindChannelIndex</emphasis> (DMA_Channel_TypeDef *channel)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Dma_1aade685ff018af519c571989552fdfb8d"/>static DMAMUX_Channel_TypeDef * <emphasis role="strong">SelectDmamux</emphasis> (DMA_Channel_TypeDef *channel)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Dma_1ad02457002af21be14410aa5d7e3cf28e"/>template&lt;typename T &gt; </para><para>static uint32_t <emphasis role="strong">u32</emphasis> (T value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+stm32_dma.h</section>

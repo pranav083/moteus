@@ -1,0 +1,4 @@
+<map id="moteus::Stm32G4AsyncUart" name="moteus::Stm32G4AsyncUart">
+<area shape="rect" id="node1" title="Presents a single USART on the STM32G4 as an AsyncStream." alt="" coords="5,131,229,413"/>
+<area shape="rect" id="node2" title=" " alt="" coords="20,5,215,83"/>
+</map>

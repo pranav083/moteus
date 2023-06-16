@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1ParkTransform" xml:lang="en-US">
+<title>moteus::ParkTransform Struct Reference</title>
+<indexterm><primary>moteus::ParkTransform</primary></indexterm>
+Collaboration diagram for moteus::ParkTransform:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/dff/structmoteus_1_1ParkTransform__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1ParkTransform_1adb6eb6a96405276351c813b1e0bf0f32"/><emphasis role="strong">ParkTransform</emphasis> (const <link linkend="_structmoteus_1_1SinCos">SinCos</link> &amp;sc, float x, float y)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1ParkTransform_1afc357119b9fc29c0cfbfea4df32c28f3"/>const float <emphasis role="strong">d</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1ParkTransform_1a8699e3bfdc30e662c99ee1182f29def5"/>const float <emphasis role="strong">q</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+foc.h</section>

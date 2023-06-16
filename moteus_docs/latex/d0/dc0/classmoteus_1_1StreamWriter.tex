@@ -1,0 +1,35 @@
+\hypertarget{classmoteus_1_1StreamWriter}{}\doxysection{moteus\+::Stream\+Writer$<$ Size, Num\+Callbacks $>$ Class Template Reference}
+\label{classmoteus_1_1StreamWriter}\index{moteus::StreamWriter$<$ Size, NumCallbacks $>$@{moteus::StreamWriter$<$ Size, NumCallbacks $>$}}
+
+
+{\ttfamily \#include $<$stream\+\_\+writer.\+h$>$}
+
+
+
+Collaboration diagram for moteus\+::Stream\+Writer$<$ Size, Num\+Callbacks $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{dd/d0e/classmoteus_1_1StreamWriter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1StreamWriter_a0efacef1633aa09d6c987078bafdce66}\label{classmoteus_1_1StreamWriter_a0efacef1633aa09d6c987078bafdce66}} 
+{\bfseries Stream\+Writer} (mjlib\+::micro\+::\+Async\+Write\+Stream $\ast$stream)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1StreamWriter_a84c1a2ab0ec0c40b29139242fa2c5813}\label{classmoteus_1_1StreamWriter_a84c1a2ab0ec0c40b29139242fa2c5813}} 
+void {\bfseries Async\+Write} (const std\+::string\+\_\+view \&buffer, const mjlib\+::micro\+::\+Error\+Callback \&callback)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$size\+\_\+t Size, size\+\_\+t Num\+Callbacks = 14$>$\newline
+class moteus\+::\+Stream\+Writer$<$ Size, Num\+Callbacks $>$}
+
+Supports writing to a stream where the buffer passed to Async\+Write does not need to live past the call. It does this through an internal double buffer. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+stream\+\_\+writer.\+h\end{DoxyCompactItemize}

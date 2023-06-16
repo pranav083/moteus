@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1FDCan_1_1Filter" xml:lang="en-US">
+<title>moteus::FDCan::Filter Struct Reference</title>
+<indexterm><primary>moteus::FDCan::Filter</primary></indexterm>
+Collaboration diagram for moteus::FDCan::Filter:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d6/d64/structmoteus_1_1FDCan_1_1Filter__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Filter_1a422375be0fda3c8067a88383b050f9cf"/>uint32_t <emphasis role="strong">id1</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Filter_1a488c16007d12c3f7b49226e06d6e011c"/>uint32_t <emphasis role="strong">id2</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Filter_1a1bf33e144a3a5182ce198792d78403da"/>FilterMode <emphasis role="strong">mode</emphasis> = FilterMode::kRange</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Filter_1a66ef4786fb00e775ac1c024a3f9f5ab9"/>FilterAction <emphasis role="strong">action</emphasis> = FilterAction::kDisable</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Filter_1aee2a6fc70a9701a6680523fa20aa14ef"/>FilterType <emphasis role="strong">type</emphasis> = FilterType::kStandard</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+fdcan.h</section>

@@ -1,0 +1,107 @@
+\hypertarget{classmoteus_1_1BldcServo}{}\doxysection{moteus\+::Bldc\+Servo Class Reference}
+\label{classmoteus_1_1BldcServo}\index{moteus::BldcServo@{moteus::BldcServo}}
+
+
+Implements a closed loop servo around a brushless DC motor.  
+
+
+
+
+{\ttfamily \#include $<$bldc\+\_\+servo.\+h$>$}
+
+
+
+Collaboration diagram for moteus\+::Bldc\+Servo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{d3/d98/classmoteus_1_1BldcServo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmoteus_1_1BldcServo_1_1Control}{Control}}
+\item 
+class \mbox{\hyperlink{classmoteus_1_1BldcServo_1_1Impl}{Impl}}
+\item 
+struct \mbox{\hyperlink{structmoteus_1_1BldcServo_1_1Options}{Options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a1fddc40e739a09e3a01b9268201d7f39}\label{classmoteus_1_1BldcServo_a1fddc40e739a09e3a01b9268201d7f39}} 
+using {\bfseries Mode} = Bldc\+Servo\+Mode
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a5d123c9e0488510bb7e6fc7d5295f5a5}\label{classmoteus_1_1BldcServo_a5d123c9e0488510bb7e6fc7d5295f5a5}} 
+using {\bfseries Status} = \mbox{\hyperlink{structmoteus_1_1BldcServoStatus}{Bldc\+Servo\+Status}}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a02904b0de1a7e20eafbdb1d41eb9ab8c}\label{classmoteus_1_1BldcServo_a02904b0de1a7e20eafbdb1d41eb9ab8c}} 
+using {\bfseries Command\+Data} = \mbox{\hyperlink{structmoteus_1_1BldcServoCommandData}{Bldc\+Servo\+Command\+Data}}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a7cb7af7bea14695537e27dc3e75379a6}\label{classmoteus_1_1BldcServo_a7cb7af7bea14695537e27dc3e75379a6}} 
+using {\bfseries Motor} = \mbox{\hyperlink{structmoteus_1_1BldcServoMotor}{Bldc\+Servo\+Motor}}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_ac19ef0357eddea729216025d44039e55}\label{classmoteus_1_1BldcServo_ac19ef0357eddea729216025d44039e55}} 
+using {\bfseries Config} = \mbox{\hyperlink{structmoteus_1_1BldcServoConfig}{Bldc\+Servo\+Config}}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a27ce73ee972579d1b50d7a7d9bcfcb9a}\label{classmoteus_1_1BldcServo_a27ce73ee972579d1b50d7a7d9bcfcb9a}} 
+using {\bfseries Position\+Config} = \mbox{\hyperlink{structmoteus_1_1BldcServoPositionConfig}{Bldc\+Servo\+Position\+Config}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_ab2aab216d0aca1cc29f7af9626e0926e}\label{classmoteus_1_1BldcServo_ab2aab216d0aca1cc29f7af9626e0926e}} 
+{\bfseries Bldc\+Servo} (mjlib\+::micro\+::\+Pool $\ast$, mjlib\+::micro\+::\+Persistent\+Config $\ast$, mjlib\+::micro\+::\+Telemetry\+Manager $\ast$, \mbox{\hyperlink{classmoteus_1_1MillisecondTimer}{Millisecond\+Timer}} $\ast$, \mbox{\hyperlink{classmoteus_1_1MotorDriver}{Motor\+Driver}} $\ast$, \mbox{\hyperlink{classmoteus_1_1AuxADC}{Aux\+ADC}} $\ast$, \mbox{\hyperlink{classmoteus_1_1AuxPort}{Aux\+Port}} $\ast$, \mbox{\hyperlink{classmoteus_1_1AuxPort}{Aux\+Port}} $\ast$, \mbox{\hyperlink{classmoteus_1_1MotorPosition}{Motor\+Position}} $\ast$, const \mbox{\hyperlink{structmoteus_1_1BldcServo_1_1Options}{Options}} \&)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a4335ebe0578c153f3efd72508f45ff11}\label{classmoteus_1_1BldcServo_a4335ebe0578c153f3efd72508f45ff11}} 
+void {\bfseries Poll\+Millisecond} ()
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a5de721aa26166a54b2ff6e33ec1ca0cb}\label{classmoteus_1_1BldcServo_a5de721aa26166a54b2ff6e33ec1ca0cb}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a416d8ec19a86a4ce1033b628d83a6d78}\label{classmoteus_1_1BldcServo_a416d8ec19a86a4ce1033b628d83a6d78}} 
+void {\bfseries Command} (const \mbox{\hyperlink{structmoteus_1_1BldcServoCommandData}{Command\+Data}} \&)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a5201b96d712d5a34bc4cd8e1f16609eb}\label{classmoteus_1_1BldcServo_a5201b96d712d5a34bc4cd8e1f16609eb}} 
+const \mbox{\hyperlink{structmoteus_1_1BldcServoStatus}{Status}} \& {\bfseries status} () const
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_ada0c0e2ae1ea32f71b2921e2bfb58655}\label{classmoteus_1_1BldcServo_ada0c0e2ae1ea32f71b2921e2bfb58655}} 
+const \mbox{\hyperlink{structmoteus_1_1BldcServoConfig}{Config}} \& {\bfseries config} () const
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a38a95e3c1a76ac60f266c70cd56f6427}\label{classmoteus_1_1BldcServo_a38a95e3c1a76ac60f266c70cd56f6427}} 
+const \mbox{\hyperlink{structmoteus_1_1BldcServo_1_1Control}{Control}} \& {\bfseries control} () const
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a71bfbf14b45f98d097d8d4be26816327}\label{classmoteus_1_1BldcServo_a71bfbf14b45f98d097d8d4be26816327}} 
+const \mbox{\hyperlink{structmoteus_1_1aux_1_1AuxStatus}{Aux\+Port\+::\+Status}} \& {\bfseries aux1} () const
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a63e51ba289ab5e706db804902f2ef710}\label{classmoteus_1_1BldcServo_a63e51ba289ab5e706db804902f2ef710}} 
+const \mbox{\hyperlink{structmoteus_1_1aux_1_1AuxStatus}{Aux\+Port\+::\+Status}} \& {\bfseries aux2} () const
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_ad7cf791bd4467a8224eeeb2d69f9a852}\label{classmoteus_1_1BldcServo_ad7cf791bd4467a8224eeeb2d69f9a852}} 
+const \mbox{\hyperlink{structmoteus_1_1MotorPosition_1_1Status}{Motor\+Position\+::\+Status}} \& {\bfseries motor\+\_\+position} () const
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_ae441fc005027470a5ae072e25140dc87}\label{classmoteus_1_1BldcServo_ae441fc005027470a5ae072e25140dc87}} 
+\mbox{\hyperlink{structmoteus_1_1MotorPosition_1_1Config}{Motor\+Position\+::\+Config}} $\ast$ {\bfseries motor\+\_\+position\+\_\+config} ()
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a5c40ecdfb6c8f25f134c08042e9ba5fd}\label{classmoteus_1_1BldcServo_a5c40ecdfb6c8f25f134c08042e9ba5fd}} 
+const \mbox{\hyperlink{structmoteus_1_1MotorPosition_1_1Config}{Motor\+Position\+::\+Config}} $\ast$ {\bfseries motor\+\_\+position\+\_\+config} () const
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a74343d568b48e7831fce76e58b31c1ca}\label{classmoteus_1_1BldcServo_a74343d568b48e7831fce76e58b31c1ca}} 
+void {\bfseries Set\+Output\+Position\+Nearest} (float position)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a2773aaf35e96073754ff147bbd1745fa}\label{classmoteus_1_1BldcServo_a2773aaf35e96073754ff147bbd1745fa}} 
+void {\bfseries Set\+Output\+Position} (float position)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1BldcServo_a6c73774da33c604cbf44b97b8823775f}\label{classmoteus_1_1BldcServo_a6c73774da33c604cbf44b97b8823775f}} 
+void {\bfseries Require\+Reindex} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements a closed loop servo around a brushless DC motor. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bldc\+\_\+servo.\+h\item 
+bldc\+\_\+servo.\+cc\end{DoxyCompactItemize}

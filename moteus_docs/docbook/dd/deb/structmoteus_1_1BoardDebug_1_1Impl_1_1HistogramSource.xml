@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource" xml:lang="en-US">
+<title>moteus::BoardDebug::Impl::HistogramSource Struct Reference</title>
+<indexterm><primary>moteus::BoardDebug::Impl::HistogramSource</primary></indexterm>
+Collaboration diagram for moteus::BoardDebug::Impl::HistogramSource:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d13/structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource_1a326d3b654799e1d96b7b51ecd6d134f0"/>enum <emphasis role="strong">Type</emphasis> { 
+<emphasis role="strong">kNone</emphasis> = 0
+, <emphasis role="strong">kElectricalTheta</emphasis>
+, <emphasis role="strong">kEncoderCompensated</emphasis>
+, <emphasis role="strong">kEncoderFiltered</emphasis>
+, 
+<emphasis role="strong">kEncoderOffset</emphasis>
+, <emphasis role="strong">kEncoderRaw</emphasis>
+, <emphasis role="strong">kEncoderVelocity</emphasis>
+, <emphasis role="strong">kCurrentD</emphasis>
+, 
+<emphasis role="strong">kCurrentQ</emphasis>
+, <emphasis role="strong">kPositionError</emphasis>
+, <emphasis role="strong">kPositionErrorRate</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource_1ad2cb4c7698de0c22785b4dbe515ad787"/>static bool <emphasis role="strong">IsCyclic</emphasis> (Type t)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource_1adfbcaba8c12f6c2d7609b1369e3b64ec"/>Type <emphasis role="strong">type</emphasis> = kNone</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource_1a5a1d1545920e3624c04bc10e95e4b586"/>bool <emphasis role="strong">derivative</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource_1a3c414ead12c7e381b67fc8d6aa8bd82e"/>int <emphasis role="strong">encoder_channel</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource_1aacec71d1e8127cd525d5de988ba6c8a2"/>float <emphasis role="strong">old_value</emphasis> = 0.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+board_debug.cc</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1IcPz_1_1Options" xml:lang="en-US">
+<title>moteus::IcPz::Options Struct Reference</title>
+<indexterm><primary>moteus::IcPz::Options</primary></indexterm>
+Inheritance diagram for moteus::IcPz::Options:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d5a/structmoteus_1_1IcPz_1_1Options__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for moteus::IcPz::Options:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d5d/structmoteus_1_1IcPz_1_1Options__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1IcPz_1_1Options_1ae44328e0302f960f5f4e58c94bdb952a"/>uint8_t <emphasis role="strong">resolution_bits</emphasis> = 24</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+ic_pz.h</section>

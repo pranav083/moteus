@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig" xml:lang="en-US">
+<title>moteus::MotorPosition::SourceConfig Struct Reference</title>
+<indexterm><primary>moteus::MotorPosition::SourceConfig</primary></indexterm>
+Collaboration diagram for moteus::MotorPosition::SourceConfig:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/da4/structmoteus_1_1MotorPosition_1_1SourceConfig__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1a27910aee7c4bad0fb5ba4e1d86ee9af0"/>enum <emphasis role="strong">Type</emphasis> { 
+<emphasis role="strong">kNone</emphasis>
+, <emphasis role="strong">kSpi</emphasis>
+, <emphasis role="strong">kUart</emphasis>
+, <emphasis role="strong">kQuadrature</emphasis>
+, 
+<emphasis role="strong">kHall</emphasis>
+, <emphasis role="strong">kIndex</emphasis>
+, <emphasis role="strong">kSineCosine</emphasis>
+, <emphasis role="strong">kI2C</emphasis>
+, 
+<emphasis role="strong">kSensorless</emphasis>
+, <emphasis role="strong">kNumTypes</emphasis>
+ }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1abe7d890312aeb5db147ab662fe5f863c"/>enum <emphasis role="strong">Reference</emphasis> { <emphasis role="strong">kRotor</emphasis>
+, <emphasis role="strong">kOutput</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1aad08f93b754a9b6b6c9dc16c9d1b677a"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1a0de86f9ba3377ff5beafacffd315bb6c"/>uint8_t <emphasis role="strong">aux_number</emphasis> = 1</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1a2fab514357c0b2c446319f96d3cc5675"/>Type <emphasis role="strong">type</emphasis> = kNone</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1afbb46909ac6996927bb0fdc61d5e66f3"/>uint8_t <emphasis role="strong">i2c_device</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1af995864ef0a60330db1f0ddc33b9c608"/>int8_t <emphasis role="strong">incremental_index</emphasis> = -1</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1a17c014d6eb577fae6ea19a69d31c687e"/>uint32_t <emphasis role="strong">cpr</emphasis> = 16384</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1a6cae00042170623f163223ed09881a24"/>float <emphasis role="strong">offset</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1af75ae7032681bab65ad4ea200ccbf47a"/>int8_t <emphasis role="strong">sign</emphasis> = 1</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1aaffa2618ad0ed69842181e49143f144c"/>int32_t <emphasis role="strong">debug_override</emphasis> = -1</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1aa377fe5310f57ec4652cf1fe3fa68e5f"/>Reference <emphasis role="strong">reference</emphasis> = kRotor</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1a1e437a314818ac493375088e898ba557"/>float <emphasis role="strong">pll_filter_hz</emphasis> = 400.0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceConfig_1ad761f12c7613297a9a18c0ffed6f6dc5"/>std::array&lt; float, kCompensationSize &gt; <emphasis role="strong">compensation_table</emphasis> = {}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+motor_position.h</section>

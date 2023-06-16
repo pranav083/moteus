@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1TorqueModel" xml:lang="en-US">
+<title>moteus::TorqueModel Class Reference</title>
+<indexterm><primary>moteus::TorqueModel</primary></indexterm>
+<para>
+<computeroutput>#include &lt;torque_model.h&gt;</computeroutput>
+</para>
+Collaboration diagram for moteus::TorqueModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/dc5/classmoteus_1_1TorqueModel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1TorqueModel_1a34e6910fba9d6fa2861e27177d4b1b75"/><emphasis role="strong">TorqueModel</emphasis> (float torque_constant, float current_cutoff_A, float current_scale, float torque_scale)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1TorqueModel_1ade9945ec13df53d5daa5eba8b6474c5d"/>float <emphasis role="strong">current_to_torque</emphasis> (float current) const __attribute__((always_inline))</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1TorqueModel_1a66a4100aef9d9e15206c511ae8cee168"/>float <emphasis role="strong">torque_to_current</emphasis> (float torque) const __attribute__((always_inline))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1TorqueModel_1a2ea99e7f9c3974852c645bcba8bff0a5"/>const float <emphasis role="strong">torque_constant_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1TorqueModel_1acea3ab99792cadd14603571ad4ba087c"/>const float <emphasis role="strong">current_cutoff_A_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1TorqueModel_1a3bcd107ed87aeaca67f0338de66625d9"/>const float <emphasis role="strong">current_scale_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1TorqueModel_1afa9062ee24cd3a900a35573371daa047"/>const float <emphasis role="strong">torque_scale_</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Provides facilities for converting to and from torque and phase current for a given motor. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+torque_model.h</section>
+</section>

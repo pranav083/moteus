@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1Spi_1_1Config" xml:lang="en-US">
+<title>moteus::aux::Spi::Config Struct Reference</title>
+<indexterm><primary>moteus::aux::Spi::Config</primary></indexterm>
+Collaboration diagram for moteus::aux::Spi::Config:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/d49/structmoteus_1_1aux_1_1Spi_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Spi_1_1Config_1a2b8b7333331448571f9d37be8d64b615"/>enum <emphasis role="strong">Mode</emphasis> { 
+<emphasis role="strong">kOnboardAs5047</emphasis>
+, <emphasis role="strong">kDisabled</emphasis>
+, <emphasis role="strong">kAs5047</emphasis>
+, <emphasis role="strong">kIcPz</emphasis>
+, 
+<emphasis role="strong">kNumModes</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Spi_1_1Config_1abbe7e3436d6731f3dae99685a16fee4d"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Spi_1_1Config_1aa2b64bdab9a7ff54789c82b980d966e7"/>Mode <emphasis role="strong">mode</emphasis> = kOnboardAs5047</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Spi_1_1Config_1a2c95409be5d2dd30db5c07afc1d36488"/>uint32_t <emphasis role="strong">rate_hz</emphasis> = 12000000</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

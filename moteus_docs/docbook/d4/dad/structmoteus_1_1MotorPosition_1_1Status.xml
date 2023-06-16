@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1MotorPosition_1_1Status" xml:lang="en-US">
+<title>moteus::MotorPosition::Status Struct Reference</title>
+<indexterm><primary>moteus::MotorPosition::Status</primary></indexterm>
+Collaboration diagram for moteus::MotorPosition::Status:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dc/db3/structmoteus_1_1MotorPosition_1_1Status__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1a07fa24a7c4eaaf230832a8e6312e6ba6"/>enum <emphasis role="strong">Error</emphasis> { 
+<emphasis role="strong">kNone</emphasis>
+, <emphasis role="strong">kMotorNotConfigured</emphasis>
+, <emphasis role="strong">kInvalidConfig</emphasis>
+, <emphasis role="strong">kSourceError</emphasis>
+, 
+<emphasis role="strong">kNumErrors</emphasis>
+ }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1a30237de57cf5cdcdaec072a80514bd56"/>enum <emphasis role="strong">Homed</emphasis> { <emphasis role="strong">kRelative</emphasis>
+, <emphasis role="strong">kRotor</emphasis>
+, <emphasis role="strong">kOutput</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1abea461441688d41b200f4d9d9adc5734"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1a3df3f2e45c3749c80bd6de5f0917bd32"/>Error <emphasis role="strong">error</emphasis> = kNone</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1aa3a28c89b4c15171ec8eeb3a6b94c26c"/>std::array&lt; <link linkend="_structmoteus_1_1MotorPosition_1_1SourceStatus">SourceStatus</link>, kNumSources &gt; <emphasis role="strong">sources</emphasis> = { {} }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1a9c2cd6fe1943586e02cffcb594141464"/>uint8_t <emphasis role="strong">epoch</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1ac6edf916088c9d28dd3914b244b68db8"/>bool <link linkend="_structmoteus_1_1MotorPosition_1_1Status_1ac6edf916088c9d28dd3914b244b68db8">position_relative_valid</link> = false</para>
+
+<para>OUTPUT REFERENCED POSITIONS. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1ad26c7f59109381ca2a9eb1967ff59ba4"/>int64_t <emphasis role="strong">position_relative_raw</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1a25ec9f0542c5e7bac97db1d8f5bb8b4e"/>float <emphasis role="strong">position_relative</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1a3ed579e09bf6dad875b022ec9245f8e3"/>int64_t <emphasis role="strong">position_relative_modulo</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1af68574b2e207ccc5ca033fc4c7416d2c"/>int64_t <emphasis role="strong">position_raw</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1a6e9ae6c2669ba50d77ee0cd81de47d28"/>float <emphasis role="strong">position</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1a845daca5bda655545989b06c8dabc726"/>Homed <emphasis role="strong">homed</emphasis> = kRelative</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1a8243eace384dbf8c67d4ed53656e746c"/>float <emphasis role="strong">velocity</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1afa9514f81720c00ad084383917e1b723"/>bool <link linkend="_structmoteus_1_1MotorPosition_1_1Status_1afa9514f81720c00ad084383917e1b723">theta_valid</link> = false</para>
+
+<para>ROTOR REFERENCED POSITIONS. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Status_1a1937017405ff66ef199209c8d0426522"/>float <emphasis role="strong">electrical_theta</emphasis> = 0.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+motor_position.h</section>

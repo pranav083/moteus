@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1BldcServoPosition" xml:lang="en-US">
+<title>moteus::BldcServoPosition Class Reference</title>
+<indexterm><primary>moteus::BldcServoPosition</primary></indexterm>
+Collaboration diagram for moteus::BldcServoPosition:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d7/ddd/classmoteus_1_1BldcServoPosition__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServoPosition_1a742dd0e51ac7c8d1bfb0c350a0fa41d9"/>static void <emphasis role="strong">DoVelocityModeLimits</emphasis> (<link linkend="_structmoteus_1_1BldcServoStatus">BldcServoStatus</link> *status, const <link linkend="_structmoteus_1_1BldcServoConfig">BldcServoConfig</link> *config, float rate_hz, <link linkend="_structmoteus_1_1BldcServoCommandData">BldcServoCommandData</link> *data, float velocity) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServoPosition_1af2245ca7c59191165ae86aa1314e1b9d"/>static void <emphasis role="strong">DoVelocityOnlyLimit</emphasis> (<link linkend="_structmoteus_1_1BldcServoStatus">BldcServoStatus</link> *status, float dx, <link linkend="_structmoteus_1_1BldcServoCommandData">BldcServoCommandData</link> *data, float velocity, float period_s) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServoPosition_1a9621eba76cc42f2578c94ca2b70ddeeb"/>static float <emphasis role="strong">CalculateAcceleration</emphasis> (<link linkend="_structmoteus_1_1BldcServoCommandData">BldcServoCommandData</link> *data, float a, float v0, float vf, float dx, float dv) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServoPosition_1acd98ede662308c326dc70855a9f94e7e"/>static void <emphasis role="strong">DoVelocityAndAccelLimits</emphasis> (<link linkend="_structmoteus_1_1BldcServoStatus">BldcServoStatus</link> *status, const <link linkend="_structmoteus_1_1BldcServoConfig">BldcServoConfig</link> *config, float rate_hz, <link linkend="_structmoteus_1_1BldcServoCommandData">BldcServoCommandData</link> *data, float velocity) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServoPosition_1ac9e608ddf43a84504cd67acf3fb7868a"/>static void <emphasis role="strong">UpdateTrajectory</emphasis> (<link linkend="_structmoteus_1_1BldcServoStatus">BldcServoStatus</link> *status, const <link linkend="_structmoteus_1_1BldcServoConfig">BldcServoConfig</link> *config, float rate_hz, <link linkend="_structmoteus_1_1BldcServoCommandData">BldcServoCommandData</link> *data, float velocity) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServoPosition_1ae497b815a1661ed1868d3d2db85d57b3"/>static float <emphasis role="strong">UpdateCommand</emphasis> (<link linkend="_structmoteus_1_1BldcServoStatus">BldcServoStatus</link> *status, const <link linkend="_structmoteus_1_1BldcServoConfig">BldcServoConfig</link> *config, const <link linkend="_structmoteus_1_1BldcServoPositionConfig">BldcServoPositionConfig</link> *position_config, const <link linkend="_structmoteus_1_1MotorPosition_1_1Status">MotorPosition::Status</link> *position, int64_t absolute_relative_delta, float rate_hz, <link linkend="_structmoteus_1_1BldcServoCommandData">BldcServoCommandData</link> *data, float velocity) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+bldc_servo_position.h</section>

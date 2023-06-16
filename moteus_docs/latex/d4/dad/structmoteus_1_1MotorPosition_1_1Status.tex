@@ -1,0 +1,83 @@
+\hypertarget{structmoteus_1_1MotorPosition_1_1Status}{}\doxysection{moteus\+::Motor\+Position\+::Status Struct Reference}
+\label{structmoteus_1_1MotorPosition_1_1Status}\index{moteus::MotorPosition::Status@{moteus::MotorPosition::Status}}
+
+
+Collaboration diagram for moteus\+::Motor\+Position\+::Status\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{dc/db3/structmoteus_1_1MotorPosition_1_1Status__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_a07fa24a7c4eaaf230832a8e6312e6ba6}\label{structmoteus_1_1MotorPosition_1_1Status_a07fa24a7c4eaaf230832a8e6312e6ba6}} 
+enum {\bfseries Error} \{ \newline
+{\bfseries k\+None}
+, {\bfseries k\+Motor\+Not\+Configured}
+, {\bfseries k\+Invalid\+Config}
+, {\bfseries k\+Source\+Error}
+, \newline
+{\bfseries k\+Num\+Errors}
+ \}
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_a30237de57cf5cdcdaec072a80514bd56}\label{structmoteus_1_1MotorPosition_1_1Status_a30237de57cf5cdcdaec072a80514bd56}} 
+enum {\bfseries Homed} \{ {\bfseries k\+Relative}
+, {\bfseries k\+Rotor}
+, {\bfseries k\+Output}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_abea461441688d41b200f4d9d9adc5734}\label{structmoteus_1_1MotorPosition_1_1Status_abea461441688d41b200f4d9d9adc5734}} 
+{\footnotesize template$<$typename Archive $>$ }\\void {\bfseries Serialize} (Archive $\ast$a)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_a3df3f2e45c3749c80bd6de5f0917bd32}\label{structmoteus_1_1MotorPosition_1_1Status_a3df3f2e45c3749c80bd6de5f0917bd32}} 
+Error {\bfseries error} = k\+None
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_aa3a28c89b4c15171ec8eeb3a6b94c26c}\label{structmoteus_1_1MotorPosition_1_1Status_aa3a28c89b4c15171ec8eeb3a6b94c26c}} 
+std\+::array$<$ \mbox{\hyperlink{structmoteus_1_1MotorPosition_1_1SourceStatus}{Source\+Status}}, k\+Num\+Sources $>$ {\bfseries sources} = \{ \{\} \}
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_a9c2cd6fe1943586e02cffcb594141464}\label{structmoteus_1_1MotorPosition_1_1Status_a9c2cd6fe1943586e02cffcb594141464}} 
+uint8\+\_\+t {\bfseries epoch} = 0
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_ac6edf916088c9d28dd3914b244b68db8}\label{structmoteus_1_1MotorPosition_1_1Status_ac6edf916088c9d28dd3914b244b68db8}} 
+bool \mbox{\hyperlink{structmoteus_1_1MotorPosition_1_1Status_ac6edf916088c9d28dd3914b244b68db8}{position\+\_\+relative\+\_\+valid}} = false
+\begin{DoxyCompactList}\small\item\em OUTPUT REFERENCED POSITIONS. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_ad26c7f59109381ca2a9eb1967ff59ba4}\label{structmoteus_1_1MotorPosition_1_1Status_ad26c7f59109381ca2a9eb1967ff59ba4}} 
+int64\+\_\+t {\bfseries position\+\_\+relative\+\_\+raw} = 0
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_a25ec9f0542c5e7bac97db1d8f5bb8b4e}\label{structmoteus_1_1MotorPosition_1_1Status_a25ec9f0542c5e7bac97db1d8f5bb8b4e}} 
+float {\bfseries position\+\_\+relative} = 0.\+0f
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_a3ed579e09bf6dad875b022ec9245f8e3}\label{structmoteus_1_1MotorPosition_1_1Status_a3ed579e09bf6dad875b022ec9245f8e3}} 
+int64\+\_\+t {\bfseries position\+\_\+relative\+\_\+modulo} = 0
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_af68574b2e207ccc5ca033fc4c7416d2c}\label{structmoteus_1_1MotorPosition_1_1Status_af68574b2e207ccc5ca033fc4c7416d2c}} 
+int64\+\_\+t {\bfseries position\+\_\+raw} = 0
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_a6e9ae6c2669ba50d77ee0cd81de47d28}\label{structmoteus_1_1MotorPosition_1_1Status_a6e9ae6c2669ba50d77ee0cd81de47d28}} 
+float {\bfseries position} = 0.\+0f
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_a845daca5bda655545989b06c8dabc726}\label{structmoteus_1_1MotorPosition_1_1Status_a845daca5bda655545989b06c8dabc726}} 
+Homed {\bfseries homed} = k\+Relative
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_a8243eace384dbf8c67d4ed53656e746c}\label{structmoteus_1_1MotorPosition_1_1Status_a8243eace384dbf8c67d4ed53656e746c}} 
+float {\bfseries velocity} = 0.\+0f
+\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_afa9514f81720c00ad084383917e1b723}\label{structmoteus_1_1MotorPosition_1_1Status_afa9514f81720c00ad084383917e1b723}} 
+bool \mbox{\hyperlink{structmoteus_1_1MotorPosition_1_1Status_afa9514f81720c00ad084383917e1b723}{theta\+\_\+valid}} = false
+\begin{DoxyCompactList}\small\item\em ROTOR REFERENCED POSITIONS. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structmoteus_1_1MotorPosition_1_1Status_a1937017405ff66ef199209c8d0426522}\label{structmoteus_1_1MotorPosition_1_1Status_a1937017405ff66ef199209c8d0426522}} 
+float {\bfseries electrical\+\_\+theta} = 0.\+0f
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+motor\+\_\+position.\+h\end{DoxyCompactItemize}

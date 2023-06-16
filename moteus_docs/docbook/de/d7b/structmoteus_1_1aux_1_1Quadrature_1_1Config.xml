@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1Quadrature_1_1Config" xml:lang="en-US">
+<title>moteus::aux::Quadrature::Config Struct Reference</title>
+<indexterm><primary>moteus::aux::Quadrature::Config</primary></indexterm>
+Collaboration diagram for moteus::aux::Quadrature::Config:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/dc3/structmoteus_1_1aux_1_1Quadrature_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Quadrature_1_1Config_1a5f3062488c5b9f92b2ff7dee87cd1ae5"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Quadrature_1_1Config_1ac4fac92c67aae023fe93c368a54c692a"/>bool <emphasis role="strong">enabled</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Quadrature_1_1Config_1a23d33c77a6cc131d7c15278c87d9a819"/>uint32_t <emphasis role="strong">cpr</emphasis> = 16384</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

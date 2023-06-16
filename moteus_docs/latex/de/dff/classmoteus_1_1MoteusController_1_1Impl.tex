@@ -1,0 +1,88 @@
+\hypertarget{classmoteus_1_1MoteusController_1_1Impl}{}\doxysection{moteus\+::Moteus\+Controller\+::Impl Class Reference}
+\label{classmoteus_1_1MoteusController_1_1Impl}\index{moteus::MoteusController::Impl@{moteus::MoteusController::Impl}}
+
+
+Inheritance diagram for moteus\+::Moteus\+Controller\+::Impl\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d5/d04/classmoteus_1_1MoteusController_1_1Impl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for moteus\+::Moteus\+Controller\+::Impl\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d97/classmoteus_1_1MoteusController_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_ab159519fd9ac89e40d05693a17642df9}\label{classmoteus_1_1MoteusController_1_1Impl_ab159519fd9ac89e40d05693a17642df9}} 
+{\bfseries Impl} (micro\+::\+Pool $\ast$pool, micro\+::\+Persistent\+Config $\ast$persistent\+\_\+config, micro\+::\+Command\+Manager $\ast$command\+\_\+manager, micro\+::\+Telemetry\+Manager $\ast$telemetry\+\_\+manager, multiplex\+::\+Micro\+Server $\ast$multiplex\+\_\+protocol, \mbox{\hyperlink{classmoteus_1_1ClockManager}{Clock\+Manager}} $\ast$clock\+\_\+manager, \mbox{\hyperlink{classmoteus_1_1SystemInfo}{System\+Info}} $\ast$system\+\_\+info, \mbox{\hyperlink{classmoteus_1_1MillisecondTimer}{Millisecond\+Timer}} $\ast$timer, \mbox{\hyperlink{classmoteus_1_1FirmwareInfo}{Firmware\+Info}} $\ast$firmware)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_a7be8cb8656a313fd78ec2ca0ab23d837}\label{classmoteus_1_1MoteusController_1_1Impl_a7be8cb8656a313fd78ec2ca0ab23d837}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_a4849b5559d15c0a96307381b812836e0}\label{classmoteus_1_1MoteusController_1_1Impl_a4849b5559d15c0a96307381b812836e0}} 
+void {\bfseries Poll} ()
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_a4f892db4d9f7dfba777c458483724ea3}\label{classmoteus_1_1MoteusController_1_1Impl_a4f892db4d9f7dfba777c458483724ea3}} 
+void {\bfseries Poll\+Millisecond} ()
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_ac63833f8211e0d99bf8280a4364aed6d}\label{classmoteus_1_1MoteusController_1_1Impl_ac63833f8211e0d99bf8280a4364aed6d}} 
+uint32\+\_\+t {\bfseries Write} (multiplex\+::\+Micro\+Server\+::\+Register reg, const multiplex\+::\+Micro\+Server\+::\+Value \&value) override \+\_\+\+\_\+attribute\+\_\+\+\_\+((optimize(\char`\"{}O3\char`\"{})))
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_a9203e3cd49320d33fc87817ab4f6f08b}\label{classmoteus_1_1MoteusController_1_1Impl_a9203e3cd49320d33fc87817ab4f6f08b}} 
+const \mbox{\hyperlink{structmoteus_1_1MotorPosition_1_1SourceStatus}{Motor\+Position\+::\+Source\+Status}} \& {\bfseries encoder\+\_\+value} (int index) const
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_ac01b8a700d452b0a4b59400dd4cbdd8b}\label{classmoteus_1_1MoteusController_1_1Impl_ac01b8a700d452b0a4b59400dd4cbdd8b}} 
+const \mbox{\hyperlink{structmoteus_1_1MotorPosition_1_1SourceConfig}{Motor\+Position\+::\+Source\+Config}} \& {\bfseries encoder\+\_\+config} (int index) const
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_a04bbd1a5f34cb6a12948c5ec08b2eb67}\label{classmoteus_1_1MoteusController_1_1Impl_a04bbd1a5f34cb6a12948c5ec08b2eb67}} 
+multiplex\+::\+Micro\+Server\+::\+Read\+Result {\bfseries Read} (multiplex\+::\+Micro\+Server\+::\+Register reg, size\+\_\+t type) const override \+\_\+\+\_\+attribute\+\_\+\+\_\+((optimize(\char`\"{}O3\char`\"{})))
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_aec4f6494f9fd8fe932e359fc05af7b00}\label{classmoteus_1_1MoteusController_1_1Impl_aec4f6494f9fd8fe932e359fc05af7b00}} 
+\mbox{\hyperlink{classmoteus_1_1AuxADC}{Aux\+ADC}} {\bfseries aux\+\_\+adc\+\_\+}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_a47eb186d90ff3853d5ec7a888fe8e174}\label{classmoteus_1_1MoteusController_1_1Impl_a47eb186d90ff3853d5ec7a888fe8e174}} 
+\mbox{\hyperlink{classmoteus_1_1AuxPort}{Aux\+Port}} {\bfseries aux1\+\_\+port\+\_\+}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_ad66e014ba0ca54f4530e2e1b9f0f9d73}\label{classmoteus_1_1MoteusController_1_1Impl_ad66e014ba0ca54f4530e2e1b9f0f9d73}} 
+\mbox{\hyperlink{classmoteus_1_1AuxPort}{Aux\+Port}} {\bfseries aux2\+\_\+port\+\_\+}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_a9d3ce4f58fccefdaf1d48e756d07ad5d}\label{classmoteus_1_1MoteusController_1_1Impl_a9d3ce4f58fccefdaf1d48e756d07ad5d}} 
+\mbox{\hyperlink{classmoteus_1_1MotorPosition}{Motor\+Position}} {\bfseries motor\+\_\+position\+\_\+}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_a4079feb8b85512b38df4ef01ef5c4b14}\label{classmoteus_1_1MoteusController_1_1Impl_a4079feb8b85512b38df4ef01ef5c4b14}} 
+\mbox{\hyperlink{classmoteus_1_1Drv8323}{Drv8323}} {\bfseries drv8323\+\_\+}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_afc82379ab2711cd68c4a554f2d6bd002}\label{classmoteus_1_1MoteusController_1_1Impl_afc82379ab2711cd68c4a554f2d6bd002}} 
+\mbox{\hyperlink{classmoteus_1_1BldcServo}{Bldc\+Servo}} {\bfseries bldc\+\_\+}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_a2bac24619c5e48ac55f2e65cee7aa3b9}\label{classmoteus_1_1MoteusController_1_1Impl_a2bac24619c5e48ac55f2e65cee7aa3b9}} 
+\mbox{\hyperlink{classmoteus_1_1ClockManager}{Clock\+Manager}} $\ast$const {\bfseries clock\+\_\+manager\+\_\+}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_a3de532130bfdb7f6be9f2eac37bad51a}\label{classmoteus_1_1MoteusController_1_1Impl_a3de532130bfdb7f6be9f2eac37bad51a}} 
+\mbox{\hyperlink{classmoteus_1_1SystemInfo}{System\+Info}} $\ast$const {\bfseries system\+\_\+info\+\_\+}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_aa1a05842f99c9e7040417dd31da2944a}\label{classmoteus_1_1MoteusController_1_1Impl_aa1a05842f99c9e7040417dd31da2944a}} 
+\mbox{\hyperlink{classmoteus_1_1FirmwareInfo}{Firmware\+Info}} $\ast$const {\bfseries firmware\+\_\+}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_af35b477f103c0d10154ef4d551332284}\label{classmoteus_1_1MoteusController_1_1Impl_af35b477f103c0d10154ef4d551332284}} 
+bool {\bfseries command\+\_\+valid\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classmoteus_1_1MoteusController_1_1Impl_a7cb2f97cdd57c5a1a6af0a333935dcc3}\label{classmoteus_1_1MoteusController_1_1Impl_a7cb2f97cdd57c5a1a6af0a333935dcc3}} 
+\mbox{\hyperlink{structmoteus_1_1BldcServoCommandData}{Bldc\+Servo\+::\+Command\+Data}} {\bfseries command\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+moteus\+\_\+controller.\+cc\end{DoxyCompactItemize}

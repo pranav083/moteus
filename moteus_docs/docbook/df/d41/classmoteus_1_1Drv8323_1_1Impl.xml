@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Drv8323_1_1Impl" xml:lang="en-US">
+<title>moteus::Drv8323::Impl Class Reference</title>
+<indexterm><primary>moteus::Drv8323::Impl</primary></indexterm>
+Collaboration diagram for moteus::Drv8323::Impl:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/d1c/classmoteus_1_1Drv8323_1_1Impl__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a29e30ecf7ec8ff9894846ba75faf3128"/><emphasis role="strong">Impl</emphasis> (micro::PersistentConfig *config, micro::TelemetryManager *telemetry_manager, <link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer, const <link linkend="_structmoteus_1_1Drv8323_1_1Options">Options</link> &amp;options)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1ada2bf4098ce7a895a21cec9718d374df"/>void <emphasis role="strong">Enable</emphasis> (bool value)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a219282369c1be7e07a3fb97a73bb47f0"/>void <emphasis role="strong">Power</emphasis> (bool value)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1ab4d921f2c30f1216c462a1685b6ab92f"/>uint16_t <emphasis role="strong">Read</emphasis> (int reg)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a7f776563c290ae957438d0ea00fa37a4"/>void <emphasis role="strong">Write</emphasis> (int reg, uint16_t value)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1ae1c3a9c71b92f66a0b420db8a98889ca"/>void <emphasis role="strong">PollMillisecond</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1af9134c8bf18dbee89b6c0c1c3d35a503"/>void <emphasis role="strong">HandleConfigUpdate</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a5077296094b0f7f542d1e61402992b15"/>void <emphasis role="strong">Calibrate</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a92526e0f27cabca1f89d255b4d40c5d2"/>void <emphasis role="strong">WriteConfig</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1aa3d1e4fb5ffcffadde0a5ed5c5c368b6"/><link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *const <emphasis role="strong">timer_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1aa2a22198a6c17d8d02c7c441aa3868dc"/><link linkend="_structmoteus_1_1Drv8323_1_1Status">Status</link> <emphasis role="strong">status_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a7da2e353394533b2ca9ab6bcd0a57eaf"/><link linkend="_structmoteus_1_1Drv8323_1_1Config">Config</link> <emphasis role="strong">config_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1acbe40c5d51f308ace35bb4a1be70f90b"/><link linkend="_classmoteus_1_1Stm32BitbangSpi">Stm32BitbangSpi</link> <emphasis role="strong">spi_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1aaf3d4b831ebb4c88c74c0612e88e40d8"/>DigitalOut <emphasis role="strong">enable_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a63c1585a6388e8d265210afe1cb35aaf"/>int32_t <emphasis role="strong">enable_cache_</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a0c7504469a41e7fa53bfcd0d41a8f032"/>DigitalOut <emphasis role="strong">hiz_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1ae542492b4fd89e958dd91f3dd112ec94"/>DigitalIn <emphasis role="strong">fault_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1ae2c2303c656b623bd2f62ddfa23b7a4f"/>uint16_t <emphasis role="strong">loop_count_</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Drv8323_1_1Impl_1a1af854ff77c16864713151bd0353e80d"/>mjlib::base::inplace_function&lt; void()&gt; <emphasis role="strong">status_update_</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+drv8323.cc</section>

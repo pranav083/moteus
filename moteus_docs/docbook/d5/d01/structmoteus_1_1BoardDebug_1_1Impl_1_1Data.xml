@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1BoardDebug_1_1Impl_1_1Data" xml:lang="en-US">
+<title>moteus::BoardDebug::Impl::Data Struct Reference</title>
+<indexterm><primary>moteus::BoardDebug::Impl::Data</primary></indexterm>
+Collaboration diagram for moteus::BoardDebug::Impl::Data:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/dff/structmoteus_1_1BoardDebug_1_1Impl_1_1Data__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BoardDebug_1_1Impl_1_1Data_1a5ba69c3095496bd15d8fa5f4eedb09b1"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BoardDebug_1_1Impl_1_1Data_1a25f81fe5bf0248c841a4a1c6039ac857"/>bool <emphasis role="strong">led1</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BoardDebug_1_1Impl_1_1Data_1ab7fdb36cb6209779242cc1cfbe639ca8"/>bool <emphasis role="strong">led2</emphasis> = false</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+board_debug.cc</section>

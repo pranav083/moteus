@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1BldcServo_1_1Options" xml:lang="en-US">
+<title>moteus::BldcServo::Options Struct Reference</title>
+<indexterm><primary>moteus::BldcServo::Options</primary></indexterm>
+Collaboration diagram for moteus::BldcServo::Options:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d1/d88/structmoteus_1_1BldcServo_1_1Options__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1af9bb36692b4f404701c08586d09247f1"/>PinName <emphasis role="strong">pwm1</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1ac00ad2d903efd3d8ad3b278f4a54789e"/>PinName <emphasis role="strong">pwm2</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1a8ba913c1343852c5688d8c16fa79a11a"/>PinName <emphasis role="strong">pwm3</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1a15276d36649f381de38497a074f914c4"/>PinName <emphasis role="strong">current1</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1a2d25b886c3f18a065c672ff15484283a"/>PinName <emphasis role="strong">current2</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1a9322b5da778ff0af0a9d6a2ec7f1584f"/>PinName <emphasis role="strong">current3</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1a62aa14e99d3b42d95ead32a8a133dc4c"/>PinName <emphasis role="strong">vsense</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1a64ff6b3ea528149e497f68d31bda56a4"/>PinName <emphasis role="strong">tsense</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1ac425faa79075d6f648c9de6f2d18558c"/>PinName <emphasis role="strong">msense</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1ae454876c36f874c4c8e3ad7d76d393b6"/>PinName <emphasis role="strong">debug_dac</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1a44856f9e08967b19e424cfca3a12e1b9"/>PinName <emphasis role="strong">debug_out</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1abbf1854525530f9ce33e6e807fa97183"/>PinName <emphasis role="strong">debug_out2</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServo_1_1Options_1a151193731e39ffbe20e47725f4662dfb"/>PinName <emphasis role="strong">debug_uart_out</emphasis> = NC</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+bldc_servo.h</section>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1MotorPosition_1_1Config" xml:lang="en-US">
+<title>moteus::MotorPosition::Config Struct Reference</title>
+<indexterm><primary>moteus::MotorPosition::Config</primary></indexterm>
+Collaboration diagram for moteus::MotorPosition::Config:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/dd3/structmoteus_1_1MotorPosition_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1MotorPosition_1_1Config_1_1Output">Output</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Config_1a7f52d193301217daea2a74132e4400d6"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Config_1a5d1ce5e5df3598b3921352813aa333e9"/>std::array&lt; <link linkend="_structmoteus_1_1MotorPosition_1_1SourceConfig">SourceConfig</link>, kNumSources &gt; <emphasis role="strong">sources</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Config_1a8fcf69666f05a0306befc01fbbcd0e27"/>int8_t <emphasis role="strong">commutation_source</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Config_1a4cc5586a49a8c23ee00c20b5ed82486d"/><link linkend="_structmoteus_1_1MotorPosition_1_1Config_1_1Output">Output</link> <emphasis role="strong">output</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1Config_1a080ecd2c983aec05c810278273312c55"/>float <emphasis role="strong">rotor_to_output_ratio</emphasis> = 1.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+motor_position.h</section>

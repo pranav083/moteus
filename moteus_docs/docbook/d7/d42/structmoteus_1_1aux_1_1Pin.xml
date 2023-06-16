@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1Pin" xml:lang="en-US">
+<title>moteus::aux::Pin Struct Reference</title>
+<indexterm><primary>moteus::aux::Pin</primary></indexterm>
+Collaboration diagram for moteus::aux::Pin:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/dc4/structmoteus_1_1aux_1_1Pin__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Pin_1a008d6709f4a8bce25357a8cc80389d0d"/>enum <emphasis role="strong">Mode</emphasis> { 
+<emphasis role="strong">kNC</emphasis>
+, <emphasis role="strong">kSpi</emphasis>
+, <emphasis role="strong">kSpiCs</emphasis>
+, <emphasis role="strong">kUart</emphasis>
+, 
+<emphasis role="strong">kQuadratureSoftware</emphasis>
+, <emphasis role="strong">kQuadratureHardware</emphasis>
+, <emphasis role="strong">kHall</emphasis>
+, <emphasis role="strong">kIndex</emphasis>
+, 
+<emphasis role="strong">kSine</emphasis>
+, <emphasis role="strong">kCosine</emphasis>
+, <emphasis role="strong">kStep</emphasis>
+, <emphasis role="strong">kDir</emphasis>
+, 
+<emphasis role="strong">kRcPwm</emphasis>
+, <emphasis role="strong">kI2C</emphasis>
+, <emphasis role="strong">kDigitalInput</emphasis>
+, <emphasis role="strong">kDigitalOutput</emphasis>
+, 
+<emphasis role="strong">kAnalogInput</emphasis>
+, <emphasis role="strong">kLength</emphasis>
+ }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Pin_1a3bd49e3acefdef15ac2ec27d8e85a2c4"/>enum <emphasis role="strong">Pull</emphasis> { <emphasis role="strong">kNone</emphasis>
+, <emphasis role="strong">kPullUp</emphasis>
+, <emphasis role="strong">kPullDown</emphasis>
+, <emphasis role="strong">kOpenDrain</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Pin_1ae1613ab2bdb5082bda2e575ded3f52d5"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Pin_1a326e42185a1b4b1d28bc83c33b0bb83b"/>Mode <emphasis role="strong">mode</emphasis> = kNC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1Pin_1a99f4ea164e8f752594f06bb99f723f11"/>Pull <emphasis role="strong">pull</emphasis> = kNone</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

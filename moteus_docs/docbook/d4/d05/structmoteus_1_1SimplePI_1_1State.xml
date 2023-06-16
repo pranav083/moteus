@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1SimplePI_1_1State" xml:lang="en-US">
+<title>moteus::SimplePI::State Struct Reference</title>
+<indexterm><primary>moteus::SimplePI::State</primary></indexterm>
+Collaboration diagram for moteus::SimplePI::State:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/d2d/structmoteus_1_1SimplePI_1_1State__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1SimplePI_1_1State_1a3e333ec7b5e215b276265cb536668de1"/>void <emphasis role="strong">Clear</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1SimplePI_1_1State_1a647bd39119095ef135ec88b29227d868"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1SimplePI_1_1State_1ae9975e6764a5414df1c297d2e60b2bb4"/>float <emphasis role="strong">integral</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1SimplePI_1_1State_1a853c659b941e99815f371cf1662a7ffa"/>float <emphasis role="strong">desired</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1SimplePI_1_1State_1a802b5080e3abc2277636c8721a9c2886"/>float <emphasis role="strong">error</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1SimplePI_1_1State_1a5271e258c7711dad7c8981158c216c9f"/>float <emphasis role="strong">p</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1SimplePI_1_1State_1a7d65af4bf79cf4b9a197c12a2d667014"/>float <emphasis role="strong">command</emphasis> = 0.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+simple_pi.h</section>

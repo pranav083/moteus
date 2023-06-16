@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1Stm32Spi_1_1Options" xml:lang="en-US">
+<title>moteus::Stm32Spi::Options Struct Reference</title>
+<indexterm><primary>moteus::Stm32Spi::Options</primary></indexterm>
+Inheritance diagram for moteus::Stm32Spi::Options:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d6/d0f/structmoteus_1_1Stm32Spi_1_1Options__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for moteus::Stm32Spi::Options:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d0/d0f/structmoteus_1_1Stm32Spi_1_1Options__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Spi_1_1Options_1acb1be17892637407843e2f85b13d03ab"/>PinName <emphasis role="strong">mosi</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Spi_1_1Options_1ace3a22f5959a2c38aaf7b38bc9371853"/>PinName <emphasis role="strong">miso</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Spi_1_1Options_1ac32e9cedb457accd306a65f28881ea2d"/>PinName <emphasis role="strong">sck</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Spi_1_1Options_1a38d90586a8e200724da63460a104a519"/>PinName <emphasis role="strong">cs</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Spi_1_1Options_1ad099b6732409ddd558fea6eac5088d45"/>int <emphasis role="strong">frequency</emphasis> = 10000000</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Spi_1_1Options_1afb18b3b03b848f051731d96fb7ff1c06"/>int <emphasis role="strong">width</emphasis> = 16</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Spi_1_1Options_1afc211de75459c53b76b274b84efba383"/>int <emphasis role="strong">mode</emphasis> = 1</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Spi_1_1Options_1a795db1db0578a0bf4091cc454b6bfef3"/>uint16_t <emphasis role="strong">timeout</emphasis> = 20000</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Spi_1_1Options_1a6eb5b68e0737bf306c85166a84aafcaf"/>DMA_Channel_TypeDef * <emphasis role="strong">rx_dma</emphasis> = nullptr</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32Spi_1_1Options_1a07952caeb585492088f5c9dbce6b6ef7"/>DMA_Channel_TypeDef * <emphasis role="strong">tx_dma</emphasis> = nullptr</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+stm32_spi.h</section>

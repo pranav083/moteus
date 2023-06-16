@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1FDCan" xml:lang="en-US">
+<title>moteus::FDCan Class Reference</title>
+<indexterm><primary>moteus::FDCan</primary></indexterm>
+Collaboration diagram for moteus::FDCan:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dc/d0b/classmoteus_1_1FDCan__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1FDCan_1_1Config">Config</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1FDCan_1_1Filter">Filter</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1FDCan_1_1FilterConfig">FilterConfig</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1FDCan_1_1Options">Options</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1FDCan_1_1Rate">Rate</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1FDCan_1_1SendOptions">SendOptions</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCan_1a7a58be6a5b535f0332cc69d7bc0e9bfc"/>enum class <emphasis role="strong">FilterAction</emphasis> { <emphasis role="strong">kDisable</emphasis>
+, <emphasis role="strong">kAccept</emphasis>
+, <emphasis role="strong">kReject</emphasis>
+ }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCan_1acc0f846a90f7473081368845c3a2573c"/>enum class <emphasis role="strong">FilterMode</emphasis> { <emphasis role="strong">kRange</emphasis>
+, <emphasis role="strong">kDual</emphasis>
+, <emphasis role="strong">kMask</emphasis>
+ }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCan_1a19f8a0ccad6f3837f3703b1df3f90bcf"/>enum class <emphasis role="strong">FilterType</emphasis> { <emphasis role="strong">kStandard</emphasis>
+, <emphasis role="strong">kExtended</emphasis>
+ }</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCan_1ab255faa928c31596f30d714d184fdde6"/>enum class <emphasis role="strong">Override</emphasis> { <emphasis role="strong">kDefault</emphasis>
+, <emphasis role="strong">kRequire</emphasis>
+, <emphasis role="strong">kDisable</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCan_1a6feb806bf1beb7b2b4839447da746df0"/><emphasis role="strong">FDCan</emphasis> (const <link linkend="_structmoteus_1_1FDCan_1_1Options">Options</link> &amp;options=<link linkend="_structmoteus_1_1FDCan_1_1Options">Options</link>())</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCan_1a1a83ceca2f182d4933bcf7115895d36a"/>void <emphasis role="strong">ConfigureFilters</emphasis> (const <link linkend="_structmoteus_1_1FDCan_1_1FilterConfig">FilterConfig</link> &amp;)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCan_1a343cb630c578be8052704805f45a6ca4"/>void <emphasis role="strong">Send</emphasis> (uint32_t dest_id, std::string_view data, const <link linkend="_structmoteus_1_1FDCan_1_1SendOptions">SendOptions</link> &amp;=<link linkend="_structmoteus_1_1FDCan_1_1SendOptions">SendOptions</link>())</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmoteus_1_1FDCan_1a3688d6758f4e1cfb6429a80e84de58e0">Poll</link> (FDCAN_RxHeaderTypeDef *header, mjlib::base::string_span)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCan_1a5dd3a1aa4f02329cd307f568315f0412"/>void <emphasis role="strong">RecoverBusOff</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCan_1a1915a780e712b5f84e3aaf67f08143e4"/>FDCAN_ProtocolStatusTypeDef <emphasis role="strong">status</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCan_1a8a28989feba8d9ff7849ad76fa2c6448"/><link linkend="_structmoteus_1_1FDCan_1_1Config">Config</link> <emphasis role="strong">config</emphasis> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCan_1a81e19f7e211aeb148da944437dac17ad"/>static int <emphasis role="strong">ParseDlc</emphasis> (uint32_t dlc_code)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmoteus_1_1FDCan_1a3688d6758f4e1cfb6429a80e84de58e0"/>    <section>
+    <title>Poll()</title>
+<indexterm><primary>Poll</primary><secondary>moteus::FDCan</secondary></indexterm>
+<indexterm><primary>moteus::FDCan</primary><secondary>Poll</secondary></indexterm>
+<para><computeroutput>bool moteus::FDCan::Poll (FDCAN_RxHeaderTypeDef * header, mjlib::base::string_span data)</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>true if a packet was available. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+fdcan.hfdcan.cc</section>
+</section>

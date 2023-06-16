@@ -1,0 +1,56 @@
+\hypertarget{classmoteus_1_1Stm32GpioInterruptIn}{}\doxysection{moteus\+::Stm32\+Gpio\+Interrupt\+In Class Reference}
+\label{classmoteus_1_1Stm32GpioInterruptIn}\index{moteus::Stm32GpioInterruptIn@{moteus::Stm32GpioInterruptIn}}
+
+
+{\ttfamily \#include $<$stm32\+\_\+gpio\+\_\+interrupt\+\_\+in.\+h$>$}
+
+
+
+Collaboration diagram for moteus\+::Stm32\+Gpio\+Interrupt\+In\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{da/dd3/classmoteus_1_1Stm32GpioInterruptIn__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmoteus_1_1Stm32GpioInterruptIn_1_1Callback}{Callback}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32GpioInterruptIn_a4e7c69eabdda92cfd58d9a9cfe2d7d6f}\label{classmoteus_1_1Stm32GpioInterruptIn_a4e7c69eabdda92cfd58d9a9cfe2d7d6f}} 
+using {\bfseries Callback\+Function} = void($\ast$)(uint32\+\_\+t)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32GpioInterruptIn_a1cefcf07587ccbd3a25bab26a982bc4a}\label{classmoteus_1_1Stm32GpioInterruptIn_a1cefcf07587ccbd3a25bab26a982bc4a}} 
+{\bfseries Stm32\+Gpio\+Interrupt\+In} (\mbox{\hyperlink{classmoteus_1_1Stm32GpioInterruptIn}{Stm32\+Gpio\+Interrupt\+In}} \&\&rhs)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32GpioInterruptIn_aeb44fbfa961a99170b2126d751de2ed2}\label{classmoteus_1_1Stm32GpioInterruptIn_aeb44fbfa961a99170b2126d751de2ed2}} 
+\mbox{\hyperlink{classmoteus_1_1Stm32GpioInterruptIn}{Stm32\+Gpio\+Interrupt\+In}} \& {\bfseries operator=} (\mbox{\hyperlink{classmoteus_1_1Stm32GpioInterruptIn}{Stm32\+Gpio\+Interrupt\+In}} \&\&rhs)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32GpioInterruptIn_ab6483ca7df9b23989d62ad7160b64c3b}\label{classmoteus_1_1Stm32GpioInterruptIn_ab6483ca7df9b23989d62ad7160b64c3b}} 
+{\bfseries Stm32\+Gpio\+Interrupt\+In} (Pin\+Name pin, Callback\+Function function, uint32\+\_\+t val)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32GpioInterruptIn_ad43da5efa0cda606159b3caf3616aaea}\label{classmoteus_1_1Stm32GpioInterruptIn_ad43da5efa0cda606159b3caf3616aaea}} 
+bool {\bfseries read} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32GpioInterruptIn_ac6e4ffcbcf782a97a8a058eb1ac5a9a3}\label{classmoteus_1_1Stm32GpioInterruptIn_ac6e4ffcbcf782a97a8a058eb1ac5a9a3}} 
+static std\+::optional$<$ \mbox{\hyperlink{classmoteus_1_1Stm32GpioInterruptIn}{Stm32\+Gpio\+Interrupt\+In}} $>$ {\bfseries Make} (Pin\+Name pin, Callback\+Function function, uint32\+\_\+t data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is brain dead and fast. It assumes that many pins will have the same callback. It may result in spurious callbacks. Use accordingly. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stm32\+\_\+gpio\+\_\+interrupt\+\_\+in.\+h\item 
+stm32\+\_\+gpio\+\_\+interrupt\+\_\+in.\+cc\end{DoxyCompactItemize}

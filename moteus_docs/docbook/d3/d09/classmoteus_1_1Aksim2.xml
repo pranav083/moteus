@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Aksim2" xml:lang="en-US">
+<title>moteus::Aksim2 Class Reference</title>
+<indexterm><primary>moteus::Aksim2</primary></indexterm>
+Collaboration diagram for moteus::Aksim2:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d3f/classmoteus_1_1Aksim2__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Aksim2_1ac673c752a4a48e8ad97ea38e1852f015"/><emphasis role="strong">Aksim2</emphasis> (const <link linkend="_structmoteus_1_1aux_1_1UartEncoder_1_1Config">aux::UartEncoder::Config</link> &amp;config, <link linkend="_classmoteus_1_1Stm32G4DmaUart">Stm32G4DmaUart</link> *uart, <link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Aksim2_1a2ddfdd02e9bb6b53f32a755197e09b05"/>void <emphasis role="strong">ISR_Update</emphasis> (<link linkend="_structmoteus_1_1aux_1_1UartEncoder_1_1Status">aux::UartEncoder::Status</link> *status) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Aksim2_1a49cca8cd9eb110e4a0962f62cf386670"/>void <emphasis role="strong">ProcessQuery</emphasis> (<link linkend="_structmoteus_1_1aux_1_1UartEncoder_1_1Status">aux::UartEncoder::Status</link> *status) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+aksim2.h</section>

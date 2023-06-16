@@ -1,0 +1,60 @@
+\hypertarget{classmoteus_1_1Stm32G4AsyncUart}{}\doxysection{moteus\+::Stm32\+G4\+Async\+Uart Class Reference}
+\label{classmoteus_1_1Stm32G4AsyncUart}\index{moteus::Stm32G4AsyncUart@{moteus::Stm32G4AsyncUart}}
+
+
+Presents a single USART on the STM32\+G4 as an Async\+Stream.  
+
+
+
+
+{\ttfamily \#include $<$stm32g4\+\_\+async\+\_\+uart.\+h$>$}
+
+
+
+Inheritance diagram for moteus\+::Stm32\+G4\+Async\+Uart\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{dc/d77/classmoteus_1_1Stm32G4AsyncUart__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for moteus\+::Stm32\+G4\+Async\+Uart\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{d7/d7c/classmoteus_1_1Stm32G4AsyncUart__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoteus_1_1Stm32G4AsyncUart_1_1Impl}{Impl}}
+\item 
+struct \mbox{\hyperlink{structmoteus_1_1Stm32G4AsyncUart_1_1Options}{Options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4AsyncUart_a5d2de68f290d88250ffa3f4256403273}\label{classmoteus_1_1Stm32G4AsyncUart_a5d2de68f290d88250ffa3f4256403273}} 
+{\bfseries Stm32\+G4\+Async\+Uart} (mjlib\+::micro\+::\+Pool $\ast$pool, \mbox{\hyperlink{classmoteus_1_1MillisecondTimer}{Millisecond\+Timer}} $\ast$timer, const \mbox{\hyperlink{structmoteus_1_1Stm32G4AsyncUart_1_1Options}{Options}} \&)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4AsyncUart_a1931203c6381f621286a37b83192d67d}\label{classmoteus_1_1Stm32G4AsyncUart_a1931203c6381f621286a37b83192d67d}} 
+void {\bfseries Async\+Read\+Some} (const mjlib\+::base\+::string\+\_\+span \&, const mjlib\+::micro\+::\+Size\+Callback \&) override
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4AsyncUart_ad2505587dc2638511f90fc52028ac94f}\label{classmoteus_1_1Stm32G4AsyncUart_ad2505587dc2638511f90fc52028ac94f}} 
+void {\bfseries Async\+Write\+Some} (const std\+::string\+\_\+view \&, const mjlib\+::micro\+::\+Size\+Callback \&) override
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4AsyncUart_a49668da5539f142bef0e2d9b622d959f}\label{classmoteus_1_1Stm32G4AsyncUart_a49668da5539f142bef0e2d9b622d959f}} 
+void {\bfseries Poll} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Presents a single USART on the STM32\+G4 as an Async\+Stream. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stm32g4\+\_\+async\+\_\+uart.\+h\item 
+stm32g4\+\_\+async\+\_\+uart.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Stm32Serial" xml:lang="en-US">
+<title>moteus::Stm32Serial Class Reference</title>
+<indexterm><primary>moteus::Stm32Serial</primary></indexterm>
+<para>
+<computeroutput>#include &lt;stm32_serial.h&gt;</computeroutput>
+</para>
+Collaboration diagram for moteus::Stm32Serial:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d4/dc6/classmoteus_1_1Stm32Serial__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Stm32Serial_1_1Options">Options</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Serial_1ac67402a35e086dea870b03cd85efb2d3"/><emphasis role="strong">Stm32Serial</emphasis> (const <link linkend="_structmoteus_1_1Stm32Serial_1_1Options">Options</link> &amp;)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Serial_1a460fcb0fc7cc1c56daeed7a05435f583"/>UARTName <emphasis role="strong">uart_name</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Serial_1a834d8ea89797967ef08c79c06f6ff5df"/>USART_TypeDef * <emphasis role="strong">uart</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32Serial_1aa71fad1e983213f619bd6e9d567e3811"/>UART_HandleTypeDef * <emphasis role="strong">huart</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>When constructed, this will configure the given serial port, including marking the relevant pins as alternate function.</para>
+
+<para>NOTE: Unlike the Mbed RawSerial class, this will use 8X oversampling when necessary to achieve higher baud rates. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+stm32_serial.hstm32_serial.cc</section>
+</section>

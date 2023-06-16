@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1AuxHardwareConfig" xml:lang="en-US">
+<title>moteus::aux::AuxHardwareConfig Struct Reference</title>
+<indexterm><primary>moteus::aux::AuxHardwareConfig</primary></indexterm>
+Collaboration diagram for moteus::aux::AuxHardwareConfig:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/df8/structmoteus_1_1aux_1_1AuxHardwareConfig__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxHardwareConfig_1a58dc1075caa68f8f3273e47f5e99813a"/>std::array&lt; <link linkend="_structmoteus_1_1aux_1_1AuxPinConfig">AuxPinConfig</link>, 8 &gt; <emphasis role="strong">pins</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxHardwareConfig_1aabd1869731b12698cafa7cdfc23e8207"/><link linkend="_structmoteus_1_1aux_1_1AuxExtraOptions">AuxExtraOptions</link> <emphasis role="strong">options</emphasis> = {}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_mbed.h</section>

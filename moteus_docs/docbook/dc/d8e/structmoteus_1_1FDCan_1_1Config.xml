@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1FDCan_1_1Config" xml:lang="en-US">
+<title>moteus::FDCan::Config Struct Reference</title>
+<indexterm><primary>moteus::FDCan::Config</primary></indexterm>
+Collaboration diagram for moteus::FDCan::Config:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/dcf/structmoteus_1_1FDCan_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Config_1a8a14a98d26b98f99a81ae39cc0a67c3a"/>int <emphasis role="strong">clock</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Config_1af101aaf908a5e0a8bf25c977c54d4183"/><link linkend="_structmoteus_1_1FDCan_1_1Rate">Rate</link> <emphasis role="strong">nominal</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1Config_1a599bbb8486466022ad62a2a9d8cf4a56"/><link linkend="_structmoteus_1_1FDCan_1_1Rate">Rate</link> <emphasis role="strong">data</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+fdcan.h</section>

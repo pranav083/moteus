@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Stm32BitbangSpi" xml:lang="en-US">
+<title>moteus::Stm32BitbangSpi Class Reference</title>
+<indexterm><primary>moteus::Stm32BitbangSpi</primary></indexterm>
+Collaboration diagram for moteus::Stm32BitbangSpi:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/df4/classmoteus_1_1Stm32BitbangSpi__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Stm32BitbangSpi_1_1Options">Options</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32BitbangSpi_1a69a1b23bbbe59e8195787005d03768a6"/><emphasis role="strong">Stm32BitbangSpi</emphasis> (<link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer, const <link linkend="_structmoteus_1_1Stm32BitbangSpi_1_1Options">Options</link> &amp;options)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32BitbangSpi_1a4e3be5038272c33fbc89a0dce92c4822"/>uint16_t <emphasis role="strong">write</emphasis> (uint16_t value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32BitbangSpi_1a163febba7db859bc3b62cb6b1b1beb5c"/><link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *const <emphasis role="strong">timer_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32BitbangSpi_1a0f9a9759a137add89318233172206aae"/>DigitalOut <emphasis role="strong">cs_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32BitbangSpi_1a3b6f26601d8973e5beda7bdc0dd94fde"/>DigitalOut <emphasis role="strong">mosi_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32BitbangSpi_1a2300dc596a2aed5ec962103489130a9d"/>DigitalIn <emphasis role="strong">miso_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32BitbangSpi_1acd671388cacfa286c37414d6626970c7"/>DigitalOut <emphasis role="strong">sck_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32BitbangSpi_1ab2c7fda11e924e1a3fab7fe48a73b152"/>const <link linkend="_structmoteus_1_1Stm32BitbangSpi_1_1Options">Options</link> <emphasis role="strong">options_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32BitbangSpi_1a303a7f263ca98977d69231e1ab7852d3"/>uint32_t <emphasis role="strong">us_delay_</emphasis> = 1</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+stm32_bitbang_spi.h</section>

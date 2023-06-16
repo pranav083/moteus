@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1aux_1_1Stm32Index" xml:lang="en-US">
+<title>moteus::aux::Stm32Index Class Reference</title>
+<indexterm><primary>moteus::aux::Stm32Index</primary></indexterm>
+Collaboration diagram for moteus::aux::Stm32Index:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d93/classmoteus_1_1aux_1_1Stm32Index__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1aux_1_1Stm32Index_1aecce942eac1328a7df4587f3a0cff359"/>template&lt;typename PinArray &gt; </para><para><emphasis role="strong">Stm32Index</emphasis> (const <link linkend="_structmoteus_1_1aux_1_1Index_1_1Config">Index::Config</link> &amp;config, const PinArray &amp;array, const <link linkend="_structmoteus_1_1aux_1_1AuxHardwareConfig">AuxHardwareConfig</link> &amp;hw_config)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1aux_1_1Stm32Index_1aed89cbad255d2acae4561684492bf078"/>void <emphasis role="strong">ISR_Update</emphasis> (<link linkend="_structmoteus_1_1aux_1_1Index_1_1Status">aux::Index::Status</link> *status) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1aux_1_1Stm32Index_1aabe65527ff10c46f2c2007522fa4f7d7"/>aux::AuxError <emphasis role="strong">error</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+aux_mbed.h</section>

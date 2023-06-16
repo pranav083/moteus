@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1PID" xml:lang="en-US">
+<title>moteus::PID Class Reference</title>
+<indexterm><primary>moteus::PID</primary></indexterm>
+Collaboration diagram for moteus::PID:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d43/classmoteus_1_1PID__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1PID_1_1ApplyOptions">ApplyOptions</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1PID_1_1Config">Config</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1PID_1_1State">State</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1PID_1a3626ca12b82d2ffbc59457473dbc2532"/><emphasis role="strong">PID</emphasis> (const <link linkend="_structmoteus_1_1PID_1_1Config">Config</link> *config, <link linkend="_structmoteus_1_1PID_1_1State">State</link> *state)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1PID_1a36e62d02700935586c6404326efeb606"/>float <emphasis role="strong">Apply</emphasis> (float measured, float input_desired, float measured_rate, float input_desired_rate, int rate_hz, <link linkend="_structmoteus_1_1PID_1_1ApplyOptions">ApplyOptions</link> apply_options={}) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1PID_1a3626ca12b82d2ffbc59457473dbc2532"/><emphasis role="strong">PID</emphasis> (const <link linkend="_structmoteus_1_1PID_1_1Config">Config</link> *config, <link linkend="_structmoteus_1_1PID_1_1State">State</link> *state)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1PID_1a36e62d02700935586c6404326efeb606"/>float <emphasis role="strong">Apply</emphasis> (float measured, float input_desired, float measured_rate, float input_desired_rate, int rate_hz, <link linkend="_structmoteus_1_1PID_1_1ApplyOptions">ApplyOptions</link> apply_options={}) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+pid.hsimple_pid.h</section>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1UartPinOption" xml:lang="en-US">
+<title>moteus::aux::UartPinOption Struct Reference</title>
+<indexterm><primary>moteus::aux::UartPinOption</primary></indexterm>
+Collaboration diagram for moteus::aux::UartPinOption:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d3b/structmoteus_1_1aux_1_1UartPinOption__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1UartPinOption_1afb331e78e19b2499e01d2ec4ccf20faa"/>USART_TypeDef * <emphasis role="strong">uart</emphasis> = nullptr</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1UartPinOption_1ad3f21b20948db50fe390dda4c4e0c507"/>PinName <emphasis role="strong">tx</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1UartPinOption_1ab0b0b362aaec22e455c55dd3f9638647"/>PinName <emphasis role="strong">rx</emphasis> = NC</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_mbed.h</section>

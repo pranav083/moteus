@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1SineCosine_1_1Status" xml:lang="en-US">
+<title>moteus::aux::SineCosine::Status Struct Reference</title>
+<indexterm><primary>moteus::aux::SineCosine::Status</primary></indexterm>
+Collaboration diagram for moteus::aux::SineCosine::Status:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dc/d3b/structmoteus_1_1aux_1_1SineCosine_1_1Status__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SineCosine_1_1Status_1a246e30062db09518b0c8986cf29c21ae"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SineCosine_1_1Status_1a426cff8d023567dcfde8f0d5ecee14d9"/>bool <emphasis role="strong">active</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SineCosine_1_1Status_1abff65cdba43726aee65d3090bda3e817"/>uint16_t <emphasis role="strong">sine_raw</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SineCosine_1_1Status_1a6701bdcb608f1065119749474515e23f"/>uint16_t <emphasis role="strong">cosine_raw</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SineCosine_1_1Status_1a1046375f5204e7ef96f0f17e99605056"/>uint16_t <emphasis role="strong">value</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

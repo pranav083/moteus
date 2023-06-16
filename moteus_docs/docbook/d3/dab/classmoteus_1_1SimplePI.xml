@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1SimplePI" xml:lang="en-US">
+<title>moteus::SimplePI Class Reference</title>
+<indexterm><primary>moteus::SimplePI</primary></indexterm>
+Collaboration diagram for moteus::SimplePI:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d1/d90/classmoteus_1_1SimplePI__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1SimplePI_1_1Config">Config</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1SimplePI_1_1State">State</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1SimplePI_1a3d5ca7e4a43af8aba0084fd9f31719ce"/><emphasis role="strong">SimplePI</emphasis> (const <link linkend="_structmoteus_1_1SimplePI_1_1Config">Config</link> *config, <link linkend="_structmoteus_1_1SimplePI_1_1State">State</link> *state)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1SimplePI_1a5641f170b7def72eb1c8a0f979156373"/>float <emphasis role="strong">Apply</emphasis> (float measured, float input_desired, int rate_hz) MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+simple_pi.h</section>

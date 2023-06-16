@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus" xml:lang="en-US">
+<title>moteus::MotorPosition::SourceStatus Struct Reference</title>
+<indexterm><primary>moteus::MotorPosition::SourceStatus</primary></indexterm>
+Collaboration diagram for moteus::MotorPosition::SourceStatus:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d6/de0/structmoteus_1_1MotorPosition_1_1SourceStatus__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus_1a9c36cfcaab8e6c99a252d3385d134396"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus_1a818b972ed8ef8bc2eac34718d1f1fba5"/>bool <emphasis role="strong">active_velocity</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus_1a5705148c5db6bc160330f21738989f8d"/>bool <emphasis role="strong">active_theta</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus_1a1cb390000c25149f4668ffaa0c45cc96"/>bool <emphasis role="strong">active_absolute</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus_1ab45e434078a159778fc2ff422164ee7b"/>uint32_t <emphasis role="strong">raw</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus_1ad26b67e2d3f5a229fc27a58638dfa8b2"/>float <emphasis role="strong">time_since_update</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus_1a3e89aa178d906ad458b2d2f14a551baf"/>uint8_t <emphasis role="strong">nonce</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus_1ab04385f31b6d914b47782ed614c5803b"/>uint32_t <emphasis role="strong">offset_value</emphasis> = 0.0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus_1ae6e16bc1ccaef77ddb7ac9337e4d874f"/>float <emphasis role="strong">compensated_value</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus_1aa3ad4cf71dbdc2c5c2e46d1c94fbedc4"/>float <emphasis role="strong">filtered_value</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1MotorPosition_1_1SourceStatus_1ac9637f06beff0f9049fa7d58c5030094"/>float <emphasis role="strong">velocity</emphasis> = 0.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+motor_position.h</section>

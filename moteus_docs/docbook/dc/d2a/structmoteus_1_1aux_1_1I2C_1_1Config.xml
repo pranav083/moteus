@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1I2C_1_1Config" xml:lang="en-US">
+<title>moteus::aux::I2C::Config Struct Reference</title>
+<indexterm><primary>moteus::aux::I2C::Config</primary></indexterm>
+Collaboration diagram for moteus::aux::I2C::Config:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d01/structmoteus_1_1aux_1_1I2C_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1Config_1a154ce30f2c1f8f64d95ff33ab62d6180"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1Config_1a95d71be6463da276701d3cc60aba07eb"/>int32_t <emphasis role="strong">i2c_hz</emphasis> = 400000</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1Config_1a89c3eeb991cde8c7b20fc1b5310e35a2"/>int32_t <emphasis role="strong">i2c_mode</emphasis> = 1</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1Config_1a1496b5af89910178ca85ed9000eb4668"/>bool <emphasis role="strong">pullup</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1Config_1afd3b0b554eb654b6846414eea1da4c18"/>std::array&lt; <link linkend="_structmoteus_1_1aux_1_1I2C_1_1DeviceConfig">DeviceConfig</link>, 3 &gt; <emphasis role="strong">devices</emphasis> = { {} }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1aux_1_1AuxError_01_4" xml:lang="en-US">
+<title>mjlib::base::IsEnum&lt; moteus::aux::AuxError &gt; Struct Reference</title>
+<indexterm><primary>mjlib::base::IsEnum&lt; moteus::aux::AuxError &gt;</primary></indexterm>
+Collaboration diagram for mjlib::base::IsEnum&lt; moteus::aux::AuxError &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d0/d25/structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1aux_1_1AuxError_01_4__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1aux_1_1AuxError_01_4_1a6d5958d795124abeda2d6c26a8525b18"/>using <emphasis role="strong">A</emphasis> = moteus::aux::AuxError</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1aux_1_1AuxError_01_4_1a7765ba8cf004fbac540d6f3bec19c184"/>static std::array&lt; std::pair&lt; A, const char * &gt;, static_cast&lt; int &gt;A::kLength)&gt; <emphasis role="strong">map</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmjlib_1_1base_1_1IsEnum_3_01moteus_1_1aux_1_1AuxError_01_4_1aaca7aef02957a02088f7b857493bbcc9"/>static constexpr bool <emphasis role="strong">value</emphasis> = true</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

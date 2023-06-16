@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1BoardDebug_1_1Impl" xml:lang="en-US">
+<title>moteus::BoardDebug::Impl Class Reference</title>
+<indexterm><primary>moteus::BoardDebug::Impl</primary></indexterm>
+Collaboration diagram for moteus::BoardDebug::Impl:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d4/d07/classmoteus_1_1BoardDebug_1_1Impl__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1BoardDebug_1_1Impl_1_1Data">Data</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource">HistogramSource</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1ad2988ef443a3003766c1aa6dbb2b256f"/>enum <emphasis role="strong">MotorCalMode</emphasis> { <emphasis role="strong">kNoMotorCal</emphasis>
+, <emphasis role="strong">kPhaseUp</emphasis>
+, <emphasis role="strong">kPhaseDown</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a16469a28432c3d36c020b4f91c8d7a4d"/><emphasis role="strong">Impl</emphasis> (micro::Pool *pool, micro::CommandManager *command_manager, micro::TelemetryManager *telemetry_manager, multiplex::MicroServer *multiplex_protocol, <link linkend="_classmoteus_1_1BldcServo">BldcServo</link> *bldc_servo)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1afdcd523b91548983efdab7357f63f4b9"/>void <emphasis role="strong">PollMillisecond</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1aaf02042b5b35a426f3d21088d2d054c2"/>bool <emphasis role="strong">ParseHistogramChannel</emphasis> (<link linkend="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource">HistogramSource</link> *source, const std::string_view &amp;spec)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a0c9c9a109ddb001eb999e496be1b97db"/>void <emphasis role="strong">DoCalibration</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a6cdc7b42e9a15ce8362c6b897678b664"/>void <emphasis role="strong">HandleCommand</emphasis> (const std::string_view &amp;message, const micro::CommandManager::Response &amp;response)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a58b80d2c5515eac13b7f58814f6bf6eb"/>float <emphasis role="strong">SampleHistogram</emphasis> (<link linkend="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource">HistogramSource</link> *source, bool x_axis)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a3260b043ef409eb431233d2bd2a7fee5"/>void <emphasis role="strong">DoHistogram</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a74416054c480ae02fc76ac30e04c5099"/>void <emphasis role="strong">EmitHistogramResponse</emphasis> (size_t offset)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a434db78e6d61fbe8f7ce0d0c535b28b1"/>void <emphasis role="strong">Recurse</emphasis> (int count)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a07f6c5e05cc1110bc1fb4054e3bb8353"/>void <emphasis role="strong">WriteOk</emphasis> (const micro::CommandManager::Response &amp;response)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1aaea572c76c85447999130d6dfe5ffd0c"/>void <emphasis role="strong">WriteMessage</emphasis> (const micro::CommandManager::Response &amp;response, const std::string_view &amp;message)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1af0bc85c36a8fc13c69fd8f12a9e05c47"/><link linkend="_structmoteus_1_1BoardDebug_1_1Impl_1_1Data">Data</link> <emphasis role="strong">data_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a234ebf43cac96c11e6e494afdc5979e2"/>base::inplace_function&lt; void()&gt; <emphasis role="strong">data_update_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a8487ecc3037e9f3976e8ee2193d6a146"/>DigitalOut <emphasis role="strong">led1_</emphasis> {g_hw_pins.debug_led1, 1}</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a6589b02aafbf3c71cd8e564219628a10"/>DigitalOut <emphasis role="strong">led2_</emphasis> {g_hw_pins.power_led}</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1ae3fd1c3968d393b493eb7e56f5130e4a"/>multiplex::MicroServer * <emphasis role="strong">multiplex_protocol_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a04c1823b846db2e571131afd374b4d04"/><link linkend="_classmoteus_1_1BldcServo">BldcServo</link> *const <emphasis role="strong">bldc_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a61c1f8fc5ce63fdee46060746c05e19f"/>char <emphasis role="strong">out_message_</emphasis> [64] = {}</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a79510ab8c2b3c11fe3bae666853c2f06"/>micro::CommandManager::Response <emphasis role="strong">cal_response_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1ad958a839a13da49f8b6337cb40815b39"/>MotorCalMode <emphasis role="strong">motor_cal_mode_</emphasis> = kNoMotorCal</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1aaed29e3387da0666bd807f5791f2311e"/>uint16_t <emphasis role="strong">cal_phase_</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1af071ba225642f0360bc1f643a0683e23"/>uint32_t <emphasis role="strong">cal_count_</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a709f2105db11b252bbaa1b8612c4a19e"/>std::optional&lt; uint16_t &gt; <emphasis role="strong">cal_old_position_raw_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a660c245764717c382ea75980ac5d819f"/>int32_t <emphasis role="strong">cal_position_delta_</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a6eed63ccef836837ae431e82a8b50789"/>float <emphasis role="strong">cal_magnitude_</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a5825759ee5914c5e16e7387d2184b2ce"/>float <emphasis role="strong">cal_speed_</emphasis> = 1.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a3ab4bf31036caa9d55a6ff5c7703d0c4"/>bool <emphasis role="strong">write_outstanding_</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1aac2a01dfcda2b26e9c880976b605df06"/>micro::CommandManager::Response <emphasis role="strong">histogram_response_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1ab5cbe6dce598c1d0d2b1de702ce85ae4"/>bool <emphasis role="strong">histogram_active_</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a638d7deff7ad3a33c942431fca6d246c"/>uint32_t <emphasis role="strong">histogram_count_ms_</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a4fd9129690265f3f67d07a1138ecc15f"/><link linkend="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource">HistogramSource</link> <emphasis role="strong">hist_x_source_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a93a8d223605f51b402ab8b871caed8af"/><link linkend="_structmoteus_1_1BoardDebug_1_1Impl_1_1HistogramSource">HistogramSource</link> <emphasis role="strong">hist_y_source_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a791b50f879ba31c28b3d403b9bc928f6"/>float <emphasis role="strong">hist_xmin_</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a51c9fdc8761cac611da6853ec6a9a5b9"/>float <emphasis role="strong">hist_xmax_</emphasis> = 1.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a0798fb02c8a9efff39fa7c030c37d2fe"/>std::array&lt; float, kHistogramBinCount &gt; <emphasis role="strong">histogram_values_</emphasis> = {}</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1aa3c6a8b2a710b72c60e6c40504c87843"/>std::array&lt; uint16_t, kHistogramBinCount &gt; <emphasis role="strong">histogram_counts_</emphasis> = {}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1_1Impl_1a54c5b051ea63890bccf793e864abc2b4"/>static constexpr size_t <emphasis role="strong">kHistogramBinCount</emphasis> = 128</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+board_debug.cc</section>

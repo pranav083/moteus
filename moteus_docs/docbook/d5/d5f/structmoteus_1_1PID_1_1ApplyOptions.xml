@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1PID_1_1ApplyOptions" xml:lang="en-US">
+<title>moteus::PID::ApplyOptions Struct Reference</title>
+<indexterm><primary>moteus::PID::ApplyOptions</primary></indexterm>
+Collaboration diagram for moteus::PID::ApplyOptions:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d62/structmoteus_1_1PID_1_1ApplyOptions__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1ApplyOptions_1a27356747fc8620f4f21ca36e09d74223"/>float <emphasis role="strong">kp_scale</emphasis> = 1.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1ApplyOptions_1a6495cf4a1b62de183b0136fd62955460"/>float <emphasis role="strong">kd_scale</emphasis> = 1.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1ApplyOptions_1a78bfd30b7f229da57d32efb169310ede"/>float <emphasis role="strong">ki_scale</emphasis> = 1.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following files:</para>
+pid.hsimple_pid.h</section>

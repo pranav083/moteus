@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1AuxADC" xml:lang="en-US">
+<title>moteus::AuxADC Class Reference</title>
+<indexterm><primary>moteus::AuxADC</primary></indexterm>
+Collaboration diagram for moteus::AuxADC:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/dcd/classmoteus_1_1AuxADC__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1AuxADC_1_1AuxInfo">AuxInfo</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1AuxADC_1_1PinConfig">PinConfig</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxADC_1a27e62369c0ee18e14bca1f717b1cecc6"/>void <emphasis role="strong">ISR_StartSample</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxADC_1ace5883dd906573f88656a20e71ba6547"/>void <emphasis role="strong">ISR_EndSample</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxADC_1adcf6c80efda2db39c1ea9958c72272b3"/><link linkend="_structmoteus_1_1AuxADC_1_1AuxInfo">AuxInfo</link> <emphasis role="strong">aux_info</emphasis> [2] = {}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxADC_1a28e504b45889efef1e5ade6491b5a693"/>static constexpr int <emphasis role="strong">kMaxAdcs</emphasis> = 3</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1AuxADC_1afa642b842f9f7adfa23353744ff5f0cf"/>static constexpr int <emphasis role="strong">kMaxPins</emphasis> = 5</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+aux_adc.h</section>

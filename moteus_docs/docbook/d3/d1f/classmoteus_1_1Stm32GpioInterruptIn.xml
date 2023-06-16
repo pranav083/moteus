@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Stm32GpioInterruptIn" xml:lang="en-US">
+<title>moteus::Stm32GpioInterruptIn Class Reference</title>
+<indexterm><primary>moteus::Stm32GpioInterruptIn</primary></indexterm>
+<para>
+<computeroutput>#include &lt;stm32_gpio_interrupt_in.h&gt;</computeroutput>
+</para>
+Collaboration diagram for moteus::Stm32GpioInterruptIn:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/dd3/classmoteus_1_1Stm32GpioInterruptIn__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Stm32GpioInterruptIn_1_1Callback">Callback</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32GpioInterruptIn_1a4e7c69eabdda92cfd58d9a9cfe2d7d6f"/>using <emphasis role="strong">CallbackFunction</emphasis> = void(*)(uint32_t)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32GpioInterruptIn_1a1cefcf07587ccbd3a25bab26a982bc4a"/><emphasis role="strong">Stm32GpioInterruptIn</emphasis> (<link linkend="_classmoteus_1_1Stm32GpioInterruptIn">Stm32GpioInterruptIn</link> &amp;&amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32GpioInterruptIn_1aeb44fbfa961a99170b2126d751de2ed2"/><link linkend="_classmoteus_1_1Stm32GpioInterruptIn">Stm32GpioInterruptIn</link> &amp; <emphasis role="strong">operator=</emphasis> (<link linkend="_classmoteus_1_1Stm32GpioInterruptIn">Stm32GpioInterruptIn</link> &amp;&amp;rhs)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32GpioInterruptIn_1ab6483ca7df9b23989d62ad7160b64c3b"/><emphasis role="strong">Stm32GpioInterruptIn</emphasis> (PinName pin, CallbackFunction function, uint32_t val)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32GpioInterruptIn_1ad43da5efa0cda606159b3caf3616aaea"/>bool <emphasis role="strong">read</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32GpioInterruptIn_1ac6e4ffcbcf782a97a8a058eb1ac5a9a3"/>static std::optional&lt; <link linkend="_classmoteus_1_1Stm32GpioInterruptIn">Stm32GpioInterruptIn</link> &gt; <emphasis role="strong">Make</emphasis> (PinName pin, CallbackFunction function, uint32_t data)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This is brain dead and fast. It assumes that many pins will have the same callback. It may result in spurious callbacks. Use accordingly. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+stm32_gpio_interrupt_in.hstm32_gpio_interrupt_in.cc</section>
+</section>

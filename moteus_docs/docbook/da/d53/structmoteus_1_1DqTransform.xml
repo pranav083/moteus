@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1DqTransform" xml:lang="en-US">
+<title>moteus::DqTransform Struct Reference</title>
+<indexterm><primary>moteus::DqTransform</primary></indexterm>
+Collaboration diagram for moteus::DqTransform:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/dbd/structmoteus_1_1DqTransform__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1DqTransform_1ad9a218577b664757f4f2e001c0f1f972"/><emphasis role="strong">DqTransform</emphasis> (const <link linkend="_structmoteus_1_1SinCos">SinCos</link> &amp;sc, float a, float b, float c)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1DqTransform_1a2f49e55a9a015e188dd0443a46ebda0f"/>const float <emphasis role="strong">d</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1DqTransform_1a94624adc8b15227951d796524f31df40"/>const float <emphasis role="strong">q</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+foc.h</section>

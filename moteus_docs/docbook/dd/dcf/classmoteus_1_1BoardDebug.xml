@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1BoardDebug" xml:lang="en-US">
+<title>moteus::BoardDebug Class Reference</title>
+<indexterm><primary>moteus::BoardDebug</primary></indexterm>
+<para>
+
+<para>Utilities for bringing up the controller board. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;board_debug.h&gt;</computeroutput>
+</para>
+Collaboration diagram for moteus::BoardDebug:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/de8/classmoteus_1_1BoardDebug__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classmoteus_1_1BoardDebug_1_1Impl">Impl</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1a12cef6496a8acd5bbb24e7f679f390fc"/><emphasis role="strong">BoardDebug</emphasis> (mjlib::micro::Pool *, mjlib::micro::CommandManager *, mjlib::micro::TelemetryManager *, mjlib::multiplex::MicroServer *, <link linkend="_classmoteus_1_1BldcServo">BldcServo</link> *bldc_servo)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BoardDebug_1ae2bd64aa816e7d691d1652736f02e506"/>void <emphasis role="strong">PollMillisecond</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Utilities for bringing up the controller board. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+board_debug.hboard_debug.cc</section>
+</section>

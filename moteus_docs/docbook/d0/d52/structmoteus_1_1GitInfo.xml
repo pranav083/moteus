@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1GitInfo" xml:lang="en-US">
+<title>moteus::GitInfo Struct Reference</title>
+<indexterm><primary>moteus::GitInfo</primary></indexterm>
+Collaboration diagram for moteus::GitInfo:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d0/d18/structmoteus_1_1GitInfo__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1GitInfo_1ab8c212c0bdff5a671fc5fb72fbbcc1f2"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1GitInfo_1a20755d775a8a7abe8979a668330b2b48"/>std::array&lt; uint8_t, 20 &gt; <emphasis role="strong">hash</emphasis> = {{}}</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1GitInfo_1a65be1a3f0ec1ec07698980ea315eb356"/>bool <emphasis role="strong">dirty</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1GitInfo_1a9cc909c0f8fd833ba6cbefa61dd107aa"/>uint64_t <emphasis role="strong">timestamp</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following files:</para>
+git_info.hgit_info.cc</section>

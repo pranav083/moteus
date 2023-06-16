@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmjlib_1_1micro_1_1is__error__code__enum_3_01moteus_1_1errc_01_4" xml:lang="en-US">
+<title>mjlib::micro::is_error_code_enum&lt; moteus::errc &gt; Struct Reference</title>
+<indexterm><primary>mjlib::micro::is_error_code_enum&lt; moteus::errc &gt;</primary></indexterm>
+Inheritance diagram for mjlib::micro::is_error_code_enum&lt; moteus::errc &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d7/d50/structmjlib_1_1micro_1_1is__error__code__enum_3_01moteus_1_1errc_01_4__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for mjlib::micro::is_error_code_enum&lt; moteus::errc &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/d15/structmjlib_1_1micro_1_1is__error__code__enum_3_01moteus_1_1errc_01_4__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<para>
+The documentation for this struct was generated from the following file:</para>
+error.h</section>

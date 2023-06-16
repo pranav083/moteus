@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1SineCosine_1_1Config" xml:lang="en-US">
+<title>moteus::aux::SineCosine::Config Struct Reference</title>
+<indexterm><primary>moteus::aux::SineCosine::Config</primary></indexterm>
+Collaboration diagram for moteus::aux::SineCosine::Config:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/dc7/structmoteus_1_1aux_1_1SineCosine_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SineCosine_1_1Config_1a2d998f04ea4c0cd1873463fdb301e9bd"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SineCosine_1_1Config_1a1cb361290bc96748adc87220672c67ff"/>bool <emphasis role="strong">enabled</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1SineCosine_1_1Config_1af9c9b476216565e5acaffe05d00de218"/>uint16_t <emphasis role="strong">common</emphasis> = 1700</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

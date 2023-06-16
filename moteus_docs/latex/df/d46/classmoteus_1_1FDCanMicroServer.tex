@@ -1,0 +1,64 @@
+\hypertarget{classmoteus_1_1FDCanMicroServer}{}\doxysection{moteus\+::FDCan\+Micro\+Server Class Reference}
+\label{classmoteus_1_1FDCanMicroServer}\index{moteus::FDCanMicroServer@{moteus::FDCanMicroServer}}
+
+
+Inheritance diagram for moteus\+::FDCan\+Micro\+Server\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{d9/d4a/classmoteus_1_1FDCanMicroServer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for moteus\+::FDCan\+Micro\+Server\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{d3/d74/classmoteus_1_1FDCanMicroServer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1FDCanMicroServer_aaf863adb50a029e8f54cdd90637f646b}\label{classmoteus_1_1FDCanMicroServer_aaf863adb50a029e8f54cdd90637f646b}} 
+{\bfseries FDCan\+Micro\+Server} (\mbox{\hyperlink{classmoteus_1_1FDCan}{FDCan}} $\ast$can)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1FDCanMicroServer_afd1b4c8c933b5a79cae5a6267a20c13b}\label{classmoteus_1_1FDCanMicroServer_afd1b4c8c933b5a79cae5a6267a20c13b}} 
+void {\bfseries Set\+Prefix} (uint32\+\_\+t can\+\_\+prefix)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1FDCanMicroServer_a11c5737feec7bce6a6ec1e0c629c2731}\label{classmoteus_1_1FDCanMicroServer_a11c5737feec7bce6a6ec1e0c629c2731}} 
+void {\bfseries Async\+Read} (Header $\ast$header, const mjlib\+::base\+::string\+\_\+span \&data, const mjlib\+::micro\+::\+Size\+Callback \&callback) override
+\item 
+\mbox{\Hypertarget{classmoteus_1_1FDCanMicroServer_a7f40cff9fdfb8fb8dec45455008c3d9c}\label{classmoteus_1_1FDCanMicroServer_a7f40cff9fdfb8fb8dec45455008c3d9c}} 
+void {\bfseries Async\+Write} (const Header \&header, const std\+::string\+\_\+view \&data, const Header \&query\+\_\+header, const mjlib\+::micro\+::\+Size\+Callback \&callback) override
+\item 
+\mbox{\Hypertarget{classmoteus_1_1FDCanMicroServer_a4c2496320e632caf26497557c4106490}\label{classmoteus_1_1FDCanMicroServer_a4c2496320e632caf26497557c4106490}} 
+Properties {\bfseries properties} () const override
+\item 
+\mbox{\Hypertarget{classmoteus_1_1FDCanMicroServer_a542143cf6946249383635ecf3a5aaed7}\label{classmoteus_1_1FDCanMicroServer_a542143cf6946249383635ecf3a5aaed7}} 
+void {\bfseries Poll} ()
+\item 
+\mbox{\Hypertarget{classmoteus_1_1FDCanMicroServer_a985a32bdf54c8d1a0aba989952001962}\label{classmoteus_1_1FDCanMicroServer_a985a32bdf54c8d1a0aba989952001962}} 
+uint32\+\_\+t {\bfseries can\+\_\+reset\+\_\+count} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1FDCanMicroServer_a53fa9923d1e0db7ee970cc80ddcba1d4}\label{classmoteus_1_1FDCanMicroServer_a53fa9923d1e0db7ee970cc80ddcba1d4}} 
+static size\+\_\+t {\bfseries Round\+Up\+Dlc} (size\+\_\+t value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1FDCanMicroServer_a5d259244c197eb5284df4fb00635cca9}\label{classmoteus_1_1FDCanMicroServer_a5d259244c197eb5284df4fb00635cca9}} 
+static constexpr uint32\+\_\+t {\bfseries k\+Brs\+Flag} = 0x01
+\item 
+\mbox{\Hypertarget{classmoteus_1_1FDCanMicroServer_abfe75fb852b66b9e2b83a697eba9f327}\label{classmoteus_1_1FDCanMicroServer_abfe75fb852b66b9e2b83a697eba9f327}} 
+static constexpr uint32\+\_\+t {\bfseries k\+Fdcan\+Flag} = 0x02
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+fdcan\+\_\+micro\+\_\+server.\+h\end{DoxyCompactItemize}

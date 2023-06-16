@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Impl_1_1DmaFlags" xml:lang="en-US">
+<title>moteus::Stm32G4AsyncUart::Impl::DmaFlags Struct Reference</title>
+<indexterm><primary>moteus::Stm32G4AsyncUart::Impl::DmaFlags</primary></indexterm>
+Collaboration diagram for moteus::Stm32G4AsyncUart::Impl::DmaFlags:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d7/d02/structmoteus_1_1Stm32G4AsyncUart_1_1Impl_1_1DmaFlags__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Impl_1_1DmaFlags_1ac8a0203632a4920090442045ddf37b91"/>uint32_t <emphasis role="strong">te</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+stm32g4_async_uart.cc</section>

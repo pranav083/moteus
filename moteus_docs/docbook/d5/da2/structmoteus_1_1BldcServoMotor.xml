@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1BldcServoMotor" xml:lang="en-US">
+<title>moteus::BldcServoMotor Struct Reference</title>
+<indexterm><primary>moteus::BldcServoMotor</primary></indexterm>
+Collaboration diagram for moteus::BldcServoMotor:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d2b/structmoteus_1_1BldcServoMotor__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoMotor_1a2bf8be5068a6d4e40d2a2bdffe8b87ac"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoMotor_1a77a3815c4090088eb982fe2e945f1769"/>uint8_t <emphasis role="strong">poles</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoMotor_1a71a7ad0dd2acf91f1b0caa7c90b782cc"/>uint8_t <emphasis role="strong">phase_invert</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoMotor_1a6d18b13c72b2b0be866bfe9cb91c6d78"/>float <emphasis role="strong">resistance_ohm</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoMotor_1a49eea01c1c9392e66ece13138c412287"/>float <emphasis role="strong">v_per_hz</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoMotor_1ae4d3c2521ec70d8cb7e71274342fe2a9"/>std::array&lt; float, 64 &gt; <emphasis role="strong">offset</emphasis> = {}</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoMotor_1a2458434ee2e7336e6831bc0b57814a6a"/>float <emphasis role="strong">rotation_current_cutoff_A</emphasis> = 10000.0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoMotor_1a4cdb8e0c0c6746807d7da254b49141f9"/>float <emphasis role="strong">rotation_current_scale</emphasis> = 0.05</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoMotor_1a4a0c9df3ecfe9c602dab65178cddfb26"/>float <emphasis role="strong">rotation_torque_scale</emphasis> = 14.7</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoMotor_1a8071ce191af94cace8db6f0fb8fefefc"/>float <emphasis role="strong">cogging_dq_scale</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoMotor_1ac7ac702a3a41529bee760f7de294bea0"/>std::array&lt; int8_t, 1024 &gt; <emphasis role="strong">cogging_dq_comp</emphasis> = {{}}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+bldc_servo_structs.h</section>

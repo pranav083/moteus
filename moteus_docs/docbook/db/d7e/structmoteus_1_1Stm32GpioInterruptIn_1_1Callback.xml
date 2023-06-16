@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1Stm32GpioInterruptIn_1_1Callback" xml:lang="en-US">
+<title>moteus::Stm32GpioInterruptIn::Callback Struct Reference</title>
+<indexterm><primary>moteus::Stm32GpioInterruptIn::Callback</primary></indexterm>
+Collaboration diagram for moteus::Stm32GpioInterruptIn::Callback:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/d78/structmoteus_1_1Stm32GpioInterruptIn_1_1Callback__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32GpioInterruptIn_1_1Callback_1acfc6e5b8095b6674de4a295d1db51e9f"/><emphasis role="strong">Callback</emphasis> (CallbackFunction function_in, uint32_t data_in)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32GpioInterruptIn_1_1Callback_1acde665d09ce6388a98f98ef7474bf8e4"/>CallbackFunction <emphasis role="strong">function</emphasis> = {}</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32GpioInterruptIn_1_1Callback_1a4a946abb012abe888f62de1f65f85d32"/>uint32_t <emphasis role="strong">data</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32GpioInterruptIn_1_1Callback_1a11982637f95c89d31e1fb4b6d92a4193"/>int <emphasis role="strong">ref_count</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+stm32_gpio_interrupt_in.h</section>

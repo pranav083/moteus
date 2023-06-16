@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1AuxConfig" xml:lang="en-US">
+<title>moteus::aux::AuxConfig Struct Reference</title>
+<indexterm><primary>moteus::aux::AuxConfig</primary></indexterm>
+Collaboration diagram for moteus::aux::AuxConfig:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d6/db9/structmoteus_1_1aux_1_1AuxConfig__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxConfig_1a7e6bc4037681316367ca8aec17a4c5aa"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxConfig_1a4025206f9419196b345f0c6ed37199b3"/><link linkend="_structmoteus_1_1aux_1_1I2C_1_1Config">aux::I2C::Config</link> <emphasis role="strong">i2c</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxConfig_1a77f090a4ddf34deb999c9cc51739d1bb"/><link linkend="_structmoteus_1_1aux_1_1Spi_1_1Config">aux::Spi::Config</link> <emphasis role="strong">spi</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxConfig_1a11e4a3272832b8f0582a16cde5211d31"/><link linkend="_structmoteus_1_1aux_1_1UartEncoder_1_1Config">aux::UartEncoder::Config</link> <emphasis role="strong">uart</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxConfig_1a0616c0b1249c00d1a1f09199fbd1c0c8"/><link linkend="_structmoteus_1_1aux_1_1Quadrature_1_1Config">aux::Quadrature::Config</link> <emphasis role="strong">quadrature</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxConfig_1af1a2bc9bcdd691261e58304657ee8477"/><link linkend="_structmoteus_1_1aux_1_1Hall_1_1Config">aux::Hall::Config</link> <emphasis role="strong">hall</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxConfig_1a4da9b6e8966342ca38e2e8e844d249d7"/><link linkend="_structmoteus_1_1aux_1_1Index_1_1Config">aux::Index::Config</link> <emphasis role="strong">index</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxConfig_1a4387638ccd4ed50697086e086c157dae"/><link linkend="_structmoteus_1_1aux_1_1SineCosine_1_1Config">aux::SineCosine::Config</link> <emphasis role="strong">sine_cosine</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxConfig_1a7bee4fa9f7ba0637a0cbd0a0b17ccac6"/>int32_t <emphasis role="strong">i2c_startup_delay_ms</emphasis> = 30</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxConfig_1ab068c12462eb7f3c8a96e3ad43c5aa65"/>std::array&lt; <link linkend="_structmoteus_1_1aux_1_1Pin">Pin</link>, kNumPins &gt; <emphasis role="strong">pins</emphasis> = { {} }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1AuxConfig_1af539a9ba6728757b76324e8a0732d1ae"/>static constexpr size_t <emphasis role="strong">kNumPins</emphasis> = 5</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

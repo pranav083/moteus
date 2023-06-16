@@ -1,0 +1,48 @@
+\hypertarget{classmoteus_1_1Stm32I2c}{}\doxysection{moteus\+::Stm32\+I2c Class Reference}
+\label{classmoteus_1_1Stm32I2c}\index{moteus::Stm32I2c@{moteus::Stm32I2c}}
+
+
+Collaboration diagram for moteus\+::Stm32\+I2c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{d4/d14/classmoteus_1_1Stm32I2c__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmoteus_1_1Stm32I2c_1_1Options}{Options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32I2c_afbe5ab354bab7f574da607e0b6227e74}\label{classmoteus_1_1Stm32I2c_afbe5ab354bab7f574da607e0b6227e74}} 
+enum class {\bfseries Read\+Status} \{ {\bfseries k\+No\+Status}
+, {\bfseries k\+Complete}
+, {\bfseries k\+Error}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32I2c_aa30dff65e1ca09a3fa7a61bc071437bf}\label{classmoteus_1_1Stm32I2c_aa30dff65e1ca09a3fa7a61bc071437bf}} 
+{\bfseries Stm32\+I2c} (const \mbox{\hyperlink{structmoteus_1_1Stm32I2c_1_1Options}{Options}} \&options)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32I2c_a7002c91b96785a25bd81497fcf652fbf}\label{classmoteus_1_1Stm32I2c_a7002c91b96785a25bd81497fcf652fbf}} 
+void {\bfseries Initialize} ()
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32I2c_a1da8d6f420098ef936400379da723013}\label{classmoteus_1_1Stm32I2c_a1da8d6f420098ef936400379da723013}} 
+void {\bfseries Start\+Read\+Memory} (uint8\+\_\+t slave\+\_\+address, uint8\+\_\+t address, mjlib\+::base\+::string\+\_\+span data)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32I2c_a2511683b9563a6865837ffb2c0a0b228}\label{classmoteus_1_1Stm32I2c_a2511683b9563a6865837ffb2c0a0b228}} 
+Read\+Status {\bfseries Check\+Read} ()
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32I2c_aeacb26f49c1d01171137e44979dd1041}\label{classmoteus_1_1Stm32I2c_aeacb26f49c1d01171137e44979dd1041}} 
+void {\bfseries Poll} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+stm32\+\_\+i2c.\+h\end{DoxyCompactItemize}

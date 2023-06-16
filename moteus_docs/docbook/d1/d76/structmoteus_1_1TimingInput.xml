@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1TimingInput" xml:lang="en-US">
+<title>moteus::TimingInput Struct Reference</title>
+<indexterm><primary>moteus::TimingInput</primary></indexterm>
+Collaboration diagram for moteus::TimingInput:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/d03/structmoteus_1_1TimingInput__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingInput_1a3f14d836d032d09eaf61272482ea3d7d"/>int <emphasis role="strong">peripheral_hz</emphasis> = 64000000</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingInput_1ae9dac4775bf439e02462952eaddb7d0c"/>int <emphasis role="strong">i2c_hz</emphasis> = 100000</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingInput_1ab20c5da59b07a4955c8d4bf1d390b0bd"/>I2cMode <emphasis role="strong">i2c_mode</emphasis> = I2cMode::kStandard</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingInput_1a1c3b795221cb25400d255b7494e62361"/>AnalogFilter <emphasis role="strong">analog_filter</emphasis> = AnalogFilter::kOff</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingInput_1addba9bc046f29be83c667a2b81514ff6"/>int <emphasis role="strong">rise_time_ns</emphasis> = 100</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingInput_1a0fd68aeefe20e219cf4db0644f50e5e9"/>int <emphasis role="strong">fall_time_ns</emphasis> = 10</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+stm32_i2c_timing.h</section>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1MillisecondTimer" xml:lang="en-US">
+<title>moteus::MillisecondTimer Class Reference</title>
+<indexterm><primary>moteus::MillisecondTimer</primary></indexterm>
+Collaboration diagram for moteus::MillisecondTimer:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/dcb/classmoteus_1_1MillisecondTimer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MillisecondTimer_1ad18a86bc62a2325de60bcce3ed96ed4b"/>TimerType <emphasis role="strong">read_ms</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MillisecondTimer_1ad6d7b893e2ae9d6f9a0cbbfa12e41b2b"/>TimerType <emphasis role="strong">read_us</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MillisecondTimer_1a77431189a6c51d3f0a5875072e0da3c2"/>void <emphasis role="strong">wait_ms</emphasis> (uint32_t delay_ms)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MillisecondTimer_1a5914c4332ecd818183239d9a2b374416"/>void <emphasis role="strong">wait_us</emphasis> (uint32_t delay_us)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MillisecondTimer_1ae301e6d609cbc20db90a0d72c5759b5a"/>void <emphasis role="strong">wait_us_helper</emphasis> (uint32_t delay_us)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MillisecondTimer_1a9ea9322099f3a511c35abdd841960f05"/>static TimerType <emphasis role="strong">subtract_us</emphasis> (TimerType a, TimerType b)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+millisecond_timer.h</section>

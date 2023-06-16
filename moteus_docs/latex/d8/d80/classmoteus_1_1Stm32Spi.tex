@@ -1,0 +1,48 @@
+\hypertarget{classmoteus_1_1Stm32Spi}{}\doxysection{moteus\+::Stm32\+Spi Class Reference}
+\label{classmoteus_1_1Stm32Spi}\index{moteus::Stm32Spi@{moteus::Stm32Spi}}
+
+
+Collaboration diagram for moteus\+::Stm32\+Spi\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{d8/dcb/classmoteus_1_1Stm32Spi__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmoteus_1_1Stm32Spi_1_1Options}{Options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32Spi_a64175e3d356d00e6544a21e3a5e62d62}\label{classmoteus_1_1Stm32Spi_a64175e3d356d00e6544a21e3a5e62d62}} 
+{\bfseries Stm32\+Spi} (const \mbox{\hyperlink{structmoteus_1_1Stm32Spi_1_1Options}{Options}} \&options)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32Spi_ad16faa7106a62f8a6e27c4b905b1663b}\label{classmoteus_1_1Stm32Spi_ad16faa7106a62f8a6e27c4b905b1663b}} 
+void {\bfseries set\+\_\+cs} (Pin\+Name cs)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32Spi_a0fbb563024f687b17334ce108f71396c}\label{classmoteus_1_1Stm32Spi_a0fbb563024f687b17334ce108f71396c}} 
+uint16\+\_\+t {\bfseries write} (uint16\+\_\+t value) MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32Spi_a0814f90b93012d30f90cdc10e5b52920}\label{classmoteus_1_1Stm32Spi_a0814f90b93012d30f90cdc10e5b52920}} 
+void {\bfseries start\+\_\+write} (uint16\+\_\+t value) MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32Spi_aefa948d0846beaf162a86e9f9c513f8c}\label{classmoteus_1_1Stm32Spi_aefa948d0846beaf162a86e9f9c513f8c}} 
+uint16\+\_\+t {\bfseries finish\+\_\+write} () MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32Spi_a26c732e4163660b133cda2978f3456cb}\label{classmoteus_1_1Stm32Spi_a26c732e4163660b133cda2978f3456cb}} 
+void {\bfseries start\+\_\+dma\+\_\+transfer} (std\+::string\+\_\+view tx\+\_\+buffer, mjlib\+::base\+::string\+\_\+span rx\+\_\+buffer) MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32Spi_a1e980dcf51210c491b90aeec109b5bbc}\label{classmoteus_1_1Stm32Spi_a1e980dcf51210c491b90aeec109b5bbc}} 
+bool {\bfseries is\+\_\+dma\+\_\+finished} () MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32Spi_a4aae1635ed7f3848fc99c426cc141b68}\label{classmoteus_1_1Stm32Spi_a4aae1635ed7f3848fc99c426cc141b68}} 
+void {\bfseries finish\+\_\+dma\+\_\+transfer} () MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+stm32\+\_\+spi.\+h\end{DoxyCompactItemize}

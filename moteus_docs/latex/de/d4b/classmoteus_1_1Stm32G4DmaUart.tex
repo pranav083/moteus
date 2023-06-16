@@ -1,0 +1,87 @@
+\hypertarget{classmoteus_1_1Stm32G4DmaUart}{}\doxysection{moteus\+::Stm32\+G4\+Dma\+Uart Class Reference}
+\label{classmoteus_1_1Stm32G4DmaUart}\index{moteus::Stm32G4DmaUart@{moteus::Stm32G4DmaUart}}
+
+
+Collaboration diagram for moteus\+::Stm32\+G4\+Dma\+Uart\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d4/d97/classmoteus_1_1Stm32G4DmaUart__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmoteus_1_1Stm32G4DmaUart_1_1Options}{Options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a13b9ee4f5c925a368e177254f31b7281}\label{classmoteus_1_1Stm32G4DmaUart_a13b9ee4f5c925a368e177254f31b7281}} 
+{\bfseries Stm32\+G4\+Dma\+Uart} (const \mbox{\hyperlink{structmoteus_1_1Stm32G4DmaUart_1_1Options}{Options}} \&options)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_ab2c5a3a784d024ad7d0b3814b8c4fcdc}\label{classmoteus_1_1Stm32G4DmaUart_ab2c5a3a784d024ad7d0b3814b8c4fcdc}} 
+USART\+\_\+\+Type\+Def $\ast$ {\bfseries uart} () const
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a7265b5920a4325c1ecdc9554b2cf3af6}\label{classmoteus_1_1Stm32G4DmaUart_a7265b5920a4325c1ecdc9554b2cf3af6}} 
+void {\bfseries write\+\_\+char} (uint8\+\_\+t data)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a1b7b9e98739a1bdba5ca33cd292b4d5b}\label{classmoteus_1_1Stm32G4DmaUart_a1b7b9e98739a1bdba5ca33cd292b4d5b}} 
+void {\bfseries start\+\_\+dma\+\_\+read} (mjlib\+::base\+::string\+\_\+span output) MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a0cdd4bc015812b84f26087d4c1cbca14}\label{classmoteus_1_1Stm32G4DmaUart_a0cdd4bc015812b84f26087d4c1cbca14}} 
+bool {\bfseries is\+\_\+dma\+\_\+read\+\_\+finished} () MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a6396747972e86cb47241544601f0a607}\label{classmoteus_1_1Stm32G4DmaUart_a6396747972e86cb47241544601f0a607}} 
+int {\bfseries read\+\_\+bytes\+\_\+remaining} () MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a889d5f32c525a76e59db250a08c878f3}\label{classmoteus_1_1Stm32G4DmaUart_a889d5f32c525a76e59db250a08c878f3}} 
+void {\bfseries finish\+\_\+dma\+\_\+read} () MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a74979a61e9eb55dbc15656108bde5787}\label{classmoteus_1_1Stm32G4DmaUart_a74979a61e9eb55dbc15656108bde5787}} 
+void {\bfseries start\+\_\+dma\+\_\+write} (std\+::string\+\_\+view data) MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_ae0a14327ef10267cfc374467c3f58b64}\label{classmoteus_1_1Stm32G4DmaUart_ae0a14327ef10267cfc374467c3f58b64}} 
+bool {\bfseries is\+\_\+dma\+\_\+write\+\_\+finished} () MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a5b1896811b50ab204c253125ed8a9144}\label{classmoteus_1_1Stm32G4DmaUart_a5b1896811b50ab204c253125ed8a9144}} 
+int {\bfseries write\+\_\+bytes\+\_\+remaining} () MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_ab305d53287caa6cb85eac0c5fa77503a}\label{classmoteus_1_1Stm32G4DmaUart_ab305d53287caa6cb85eac0c5fa77503a}} 
+void {\bfseries finish\+\_\+dma\+\_\+write} () MOTEUS\+\_\+\+CCM\+\_\+\+ATTRIBUTE
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a25c2e2d9501c18cd7d37375abda2c29f}\label{classmoteus_1_1Stm32G4DmaUart_a25c2e2d9501c18cd7d37375abda2c29f}} 
+static uint32\+\_\+t {\bfseries Get\+Uart\+Rx\+Request} (USART\+\_\+\+Type\+Def $\ast$uart)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a6bca0ce2cbbd69f7c45deebbb431a252}\label{classmoteus_1_1Stm32G4DmaUart_a6bca0ce2cbbd69f7c45deebbb431a252}} 
+static uint32\+\_\+t {\bfseries Get\+Uart\+Tx\+Request} (USART\+\_\+\+Type\+Def $\ast$uart)
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a75f9a121d30caa087b30ca5c323f7b72}\label{classmoteus_1_1Stm32G4DmaUart_a75f9a121d30caa087b30ca5c323f7b72}} 
+{\footnotesize template$<$typename T $>$ }\\static uint32\+\_\+t {\bfseries u32} (T value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a33ef70dc065aade1130754b46a58bfe5}\label{classmoteus_1_1Stm32G4DmaUart_a33ef70dc065aade1130754b46a58bfe5}} 
+const \mbox{\hyperlink{structmoteus_1_1Stm32G4DmaUart_1_1Options}{Options}} {\bfseries options\+\_\+}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a89138b5854d48d8d4082e1bd161b24b7}\label{classmoteus_1_1Stm32G4DmaUart_a89138b5854d48d8d4082e1bd161b24b7}} 
+\mbox{\hyperlink{classmoteus_1_1Stm32Serial}{Stm32\+Serial}} {\bfseries stm32\+\_\+serial\+\_\+}
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_a8297f0b9f7f4c937b4fc1413b153fa25}\label{classmoteus_1_1Stm32G4DmaUart_a8297f0b9f7f4c937b4fc1413b153fa25}} 
+USART\+\_\+\+Type\+Def $\ast$ {\bfseries uart\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_abbe5cfdc97a9536c0867bd1f604a65e7}\label{classmoteus_1_1Stm32G4DmaUart_abbe5cfdc97a9536c0867bd1f604a65e7}} 
+DMAMUX\+\_\+\+Channel\+\_\+\+Type\+Def $\ast$ {\bfseries dmamux\+\_\+rx\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{classmoteus_1_1Stm32G4DmaUart_ac5c9f55a454fc98ceddaf7ebc8e74e25}\label{classmoteus_1_1Stm32G4DmaUart_ac5c9f55a454fc98ceddaf7ebc8e74e25}} 
+DMAMUX\+\_\+\+Channel\+\_\+\+Type\+Def $\ast$ {\bfseries dmamux\+\_\+tx\+\_\+} = nullptr
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+stm32g4\+\_\+dma\+\_\+uart.\+h\end{DoxyCompactItemize}

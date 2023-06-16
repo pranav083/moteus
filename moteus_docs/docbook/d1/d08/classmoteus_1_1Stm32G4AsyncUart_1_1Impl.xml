@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl" xml:lang="en-US">
+<title>moteus::Stm32G4AsyncUart::Impl Class Reference</title>
+<indexterm><primary>moteus::Stm32G4AsyncUart::Impl</primary></indexterm>
+Collaboration diagram for moteus::Stm32G4AsyncUart::Impl:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/dad/classmoteus_1_1Stm32G4AsyncUart_1_1Impl__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1Stm32G4AsyncUart_1_1Impl_1_1DmaFlags">DmaFlags</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a18270492f4d4fb821b0109efba5baccb"/><emphasis role="strong">Impl</emphasis> (micro::Pool *pool, const <link linkend="_structmoteus_1_1Stm32G4AsyncUart_1_1Options">Options</link> &amp;options)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a3c643963b7d6c341475e1a0d43674a96"/>void <emphasis role="strong">AsyncReadSome</emphasis> (const base::string_span &amp;data, const micro::SizeCallback &amp;callback)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a6ccdd31f6a10317d00456a5fb673bd1e"/>void <emphasis role="strong">AsyncWriteSome</emphasis> (const string_view &amp;data, const micro::SizeCallback &amp;callback)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a3a78d23353f79bb1bb2450d9b9afd41f"/>void <emphasis role="strong">ProcessRead</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a3ff78e1faa0b0cf2d4971ccd44281278"/>void <emphasis role="strong">Poll</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a484cbe2a944534622e971c6636f55ebf"/>const <link linkend="_structmoteus_1_1Stm32G4AsyncUart_1_1Options">Options</link> <emphasis role="strong">options_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a74c1fac4b6fdfeae42a20bbbeab0ba6b"/><link linkend="_classmoteus_1_1Stm32Serial">Stm32Serial</link> <emphasis role="strong">stm32_serial_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a328b08cd3ad1acd97af7449e35237431"/>UART_HandleTypeDef &amp; <emphasis role="strong">uart_</emphasis> = *stm32_serial_.huart()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a53f0de5069bd46e971298eb106a8030f"/>DMA_Channel_TypeDef * <emphasis role="strong">dma_rx_</emphasis> = nullptr</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1acbf615136dd9ebdb5f2ddae797a43fc0"/>DMAMUX_Channel_TypeDef * <emphasis role="strong">dmamux_rx_</emphasis> = nullptr</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1aec62617bdcabbff8c44fe6cbd5ced0e0"/>DMA_HandleTypeDef <emphasis role="strong">hdma_usart_tx_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a388a5741fe35deca56523403e52135d5"/>micro::SizeCallback <emphasis role="strong">current_write_callback_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a37512bd88fcdac4c055a51e46c7acddf"/>ssize_t <emphasis role="strong">current_write_bytes_</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a4da315316e0cdd684d4d4f4ef5393bce"/>micro::SizeCallback <emphasis role="strong">current_read_callback_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a02765b79f31546b46ce40a185b723c1d"/>base::string_span <emphasis role="strong">current_read_data_</emphasis> = {}</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a871367bf6cc816352b832a01f3ab8d6e"/>micro::error_code <emphasis role="strong">pending_rx_error_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a5cc3bf52579da91f3143531665d1ef19"/>micro::CallbackTable::Callback <emphasis role="strong">tx_callback_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a2a724ec1c7ba4f37f598d6f660c81c4d"/>micro::CallbackTable::Callback <emphasis role="strong">uart_callback_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a152999f12e2e61e39efc31c5017b1c7b"/><link linkend="_structmoteus_1_1Stm32G4AsyncUart_1_1Impl_1_1DmaFlags">DmaFlags</link> <emphasis role="strong">dma_rx_flags_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a44886b1cffbbac72d23ad4f48552ce9f"/>volatile uint16_t * <emphasis role="strong">rx_buffer_</emphasis> = nullptr</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32G4AsyncUart_1_1Impl_1a8f72b396fcfa804e5390042bb750b3e4"/>uint16_t <emphasis role="strong">rx_buffer_pos_</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+stm32g4_async_uart.cc</section>

@@ -1,0 +1,27 @@
+var structmoteus_1_1Drv8323_1_1Config =
+[
+    [ "Serialize", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a1410d6310bba5c59b30e538f1b40f0b5", null ],
+    [ "cbc", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#afc2662e95c6b8252068b95df18cbe395", null ],
+    [ "csa_fet", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a38f1fd7f1676ada872767ea8d2be5b93", null ],
+    [ "csa_gain", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a24d84f493c61fd46d4ff36b01f73399e", null ],
+    [ "dead_time_ns", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#af8f03c95bd14657b4c9333a343c56217", null ],
+    [ "dis_cpuv", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#ad710433a00f97ca3731aeb6ecb39357b", null ],
+    [ "dis_gdf", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a6a79c80a90c0e73d70cdfc51752080bb", null ],
+    [ "dis_sen", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a63bb90d0875614f00c9ac70901e14f3c", null ],
+    [ "idriven_hs_ma", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a8e987bd9fde3af4053960e6dba239eb7", null ],
+    [ "idriven_ls_ma", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#aca0a0a4f627e1bfcb365eb0b66068c27", null ],
+    [ "idrivep_hs_ma", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#ac1301be18b0e2cd0f586589ca4342a0e", null ],
+    [ "idrivep_ls_ma", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a10cec7abf1c57897ee8a43bf73cf99f1", null ],
+    [ "ls_ref", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a82d4c4905bb81f9aab4299557a7adcf5", null ],
+    [ "ocp_deg_us", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a570c19e2f4c9195a72678a613ff4c872", null ],
+    [ "ocp_mode", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a8d807d4a2edc4dcedd3aa95cd8a83d75", null ],
+    [ "otw_rep", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a011674a2ae30df77dc1bedd351d0eda6", null ],
+    [ "pwm_1x_asynchronous", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#afc8057f90a2ecd4362e38dfc02f7da51", null ],
+    [ "pwm_1x_dir", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a1e217a13aced85e1eaa9d86949ea19fb", null ],
+    [ "pwm_mode", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#aa092fed5999e83ccc71cb49af276f3c9", null ],
+    [ "sen_lvl_mv", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#addd3f98e3a070168e985ebdc9bf379e3", null ],
+    [ "tdrive_ns", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#af77328827a6172eec7bccf073e8ba7b1", null ],
+    [ "tretry", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a93a75e350ac8ddc85603f367608bf664", null ],
+    [ "vds_lvl_mv", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#a2b48200e491915b044016251e20fa210", null ],
+    [ "vref_div", "d2/d8d/structmoteus_1_1Drv8323_1_1Config.html#abe0f3a47e7aa5ea32573d08e2483a443", null ]
+];

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1I2C_1_1Status" xml:lang="en-US">
+<title>moteus::aux::I2C::Status Struct Reference</title>
+<indexterm><primary>moteus::aux::I2C::Status</primary></indexterm>
+Collaboration diagram for moteus::aux::I2C::Status:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/d28/structmoteus_1_1aux_1_1I2C_1_1Status__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1Status_1a0f6f1a2bff820b5766ad81c72e2c4e66"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1aux_1_1I2C_1_1Status_1a3bd75c200b257e33a4df4dd62f1c1e49"/>std::array&lt; <link linkend="_structmoteus_1_1aux_1_1I2C_1_1DeviceStatus">DeviceStatus</link>, 3 &gt; <emphasis role="strong">devices</emphasis> = { {} }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

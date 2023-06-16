@@ -1,0 +1,3 @@
+<map id="moteus::Stm32DigitalMonitor" name="moteus::Stm32DigitalMonitor">
+<area shape="rect" id="node1" title="Read a digital input, but without configuring it in any way." alt="" coords="5,5,220,112"/>
+</map>

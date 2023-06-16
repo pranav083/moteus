@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1FirmwareInfo_1_1Impl" xml:lang="en-US">
+<title>moteus::FirmwareInfo::Impl Class Reference</title>
+<indexterm><primary>moteus::FirmwareInfo::Impl</primary></indexterm>
+Collaboration diagram for moteus::FirmwareInfo::Impl:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d7e/classmoteus_1_1FirmwareInfo_1_1Impl__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FirmwareInfo_1_1Impl_1ab55389bf3c7405cd9ae0212efe3b6d06"/><emphasis role="strong">Impl</emphasis> (mjlib::micro::TelemetryManager &amp;telemetry, uint32_t version, uint32_t model)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FirmwareInfo_1_1Impl_1ade496880e4dc6445bd269939bec884d5"/>Info <emphasis role="strong">info_</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+firmware_info.cc</section>

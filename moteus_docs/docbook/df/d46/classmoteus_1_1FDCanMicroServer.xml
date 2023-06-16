@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1FDCanMicroServer" xml:lang="en-US">
+<title>moteus::FDCanMicroServer Class Reference</title>
+<indexterm><primary>moteus::FDCanMicroServer</primary></indexterm>
+Inheritance diagram for moteus::FDCanMicroServer:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d4a/classmoteus_1_1FDCanMicroServer__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for moteus::FDCanMicroServer:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d74/classmoteus_1_1FDCanMicroServer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCanMicroServer_1aaf863adb50a029e8f54cdd90637f646b"/><emphasis role="strong">FDCanMicroServer</emphasis> (<link linkend="_classmoteus_1_1FDCan">FDCan</link> *can)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCanMicroServer_1afd1b4c8c933b5a79cae5a6267a20c13b"/>void <emphasis role="strong">SetPrefix</emphasis> (uint32_t can_prefix)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCanMicroServer_1a11c5737feec7bce6a6ec1e0c629c2731"/>void <emphasis role="strong">AsyncRead</emphasis> (Header *header, const mjlib::base::string_span &amp;data, const mjlib::micro::SizeCallback &amp;callback) override</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCanMicroServer_1a7f40cff9fdfb8fb8dec45455008c3d9c"/>void <emphasis role="strong">AsyncWrite</emphasis> (const Header &amp;header, const std::string_view &amp;data, const Header &amp;query_header, const mjlib::micro::SizeCallback &amp;callback) override</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCanMicroServer_1a4c2496320e632caf26497557c4106490"/>Properties <emphasis role="strong">properties</emphasis> () const override</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCanMicroServer_1a542143cf6946249383635ecf3a5aaed7"/>void <emphasis role="strong">Poll</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCanMicroServer_1a985a32bdf54c8d1a0aba989952001962"/>uint32_t <emphasis role="strong">can_reset_count</emphasis> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCanMicroServer_1a53fa9923d1e0db7ee970cc80ddcba1d4"/>static size_t <emphasis role="strong">RoundUpDlc</emphasis> (size_t value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCanMicroServer_1a5d259244c197eb5284df4fb00635cca9"/>static constexpr uint32_t <emphasis role="strong">kBrsFlag</emphasis> = 0x01</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1FDCanMicroServer_1abfe75fb852b66b9e2b83a697eba9f327"/>static constexpr uint32_t <emphasis role="strong">kFdcanFlag</emphasis> = 0x02</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+fdcan_micro_server.h</section>

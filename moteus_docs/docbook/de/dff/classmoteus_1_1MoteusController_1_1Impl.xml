@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1MoteusController_1_1Impl" xml:lang="en-US">
+<title>moteus::MoteusController::Impl Class Reference</title>
+<indexterm><primary>moteus::MoteusController::Impl</primary></indexterm>
+Inheritance diagram for moteus::MoteusController::Impl:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d04/classmoteus_1_1MoteusController_1_1Impl__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for moteus::MoteusController::Impl:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d97/classmoteus_1_1MoteusController_1_1Impl__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1ab159519fd9ac89e40d05693a17642df9"/><emphasis role="strong">Impl</emphasis> (micro::Pool *pool, micro::PersistentConfig *persistent_config, micro::CommandManager *command_manager, micro::TelemetryManager *telemetry_manager, multiplex::MicroServer *multiplex_protocol, <link linkend="_classmoteus_1_1ClockManager">ClockManager</link> *clock_manager, <link linkend="_classmoteus_1_1SystemInfo">SystemInfo</link> *system_info, <link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer, <link linkend="_classmoteus_1_1FirmwareInfo">FirmwareInfo</link> *firmware)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1a7be8cb8656a313fd78ec2ca0ab23d837"/>void <emphasis role="strong">Start</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1a4849b5559d15c0a96307381b812836e0"/>void <emphasis role="strong">Poll</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1a4f892db4d9f7dfba777c458483724ea3"/>void <emphasis role="strong">PollMillisecond</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1ac63833f8211e0d99bf8280a4364aed6d"/>uint32_t <emphasis role="strong">Write</emphasis> (multiplex::MicroServer::Register reg, const multiplex::MicroServer::Value &amp;value) override __attribute__((optimize(&quot;O3&quot;)))</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1a9203e3cd49320d33fc87817ab4f6f08b"/>const <link linkend="_structmoteus_1_1MotorPosition_1_1SourceStatus">MotorPosition::SourceStatus</link> &amp; <emphasis role="strong">encoder_value</emphasis> (int index) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1ac01b8a700d452b0a4b59400dd4cbdd8b"/>const <link linkend="_structmoteus_1_1MotorPosition_1_1SourceConfig">MotorPosition::SourceConfig</link> &amp; <emphasis role="strong">encoder_config</emphasis> (int index) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1a04bbd1a5f34cb6a12948c5ec08b2eb67"/>multiplex::MicroServer::ReadResult <emphasis role="strong">Read</emphasis> (multiplex::MicroServer::Register reg, size_t type) const override __attribute__((optimize(&quot;O3&quot;)))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1aec4f6494f9fd8fe932e359fc05af7b00"/><link linkend="_classmoteus_1_1AuxADC">AuxADC</link> <emphasis role="strong">aux_adc_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1a47eb186d90ff3853d5ec7a888fe8e174"/><link linkend="_classmoteus_1_1AuxPort">AuxPort</link> <emphasis role="strong">aux1_port_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1ad66e014ba0ca54f4530e2e1b9f0f9d73"/><link linkend="_classmoteus_1_1AuxPort">AuxPort</link> <emphasis role="strong">aux2_port_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1a9d3ce4f58fccefdaf1d48e756d07ad5d"/><link linkend="_classmoteus_1_1MotorPosition">MotorPosition</link> <emphasis role="strong">motor_position_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1a4079feb8b85512b38df4ef01ef5c4b14"/><link linkend="_classmoteus_1_1Drv8323">Drv8323</link> <emphasis role="strong">drv8323_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1afc82379ab2711cd68c4a554f2d6bd002"/><link linkend="_classmoteus_1_1BldcServo">BldcServo</link> <emphasis role="strong">bldc_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1a2bac24619c5e48ac55f2e65cee7aa3b9"/><link linkend="_classmoteus_1_1ClockManager">ClockManager</link> *const <emphasis role="strong">clock_manager_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1a3de532130bfdb7f6be9f2eac37bad51a"/><link linkend="_classmoteus_1_1SystemInfo">SystemInfo</link> *const <emphasis role="strong">system_info_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1aa1a05842f99c9e7040417dd31da2944a"/><link linkend="_classmoteus_1_1FirmwareInfo">FirmwareInfo</link> *const <emphasis role="strong">firmware_</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1af35b477f103c0d10154ef4d551332284"/>bool <emphasis role="strong">command_valid_</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1MoteusController_1_1Impl_1a7cb2f97cdd57c5a1a6af0a333935dcc3"/><link linkend="_structmoteus_1_1BldcServoCommandData">BldcServo::CommandData</link> <emphasis role="strong">command_</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+moteus_controller.cc</section>

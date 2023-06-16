@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1FDCan_1_1FilterConfig" xml:lang="en-US">
+<title>moteus::FDCan::FilterConfig Struct Reference</title>
+<indexterm><primary>moteus::FDCan::FilterConfig</primary></indexterm>
+Collaboration diagram for moteus::FDCan::FilterConfig:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/de0/structmoteus_1_1FDCan_1_1FilterConfig__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1FilterConfig_1a37b301dce64e4eb9d98f13f47b5ebf2d"/>FilterAction <emphasis role="strong">global_std_action</emphasis> = FilterAction::kAccept</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1FilterConfig_1ada84a7d2d43b3343574db6b033519bfc"/>FilterAction <emphasis role="strong">global_ext_action</emphasis> = FilterAction::kAccept</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1FilterConfig_1a744b43023a4eea94f8b6eb885fcc70d5"/>FilterAction <emphasis role="strong">global_remote_std_action</emphasis> = FilterAction::kAccept</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1FilterConfig_1a8398317c0637c99b3575a833fdf11fe3"/>FilterAction <emphasis role="strong">global_remote_ext_action</emphasis> = FilterAction::kAccept</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1FilterConfig_1a347bf31aa1123b20f25162263c318827"/>const <link linkend="_structmoteus_1_1FDCan_1_1Filter">Filter</link> * <emphasis role="strong">begin</emphasis> = nullptr</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1FDCan_1_1FilterConfig_1a2ef01ba445011b8e59301ec6d0c1dad6"/>const <link linkend="_structmoteus_1_1FDCan_1_1Filter">Filter</link> * <emphasis role="strong">end</emphasis> = nullptr</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+fdcan.h</section>

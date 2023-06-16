@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1BldcServo" xml:lang="en-US">
+<title>moteus::BldcServo Class Reference</title>
+<indexterm><primary>moteus::BldcServo</primary></indexterm>
+<para>
+
+<para>Implements a closed loop servo around a brushless DC motor. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;bldc_servo.h&gt;</computeroutput>
+</para>
+Collaboration diagram for moteus::BldcServo:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d98/classmoteus_1_1BldcServo__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1BldcServo_1_1Control">Control</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmoteus_1_1BldcServo_1_1Impl">Impl</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1BldcServo_1_1Options">Options</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a1fddc40e739a09e3a01b9268201d7f39"/>using <emphasis role="strong">Mode</emphasis> = BldcServoMode</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a5d123c9e0488510bb7e6fc7d5295f5a5"/>using <emphasis role="strong">Status</emphasis> = <link linkend="_structmoteus_1_1BldcServoStatus">BldcServoStatus</link></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a02904b0de1a7e20eafbdb1d41eb9ab8c"/>using <emphasis role="strong">CommandData</emphasis> = <link linkend="_structmoteus_1_1BldcServoCommandData">BldcServoCommandData</link></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a7cb7af7bea14695537e27dc3e75379a6"/>using <emphasis role="strong">Motor</emphasis> = <link linkend="_structmoteus_1_1BldcServoMotor">BldcServoMotor</link></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1ac19ef0357eddea729216025d44039e55"/>using <emphasis role="strong">Config</emphasis> = <link linkend="_structmoteus_1_1BldcServoConfig">BldcServoConfig</link></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a27ce73ee972579d1b50d7a7d9bcfcb9a"/>using <emphasis role="strong">PositionConfig</emphasis> = <link linkend="_structmoteus_1_1BldcServoPositionConfig">BldcServoPositionConfig</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1ab2aab216d0aca1cc29f7af9626e0926e"/><emphasis role="strong">BldcServo</emphasis> (mjlib::micro::Pool *, mjlib::micro::PersistentConfig *, mjlib::micro::TelemetryManager *, <link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *, <link linkend="_classmoteus_1_1MotorDriver">MotorDriver</link> *, <link linkend="_classmoteus_1_1AuxADC">AuxADC</link> *, <link linkend="_classmoteus_1_1AuxPort">AuxPort</link> *, <link linkend="_classmoteus_1_1AuxPort">AuxPort</link> *, <link linkend="_classmoteus_1_1MotorPosition">MotorPosition</link> *, const <link linkend="_structmoteus_1_1BldcServo_1_1Options">Options</link> &amp;)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a4335ebe0578c153f3efd72508f45ff11"/>void <emphasis role="strong">PollMillisecond</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a5de721aa26166a54b2ff6e33ec1ca0cb"/>void <emphasis role="strong">Start</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a416d8ec19a86a4ce1033b628d83a6d78"/>void <emphasis role="strong">Command</emphasis> (const <link linkend="_structmoteus_1_1BldcServoCommandData">CommandData</link> &amp;)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a5201b96d712d5a34bc4cd8e1f16609eb"/>const <link linkend="_structmoteus_1_1BldcServoStatus">Status</link> &amp; <emphasis role="strong">status</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1ada0c0e2ae1ea32f71b2921e2bfb58655"/>const <link linkend="_structmoteus_1_1BldcServoConfig">Config</link> &amp; <emphasis role="strong">config</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a38a95e3c1a76ac60f266c70cd56f6427"/>const <link linkend="_structmoteus_1_1BldcServo_1_1Control">Control</link> &amp; <emphasis role="strong">control</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a71bfbf14b45f98d097d8d4be26816327"/>const <link linkend="_structmoteus_1_1aux_1_1AuxStatus">AuxPort::Status</link> &amp; <emphasis role="strong">aux1</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a63e51ba289ab5e706db804902f2ef710"/>const <link linkend="_structmoteus_1_1aux_1_1AuxStatus">AuxPort::Status</link> &amp; <emphasis role="strong">aux2</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1ad7cf791bd4467a8224eeeb2d69f9a852"/>const <link linkend="_structmoteus_1_1MotorPosition_1_1Status">MotorPosition::Status</link> &amp; <emphasis role="strong">motor_position</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1ae441fc005027470a5ae072e25140dc87"/><link linkend="_structmoteus_1_1MotorPosition_1_1Config">MotorPosition::Config</link> * <emphasis role="strong">motor_position_config</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a5c40ecdfb6c8f25f134c08042e9ba5fd"/>const <link linkend="_structmoteus_1_1MotorPosition_1_1Config">MotorPosition::Config</link> * <emphasis role="strong">motor_position_config</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a74343d568b48e7831fce76e58b31c1ca"/>void <emphasis role="strong">SetOutputPositionNearest</emphasis> (float position)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a2773aaf35e96073754ff147bbd1745fa"/>void <emphasis role="strong">SetOutputPosition</emphasis> (float position)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1BldcServo_1a6c73774da33c604cbf44b97b8823775f"/>void <emphasis role="strong">RequireReindex</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Implements a closed loop servo around a brushless DC motor. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+bldc_servo.hbldc_servo.cc</section>
+</section>

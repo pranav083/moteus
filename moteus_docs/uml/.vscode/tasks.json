@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Run Script on Open",
+        "type": "shell",
+        "command": "/home/artpark/Downloads/softwareUse/plantumlAutoRun.sh", // Replace with your script file path
+        "problemMatcher": []
+      }
+    ]
+  }
+  

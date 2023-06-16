@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1aux_1_1Hall" xml:lang="en-US">
+<title>moteus::aux::Hall Struct Reference</title>
+<indexterm><primary>moteus::aux::Hall</primary></indexterm>
+Collaboration diagram for moteus::aux::Hall:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d97/structmoteus_1_1aux_1_1Hall__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1aux_1_1Hall_1_1Config">Config</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1aux_1_1Hall_1_1Status">Status</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+aux_common.h</section>

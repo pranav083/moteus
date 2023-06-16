@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1InverseParkTransform" xml:lang="en-US">
+<title>moteus::InverseParkTransform Struct Reference</title>
+<indexterm><primary>moteus::InverseParkTransform</primary></indexterm>
+Collaboration diagram for moteus::InverseParkTransform:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dc/df7/structmoteus_1_1InverseParkTransform__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1InverseParkTransform_1a0bcb1d45f138a6041094451422cf87db"/><emphasis role="strong">InverseParkTransform</emphasis> (const <link linkend="_structmoteus_1_1SinCos">SinCos</link> &amp;sc, float d, float q)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1InverseParkTransform_1a4958ad4e47ee6e882a1a6631347749ea"/>const float <emphasis role="strong">x</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1InverseParkTransform_1a1ef9de7099cd00ce9e4b4034edc1a3b5"/>const float <emphasis role="strong">y</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+foc.h</section>

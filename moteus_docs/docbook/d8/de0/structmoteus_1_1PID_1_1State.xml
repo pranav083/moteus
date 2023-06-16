@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1PID_1_1State" xml:lang="en-US">
+<title>moteus::PID::State Struct Reference</title>
+<indexterm><primary>moteus::PID::State</primary></indexterm>
+Collaboration diagram for moteus::PID::State:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/d05/structmoteus_1_1PID_1_1State__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1a4f423f73fbaf8054dd14f2a54cc086b4"/>void <emphasis role="strong">Clear</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1ae58b32eb017d0b80bcebab618d9bdc4b"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1a4f423f73fbaf8054dd14f2a54cc086b4"/>void <emphasis role="strong">Clear</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1ae58b32eb017d0b80bcebab618d9bdc4b"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1ae78353ab500a3fe787a1f9382315586c"/>float <emphasis role="strong">integral</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1ac646042220022068c0f28d907112c630"/>float <emphasis role="strong">desired</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1a84ec9e8a04ec0b7adcdc16b77a3742ed"/>float <emphasis role="strong">error</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1af5396274d50d742759570582e42e55fe"/>float <emphasis role="strong">error_rate</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1a8b045cf88d73035ecd6e800588464193"/>float <emphasis role="strong">p</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1ad90a06f5b8f01437faa7fc22b1b5be73"/>float <emphasis role="strong">d</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1a25306a051cf00ddd1882e6a2bccf70f4"/>float <emphasis role="strong">pd</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1PID_1_1State_1a5e2911d2d6a02487f270c6ecba5ae029"/>float <emphasis role="strong">command</emphasis> = 0.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following files:</para>
+pid.hsimple_pid.h</section>

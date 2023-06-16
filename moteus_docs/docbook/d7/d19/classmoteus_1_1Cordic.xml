@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Cordic" xml:lang="en-US">
+<title>moteus::Cordic Class Reference</title>
+<indexterm><primary>moteus::Cordic</primary></indexterm>
+Collaboration diagram for moteus::Cordic:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/d99/classmoteus_1_1Cordic__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Cordic_1a74cc4a12dee2d6976a90ced24ff9f533"/><link linkend="_structmoteus_1_1SinCos">SinCos</link> <emphasis role="strong">operator()</emphasis> (int32_t theta_q31) const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Cordic_1a7a06d66027a7b62e6a51a670d8e4997f"/><link linkend="_structmoteus_1_1SinCos">SinCos</link> <emphasis role="strong">radians</emphasis> (float theta) const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+foc.h</section>

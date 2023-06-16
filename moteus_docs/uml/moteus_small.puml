@@ -1,0 +1,130 @@
+@startuml
+
+Actor MicroController
+MicroController -> main: Open program
+activate main
+
+main -> mbed_die: Check compatibility
+activate mbed_die
+mbed_die --> main
+deactivate mbed_die
+
+main -> power_led: Turn on power LED
+activate power_led
+power_led --> main
+deactivate power_led
+
+main -> pool: Create pool
+activate pool
+pool --> main
+deactivate pool
+
+main -> rs485: Create rs485
+activate rs485
+rs485 --> main
+deactivate rs485
+
+main -> fdcan: Create fdcan
+activate fdcan
+fdcan --> main
+deactivate fdcan
+
+main -> fdcan_micro_server: Create fdcan_micro_server
+activate fdcan_micro_server
+fdcan_micro_server --> main
+deactivate fdcan_micro_server
+
+main -> multiplex_protocol: Create multiplex_protocol
+activate multiplex_protocol
+multiplex_protocol --> main
+deactivate multiplex_protocol
+
+
+
+main -> multiplex_protocol: MakeTunnel(1)
+activate multiplex_protocol
+multiplex_protocol --> main
+deactivate multiplex_protocol
+
+main -> command_manager: Create command_manager
+activate command_manager
+command_manager --> main
+deactivate command_manager
+
+main -> telemetry_manager: Create telemetry_manager
+activate telemetry_manager
+telemetry_manager --> main
+deactivate telemetry_manager
+
+main -> persistent_config: Create persistent_config
+activate persistent_config
+persistent_config --> main
+deactivate persistent_config
+
+main -> system_info: Create system_info
+activate system_info
+system_info --> main
+deactivate system_info
+
+main -> firmware_info: Create firmware_info
+activate firmware_info
+firmware_info --> main
+deactivate firmware_info
+
+main -> uuid: Create uuid
+activate uuid
+uuid --> main
+deactivate uuid
+
+main -> clock: Create clock
+activate clock
+clock --> main
+deactivate clock
+
+main -> moteus_controller: Create moteus_controller
+activate moteus_controller
+moteus_controller --> main
+deactivate moteus_controller
+
+main -> board_debug: Create board_debug
+activate board_debug
+board_debug --> main
+deactivate board_debug
+
+main -> persistent_config: Register "id"
+activate persistent_config
+persistent_config --> main
+deactivate persistent_config
+
+main -> telemetry_manager: Register "git"
+activate telemetry_manager
+telemetry_manager --> main
+deactivate telemetry_manager
+
+main -> persistent_config: Register "can"
+activate persistent_config
+persistent_config --> main
+deactivate persistent_config
+
+main -> persistent_config: Load
+activate persistent_config
+persistent_config --> main
+deactivate persistent_config
+
+main -> moteus_controller: Start
+activate moteus_controller
+moteus_controller --> main
+deactivate moteus_controller
+
+main -> command_manager: AsyncStart
+activate command_manager
+command_manager --> main
+deactivate command_manager
+
+main -> multiplex_protocol: Start
+activate multiplex_protocol
+multiplex_protocol --> main
+deactivate multiplex_protocol
+
+
+@enduml

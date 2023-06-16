@@ -1,0 +1,121 @@
+@startuml
+Actor MicroController
+MicroController -> main: Open program
+activate main
+
+main -> timer: set old_time variable
+' activate timer
+' timer --> main
+' deactivate timer
+
+loop Forever
+    alt rs485 exists
+        main -> rs485: Poll()
+        activate rs485
+        rs485 --> main
+        deactivate rs485
+    end
+
+alt if defined(TARGET_STM32G4)
+    main -> fdcan_micro_server: Poll()
+    activate fdcan_micro_server
+    fdcan_micro_server --> main
+    deactivate fdcan_micro_server
+end
+
+    main -> moteus_controller: Poll()
+    activate moteus_controller
+    moteus_controller --> main
+    deactivate moteus_controller
+
+    main -> multiplex_protocol: Poll()
+    activate multiplex_protocol
+    multiplex_protocol --> main
+    deactivate multiplex_protocol
+
+    main -> telemetry_manager: PollMillisecond()
+    activate telemetry_manager
+    telemetry_manager --> main
+    deactivate telemetry_manager
+
+    main -> system_info: PollMillisecond()
+    activate system_info
+    system_info --> main
+    deactivate system_info
+
+    main -> moteus_controller: PollMillisecond()
+    activate moteus_controller
+    moteus_controller --> main
+    deactivate moteus_controller
+
+    main -> board_debug: PollMillisecond()
+    activate board_debug
+    board_debug --> main
+    deactivate board_debug
+
+    main -> fdcan_micro_server: Get can_reset_count()
+    activate fdcan_micro_server
+    fdcan_micro_server --> main
+    deactivate fdcan_micro_server
+
+    main -> system_info: SetCanResetCount()
+    activate system_info
+    system_info --> main
+    deactivate system_info
+
+    main -> timer: Read new_time
+    activate timer
+    timer --> main
+    deactivate timer
+
+    main -> MillisecondTimer: Subtract old_time and new_time
+    activate MillisecondTimer
+    MillisecondTimer --> main
+    deactivate MillisecondTimer
+
+    alt delta_us >= 1000
+        main -> telemetry_manager: PollMillisecond()
+        activate telemetry_manager
+        telemetry_manager --> main
+        deactivate telemetry_manager
+
+        main -> system_info: PollMillisecond()
+        activate system_info
+        system_info --> main
+        deactivate system_info
+
+        main -> moteus_controller: PollMillisecond()
+        activate moteus_controller
+        moteus_controller --> main
+        deactivate moteus_controller
+
+        main -> board_debug: PollMillisecond()
+        activate board_debug
+        board_debug --> main
+        deactivate board_debug
+
+        main -> fdcan_micro_server: Get can_reset_count()
+        activate fdcan_micro_server
+        fdcan_micro_server --> main
+        deactivate fdcan_micro_server
+
+        main -> system_info: SetCanResetCount()
+        activate system_info
+        system_info --> main
+        deactivate system_info
+
+        main -> timer: Update old_time
+        activate timer
+        timer --> main
+        deactivate timer
+    end
+
+    main -> SystemInfo: Increment idle_count
+    activate SystemInfo
+    SystemInfo --> main
+    deactivate SystemInfo
+
+end
+main --> MicroController : Close program
+@enduml
+

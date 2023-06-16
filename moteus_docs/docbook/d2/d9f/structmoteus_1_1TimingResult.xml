@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1TimingResult" xml:lang="en-US">
+<title>moteus::TimingResult Struct Reference</title>
+<indexterm><primary>moteus::TimingResult</primary></indexterm>
+Collaboration diagram for moteus::TimingResult:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d2/dfe/structmoteus_1_1TimingResult__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingResult_1a8e90170266dc956b282149cc0b579d42"/>int <emphasis role="strong">error</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingResult_1ae685aed4845ad0af0946708112932841"/>int <emphasis role="strong">prescaler</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingResult_1a2a461da2d48e02df232da3b8113523a6"/>int <emphasis role="strong">scldel</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingResult_1a8bcb7ac0154b6c2cf8b7d007bda4cc04"/>int <emphasis role="strong">sdadel</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingResult_1a1ba158ef88208578d0cdf5297ed9c2c5"/>int <emphasis role="strong">sclh</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingResult_1a20d4532ffe864f8f3cafa7861d8cce4a"/>int <emphasis role="strong">scll</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingResult_1afd018d993b202d2b0b9b6eb768e7c6d0"/>int <emphasis role="strong">digital_noise_filter</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1TimingResult_1a2d7f236af80e18810002b3b73849f08d"/>uint32_t <emphasis role="strong">timingr</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+stm32_i2c_timing.h</section>

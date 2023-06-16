@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1IcPz" xml:lang="en-US">
+<title>moteus::IcPz Class Reference</title>
+<indexterm><primary>moteus::IcPz</primary></indexterm>
+Collaboration diagram for moteus::IcPz:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d5e/classmoteus_1_1IcPz__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmoteus_1_1IcPz_1_1Options">Options</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmoteus_1_1IcPz_1_1Status">Status</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1IcPz_1a1678727b3dd0c7f21894b1acf38ae4bc"/><emphasis role="strong">IcPz</emphasis> (const <link linkend="_structmoteus_1_1IcPz_1_1Options">Options</link> &amp;options, <link linkend="_classmoteus_1_1MillisecondTimer">MillisecondTimer</link> *timer)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1IcPz_1a5e74ba84113a006231da4548c2d52c9e"/>void <emphasis role="strong">SetExtraRead</emphasis> (uint8_t bitfield)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1IcPz_1a5f4275b3a155aa8daf3dc809a666dd96"/>void <emphasis role="strong">StartCommand</emphasis> (uint8_t cmd)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1IcPz_1aee8e80e9b969cfe6559b94af41ed7c2c"/>void <emphasis role="strong">ReadRegisters</emphasis> (uint8_t reg, mjlib::base::string_span output)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1IcPz_1aaf8e67311e958cd4f16d5064eb5a955a"/>void <emphasis role="strong">WriteRegisters</emphasis> (uint8_t reg, std::string_view data)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1IcPz_1aedee88575a53f4ac5b8aa62ad4f9bdfd"/>void <emphasis role="strong">PollMillisecond</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1IcPz_1a83032caa1068926bb9c4f46920815cf2"/>void <emphasis role="strong">DoOperating</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1IcPz_1ad322e4a37d2f996d7b7e21d267b5e3ed"/>void <emphasis role="strong">ISR_StartSample</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1IcPz_1a41ff300b9fcad3b002075be26334598d"/>void <emphasis role="strong">ISR_MaybeFinishSample</emphasis> () MOTEUS_CCM_ATTRIBUTE</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1IcPz_1a976abbcd95e4baa576e12007046e7361"/>const <link linkend="_structmoteus_1_1IcPz_1_1Status">Status</link> &amp; <emphasis role="strong">status</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1IcPz_1af803b1bf15ac5d9fa9231d60b013cd77"/><link linkend="_structmoteus_1_1IcPz_1_1Status">Status</link> <emphasis role="strong">status_</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+ic_pz.h</section>

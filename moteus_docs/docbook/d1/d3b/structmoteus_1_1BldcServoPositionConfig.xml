@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1BldcServoPositionConfig" xml:lang="en-US">
+<title>moteus::BldcServoPositionConfig Struct Reference</title>
+<indexterm><primary>moteus::BldcServoPositionConfig</primary></indexterm>
+Collaboration diagram for moteus::BldcServoPositionConfig:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d7/dcb/structmoteus_1_1BldcServoPositionConfig__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoPositionConfig_1a5356a3cf25c170521247cb417fc28ae9"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoPositionConfig_1af1b110b8ba3a671b9dc7ad6e515c5e64"/>float <emphasis role="strong">position_min</emphasis> = -0.01f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoPositionConfig_1afe5966ab4c01930d437fe9017783be79"/>float <emphasis role="strong">position_max</emphasis> = 0.01f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+bldc_servo_structs.h</section>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmoteus_1_1Stm32DigitalMonitor" xml:lang="en-US">
+<title>moteus::Stm32DigitalMonitor Class Reference</title>
+<indexterm><primary>moteus::Stm32DigitalMonitor</primary></indexterm>
+<para>
+
+<para>Read a digital input, but without configuring it in any way. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32_digital_monitor.h&gt;</computeroutput>
+</para>
+Collaboration diagram for moteus::Stm32DigitalMonitor:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/de6/classmoteus_1_1Stm32DigitalMonitor__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32DigitalMonitor_1a9b792e9d8fc958468240896addf44a23"/><emphasis role="strong">Stm32DigitalMonitor</emphasis> (PinName pin)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmoteus_1_1Stm32DigitalMonitor_1ad4c9f7d5c1477010a608dda2b266863c"/>bool <emphasis role="strong">read</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Read a digital input, but without configuring it in any way. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+stm32_digital_monitor.h</section>
+</section>

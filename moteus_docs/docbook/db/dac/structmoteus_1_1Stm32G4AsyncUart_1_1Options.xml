@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Options" xml:lang="en-US">
+<title>moteus::Stm32G4AsyncUart::Options Struct Reference</title>
+<indexterm><primary>moteus::Stm32G4AsyncUart::Options</primary></indexterm>
+Collaboration diagram for moteus::Stm32G4AsyncUart::Options:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/dee/structmoteus_1_1Stm32G4AsyncUart_1_1Options__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Options_1aef27358f190ba2994899a052467abc7e"/>PinName <emphasis role="strong">tx</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Options_1af45567536778d853cb85ea47ded4478f"/>PinName <emphasis role="strong">rx</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Options_1ace7b632f538a686f1883cbc6764f2af8"/>PinName <emphasis role="strong">dir</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Options_1add5e580bb7892ed346c4df4e28b3f020"/>uint8_t <emphasis role="strong">enable_delay_us</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Options_1a7078df65bf3d944ba9896c8caada7c28"/>uint8_t <emphasis role="strong">disable_delay_us</emphasis> = 2</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Options_1a66a9978077b4762d8629137e7eeeaa5e"/>int <emphasis role="strong">baud_rate</emphasis> = 115200</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Options_1ad90d23800318606650ec8981a8124fdb"/>size_t <emphasis role="strong">rx_buffer_size</emphasis> = 128u</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Options_1a63a621afccc72ba52b37e10ce66d11cf"/>DMA_Channel_TypeDef * <emphasis role="strong">rx_dma</emphasis> = DMA1_Channel2</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4AsyncUart_1_1Options_1a9008aa28eced3196e9f5cdfe250e9121"/>DMA_Channel_TypeDef * <emphasis role="strong">tx_dma</emphasis> = DMA1_Channel1</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+stm32g4_async_uart.h</section>

@@ -1,0 +1,78 @@
+@startuml
+
+title Main Program
+
+actor Microcontroller
+
+participant "Timer" as timer
+participant "DetectMoteusFamily" as detect_family
+participant "FindHardwarePins" as find_pins
+participant "HardwareUart" as rs485
+participant "FDCan" as fdcan
+participant "FDCanMicroServer" as fdcan_micro_server
+participant "multiplex::MicroServer" as multiplex_protocol
+participant "micro::AsyncStream" as serial
+participant "micro::AsyncExclusive<micro::AsyncWriteStream>" as write_stream
+participant "micro::CommandManager" as command_manager
+participant "micro::TelemetryManager" as telemetry_manager
+participant "Stm32Flash" as flash_interface
+participant "micro::PersistentConfig" as persistent_config
+participant "SystemInfo" as system_info
+participant "FirmwareInfo" as firmware_info
+participant "Uuid" as uuid
+participant "ClockManager" as clock
+participant "MoteusController" as moteus_controller
+participant "BoardDebug" as board_debug
+participant "CanConfig" as can_config
+participant "GitInfo" as git_info
+
+Microcontroller -> timer: SetupClock()
+Microcontroller -> detect_family: DetectMoteusFamily(timer)
+Microcontroller -> find_pins: FindHardwarePins(family_and_version)
+Microcontroller -> rs485: HardwareUart(options)
+Microcontroller -> fdcan: FDCan(options)
+Microcontroller -> fdcan_micro_server: FDCanMicroServer(fdcan)
+Microcontroller -> multiplex_protocol: MicroServer(options)
+Microcontroller -> serial: MakeTunnel(1)
+Microcontroller -> write_stream: AsyncExclusive(write_stream)
+Microcontroller -> command_manager: CommandManager(serial, write_stream)
+Microcontroller -> telemetry_manager: TelemetryManager(write_stream)
+Microcontroller -> flash_interface: Stm32Flash()
+Microcontroller -> persistent_config: PersistentConfig(command_manager, flash_interface)
+Microcontroller -> system_info: SystemInfo(telemetry_manager)
+Microcontroller -> firmware_info: FirmwareInfo(telemetry_manager)
+Microcontroller -> uuid: Uuid(persistent_config)
+Microcontroller -> clock: ClockManager(timer, persistent_config, command_manager)
+Microcontroller -> moteus_controller: MoteusController(persistent_config, command_manager, telemetry_manager, multiplex_protocol, clock, system_info, timer, firmware_info)
+Microcontroller -> board_debug: BoardDebug(command_manager, telemetry_manager, multiplex_protocol, moteus_controller)
+Microcontroller -> persistent_config: Register("id", multiplex_protocol.config())
+Microcontroller -> telemetry_manager: Register("git", git_info)
+Microcontroller -> persistent_config: Register("can", can_config)
+Microcontroller -> persistent_config: Load()
+Microcontroller -> moteus_controller: Start()
+Microcontroller -> command_manager: AsyncStart()
+Microcontroller -> multiplex_protocol: Start(moteus_controller.multiplex_server())
+
+loop Main Loop
+    Microcontroller -> rs485: Poll()
+    Microcontroller -> fdcan_micro_server: Poll()
+    Microcontroller -> moteus_controller: Poll()
+    Microcontroller -> multiplex_protocol: Poll()
+    Microcontroller -> telemetry_manager: PollMillisecond()
+    Microcontroller -> system_info: PollMillisecond()
+    Microcontroller -> moteus_controller: PollMillisecond()
+    Microcontroller -> board_debug: PollMillisecond()
+    Microcontroller -> system_info: SetCanResetCount(fdcan_micro_server.can_reset_count())
+    Microcontroller -> timer: read_us()
+    activate timer
+    Microcontroller -> timer: read_us()
+    activate timer
+    timer -> telemetry_manager: PollMillisecond()
+    timer -> system_info: PollMillisecond()
+    timer -> moteus_controller: PollMillisecond()
+    timer -> board_debug: PollMillisecond()
+    timer -> system_info: SetCanResetCount(fdcan_micro_server.can_reset_count())
+    deactivate timer
+end
+
+@enduml

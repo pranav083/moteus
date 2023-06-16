@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1Drv8323_1_1Status" xml:lang="en-US">
+<title>moteus::Drv8323::Status Struct Reference</title>
+<indexterm><primary>moteus::Drv8323::Status</primary></indexterm>
+Collaboration diagram for moteus::Drv8323::Status:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d70/structmoteus_1_1Drv8323_1_1Status__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1acfadb38b7bd8e12bd6e4eaafdc0e1e21"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1ab8b2ef769370d4392b0cc0af4a4733d9"/>bool <emphasis role="strong">fault</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a26832e9d4d5ba106ec0aaa82765672bb"/>bool <emphasis role="strong">vds_ocp</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a522e340d024899858001ed92e9fe1c7c"/>bool <emphasis role="strong">gdf</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1ab5ef53de125ff98b2039dbfd4427a2b1"/>bool <emphasis role="strong">uvlo</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a2d610c836063246eda0d8d465111de0d"/>bool <emphasis role="strong">otsd</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a1554207652a477c584c6bca4b3098685"/>bool <emphasis role="strong">vds_ha</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a50f69f6fc38958832708ed5f1d7cb264"/>bool <emphasis role="strong">vds_la</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a00d2d0b74d7711a751874c9fcccce7d8"/>bool <emphasis role="strong">vds_hb</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a98b8003892a2fa6eff5170210e5d0da2"/>bool <emphasis role="strong">vds_lb</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1ae224c9f692a2f30c5b1675ee491b9bd6"/>bool <emphasis role="strong">vds_hc</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a4c7312f50334d6c9d4d66998facedb5a"/>bool <emphasis role="strong">vds_lc</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1aa718f9e1f14103fde172ebe715413e62"/>uint16_t <emphasis role="strong">fsr1</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a2e4da992e61c7b36262d03302f5e2e1f"/>bool <emphasis role="strong">sa_oc</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1ad19f97b42442488af4ca0f989b3851f4"/>bool <emphasis role="strong">sb_oc</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a48d31ea4743afe7cc6286f8ba0031f19"/>bool <emphasis role="strong">sc_oc</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1aa98eac9bd3b7750d9a27dd3dbc8f8c49"/>bool <emphasis role="strong">otw</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a4b29449b116054c4f635d5e6646ceb76"/>bool <emphasis role="strong">cpuv</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1ae7196aa010a3efaddd84ee831d3830ff"/>bool <emphasis role="strong">vgs_ha</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1af0efde7fa8407b115e8883011ec74ada"/>bool <emphasis role="strong">vgs_la</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a5aca6c2daef601113e41ef9bbc7bdc3c"/>bool <emphasis role="strong">vgs_hb</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1abb1ad94ab6c4fa3366868b0107972736"/>bool <emphasis role="strong">vgs_lb</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1ac4662cb6e346c198f60d1209aa2c9ac2"/>bool <emphasis role="strong">vgs_hc</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a461309442fd35f8168fe87e017d92925"/>bool <emphasis role="strong">vgs_lc</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1ad40d4f7634643db8081c2eadb07113e8"/>uint16_t <emphasis role="strong">fsr2</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a653cb7a36c8653b1b960c65e319d7a1c"/>bool <emphasis role="strong">fault_line</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1aa68dbe5ca914b82c1d173e950fbd6e08"/>bool <emphasis role="strong">power</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a358fcf1bd03ad13f0ca2ae8f515e1793"/>bool <emphasis role="strong">enabled</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a55d1353957d2ccee224784b73a7a8d38"/>uint8_t <emphasis role="strong">fault_config</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1aaaab903bc2f7ed478d6199217846ab01"/>uint16_t <emphasis role="strong">config_count</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Drv8323_1_1Status_1a1b6f6659d68db488e27e69200f9b1f74"/>uint16_t <emphasis role="strong">status_count</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+drv8323.h</section>

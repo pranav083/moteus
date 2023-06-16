@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1BldcServoStatus" xml:lang="en-US">
+<title>moteus::BldcServoStatus Struct Reference</title>
+<indexterm><primary>moteus::BldcServoStatus</primary></indexterm>
+Collaboration diagram for moteus::BldcServoStatus:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/dda/structmoteus_1_1BldcServoStatus__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ade91369a7d67ce4425cd590572a126fa"/>template&lt;typename Archive &gt; </para><para>void <emphasis role="strong">Serialize</emphasis> (Archive *a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ac3a0bed66db835c2e36f26f5b62db8ba"/>BldcServoMode <emphasis role="strong">mode</emphasis> = kStopped</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a40c2a95f1ac5a918b06e14a2e77bb2f9"/>errc <emphasis role="strong">fault</emphasis> = errc::kSuccess</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a384acd6e7d352326441e9b83ccc55088"/>uint16_t <emphasis role="strong">adc_cur1_raw</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1aa808c9747f343c1f3e5fa7ec53c41e4b"/>uint16_t <emphasis role="strong">adc_cur2_raw</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ac5309c88618dba18d6442cb1808a59c8"/>uint16_t <emphasis role="strong">adc_cur3_raw</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a2a9717c50943dceeb08bc0bab13c59be"/>uint16_t <emphasis role="strong">adc_voltage_sense_raw</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a5b6144cdf39c87b95e74756e01353451"/>uint16_t <emphasis role="strong">adc_fet_temp_raw</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a1ef8f958a418bd48fa1235a6e52f204f"/>uint16_t <emphasis role="strong">adc_motor_temp_raw</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a6d96a12b0a2675077a7eea167c21e809"/>uint16_t <emphasis role="strong">adc_cur1_offset</emphasis> = 2048</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ae6860392789e92a42e7ca7f961ab6b73"/>uint16_t <emphasis role="strong">adc_cur2_offset</emphasis> = 2048</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1af1976226a332b6a871312da6239935fc"/>uint16_t <emphasis role="strong">adc_cur3_offset</emphasis> = 2048</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a224d85bfda9c2c851b04e50d7ba93459"/>float <emphasis role="strong">cur1_A</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a24720c8951bfa0e7f7e2ff356ce82e0a"/>float <emphasis role="strong">cur2_A</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ae66d4fb1eccc122eb95ffb759c13be5f"/>float <emphasis role="strong">cur3_A</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ace4566ceb7b9bf7507c0ab0b21a7342b"/>float <emphasis role="strong">bus_V</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a6be6f68eb51c2d3f8321eef12b666a62"/>float <emphasis role="strong">filt_bus_V</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1abc58d212867c98c0502a9b3eb325f7f2"/>float <emphasis role="strong">filt_1ms_bus_V</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a7b11bed2cf095dd6222ba299215f3b77"/>float <emphasis role="strong">fet_temp_C</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ad0f9563144df75c5034a52de39e2b7eb"/>float <emphasis role="strong">filt_fet_temp_C</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a23ce9d97e9de475eeb2b53f497ceff58"/>float <emphasis role="strong">motor_temp_C</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a9d258cbf3b052d7498ecb9dacd7cd073"/>float <emphasis role="strong">filt_motor_temp_C</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a1cec2ea9aa1e9066ab1aa1a66d582c08"/>float <emphasis role="strong">d_A</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1aef813962c54bc358e77bd847b99baac4"/>float <emphasis role="strong">q_A</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a8c56e84f033b922c74d666dc226b8942"/>float <emphasis role="strong">position</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a202289d358481097f9ac7df428cc037e"/>float <emphasis role="strong">velocity</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1afd18876c5bddc7a23e29c53919ec21ab"/>float <emphasis role="strong">torque_Nm</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1aeb5beef9b98c67bc50865712a6aae5f3"/>float <emphasis role="strong">velocity_filt</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a0557f6e2130e066bee7ee2f8c4f504b5"/><link linkend="_structmoteus_1_1SimplePI_1_1State">SimplePI::State</link> <emphasis role="strong">pid_d</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ae56cbbb04a69e1b0cf3d135705119ec6"/><link linkend="_structmoteus_1_1SimplePI_1_1State">SimplePI::State</link> <emphasis role="strong">pid_q</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a1cec1719a72b770f5af470daeec50e12"/><link linkend="_structmoteus_1_1PID_1_1State">PID::State</link> <emphasis role="strong">pid_position</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ab1d05a5b32c3caeebebe423ccc510ab3"/>std::optional&lt; int64_t &gt; <emphasis role="strong">control_position_raw</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ac7ea7296bd7c59647c34c8c407db8f38"/>float <emphasis role="strong">control_position</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ac07a2e954547d3d150f11655a70ae521"/>std::optional&lt; float &gt; <emphasis role="strong">control_velocity</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a58027650f3de50a1105c40d8c260953d"/>float <emphasis role="strong">position_to_set</emphasis> = std::numeric_limits&lt;float&gt;::quiet_NaN()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ac04f7ba9460567ec49085b2aa8e6b80a"/>float <emphasis role="strong">timeout_s</emphasis> = 0.0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a3c749a6cea12feb7bba8cf4498cf4281"/>bool <emphasis role="strong">trajectory_done</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a4b4fe3c85b5860e7da1cbd6490f122b4"/>float <emphasis role="strong">torque_error_Nm</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1af257d8b0c44378db66201cbbba9ab79d"/>float <emphasis role="strong">sin</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a7cc067b1c7912ca625671a6d1abd385c"/>float <emphasis role="strong">cos</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a2de767f34a39bd1a82179b86ba332ad3"/>uint16_t <emphasis role="strong">cooldown_count</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a642d51f16b927dbece76b6d4b1aad89e"/>uint32_t <emphasis role="strong">final_timer</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a406dfcda154d0266e78633346b184ffe"/>uint32_t <emphasis role="strong">total_timer</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a1f03bfb65468787176cf77f862730e41"/>float <emphasis role="strong">meas_ind_old_d_A</emphasis> = 0.0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1a454eef08d7cb012a0e34bde0313b617e"/>int8_t <emphasis role="strong">meas_ind_phase</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1BldcServoStatus_1ad27202c3f2394ec67152e8626cc1e3af"/>float <emphasis role="strong">meas_ind_integrator</emphasis> = 0.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+bldc_servo_structs.h</section>

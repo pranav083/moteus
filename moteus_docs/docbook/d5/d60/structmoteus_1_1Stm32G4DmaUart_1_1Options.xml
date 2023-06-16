@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmoteus_1_1Stm32G4DmaUart_1_1Options" xml:lang="en-US">
+<title>moteus::Stm32G4DmaUart::Options Struct Reference</title>
+<indexterm><primary>moteus::Stm32G4DmaUart::Options</primary></indexterm>
+Collaboration diagram for moteus::Stm32G4DmaUart::Options:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d1/d18/structmoteus_1_1Stm32G4DmaUart_1_1Options__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4DmaUart_1_1Options_1a764b45ffacb003cce0a0a914910ee719"/>PinName <emphasis role="strong">tx</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4DmaUart_1_1Options_1a22b8c1b72965831fe21687076b78f04a"/>PinName <emphasis role="strong">rx</emphasis> = NC</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4DmaUart_1_1Options_1ab3b042943d21bd1309d46c0820e0faec"/>int <emphasis role="strong">baud_rate</emphasis> = 115200</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4DmaUart_1_1Options_1a39f56045303dfb54236b5c68007f14bc"/>DMA_Channel_TypeDef * <emphasis role="strong">rx_dma</emphasis> = DMA1_Channel1</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structmoteus_1_1Stm32G4DmaUart_1_1Options_1af75e7fd720b2bc3f230eab4c52d78be0"/>DMA_Channel_TypeDef * <emphasis role="strong">tx_dma</emphasis> = DMA1_Channel2</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+stm32g4_dma_uart.h</section>
