@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "xpm": "^0.15.2"
+  },
+  "name": "moteus",
+  "description": "This contains full designs for the moteus brushless servo actuator, including firmware and PCBs.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

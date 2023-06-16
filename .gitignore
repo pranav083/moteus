@@ -9,3 +9,10 @@ fw/BUILD/
 fw/.mbedignore
 
 /bazel-*
+
+bazel-bin/*
+bazel-moteus/*
+bazel-out/*
+bazel-testlogs/*
+CppDependOut/*
+fw/cpp_depend1.sl
