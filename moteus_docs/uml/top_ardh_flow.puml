@@ -1,0 +1,36 @@
+@startuml Top Flow
+
+actor Processor
+activate main
+loop CAN Interrupt 
+activate Processor
+group CAN data TX
+    Processor -> main: send CAN data to controller
+    Processor -> main: CAN IDs : 0x00, 0x04, 0x08, 0x0c - write 
+    Processor -> main: CAN IDs: 0x30 - write error
+    Processor -> main: Control data
+    Processor -> main: Config data
+end
+
+deactivate Processor
+main -> BLDC_FOC : send to FOC code
+loop BLDC control
+BLDC_FOC -> gate_driver: control PWM/Direction
+gate_driver -> BLDC_motor : mosfet control
+Angle_encoder --> BLDC_FOC : Angle data
+end
+
+activate Processor
+group CAN data RX
+    main --> Processor: CAN data RX on
+    main --> Processor: CAN IDs: 0x10, 0x14, 0x18, 0x1c - read
+    main --> Processor: CAN IDs: 0x20, 0x24, 0x28, 0x2c - reply
+    main --> Processor: CAN IDs: 0x31 - read error
+    main --> Processor: telemetry data
+    main --> Processor: Diagnostic data
+    main --> Processor: Power data
+end
+deactivate Processor
+deactivate main
+end
+@enduml
