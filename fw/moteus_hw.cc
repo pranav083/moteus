@@ -1,4 +1,4 @@
-// Copyright 2018-2022 Josh Pieper, jjp@pobox.com.
+// Copyright 2023 mjbots Robotic Systems, LLC.  info@mjbots.com
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -60,7 +60,7 @@ FamilyAndVersion DetectMoteusFamily(MillisecondTimer* timer) {
   FamilyAndVersion result;
   result.family = 0;
 
-  // We check for family 1, "moteus hp", by seeing if we can find a
+  // We check for family 1, "moteus n1", by seeing if we can find a
   // DRV8323 on a chip select that is different from that used on all
   // family 0 boards.
   {
@@ -269,6 +269,24 @@ MoteusHwPins FindHardwarePins(FamilyAndVersion fv) {
   }
 
   return result;
+}
+
+void MoteusEnsureOff() {
+  gpio_t power;
+  gpio_init_out(&power, moteus::g_hw_pins.drv8323_hiz);
+  gpio_write(&power, 0);
+
+  // Also, disable the DRV8323 entirely, because, hey, why not.
+  gpio_t enable;
+  gpio_init_out(&enable, moteus::g_hw_pins.drv8323_enable);
+  gpio_write(&enable, 0);
+
+  // We want to ensure that our primary interrupt is not running.
+  // Which one it is could vary, so just turn them all off.
+  NVIC_DisableIRQ(TIM2_IRQn);
+  NVIC_DisableIRQ(TIM3_IRQn);
+  NVIC_DisableIRQ(TIM4_IRQn);
+  NVIC_DisableIRQ(TIM5_IRQn);
 }
 
 }

@@ -1,4 +1,4 @@
-// Copyright 2018-2022 Josh Pieper, jjp@pobox.com.
+// Copyright 2023 mjbots Robotic Systems, LLC.  info@mjbots.com
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -444,6 +444,10 @@ class BoardDebug::Impl {
       // Do we at least have a rotor level home on our commutation
       // source?
       const auto& motor_position = bldc_->motor_position();
+      if (motor_position.error != MotorPosition::Status::kNone) {
+        WriteMessage(response, "ERR encoder configuration error\r\n");
+        return;
+      }
       if (!motor_position.theta_valid) {
         WriteMessage(response, "ERR no theta available\r\n");
         return;
@@ -685,11 +689,13 @@ class BoardDebug::Impl {
           std::strtof(pos_value.data(), nullptr);
 
       // Get us within 1 revolution.
+      auto* const config = bldc_->motor_position_config();
+      config->output.offset = 0.0f;
       bldc_->SetOutputPositionNearest(set_value);
+
       const float cur_output = bldc_->motor_position().position;
       const float error = set_value - cur_output;
 
-      auto* const config = bldc_->motor_position_config();
       config->output.offset += error * config->output.sign;
 
       bldc_->SetOutputPositionNearest(set_value);
@@ -794,7 +800,9 @@ class BoardDebug::Impl {
     }
 
     if (cmd_text == "flash") {
-      // TODO: Get the USART and direction pin from our config.
+      // Ensure everything is stopped!
+      MoteusEnsureOff();
+
       MultiplexBootloader(multiplex_protocol_->config()->id, USART1, GPIOA, 8);
       // We should never get here.
       MJ_ASSERT(false);

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Copyright 2020 Josh Pieper, jjp@pobox.com.
+# Copyright 2023 mjbots Robotic Systems, LLC.  info@mjbots.com
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -72,6 +72,9 @@ class TestDynoFast(unittest.TestCase):
 
     def test_validate_position_wraparound(self):
         dyno('--validate_position_wraparound', '1')
+
+    def test_validate_position_reverse(self):
+        dyno('--validate_position_reverse', '1')
 
     def test_validate_stay_within(self):
         dyno('--validate_stay_within', '1')

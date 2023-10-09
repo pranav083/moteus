@@ -1,6 +1,6 @@
 #!/usr/bin/python3 -B
 
-# Copyright 2019-2022 Josh Pieper, jjp@pobox.com.
+# Copyright 2023 mjbots Robotic Systems, LLC.  info@mjbots.com
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -560,6 +560,27 @@ class Stream:
         await self.command("conf write")
         await self.command(f"d rezero {value}")
 
+    async def do_restore_config(self, config_file):
+        errors = []
+
+        with open(config_file, "r") as fp:
+            for line in fp.readlines():
+                if '#' in line:
+                    line = line[0:line.index('#')]
+                line = line.rstrip()
+                if len(line) == 0:
+                    continue
+
+                try:
+                    await self.command(f'conf set {line}'.encode('latin1'))
+                except moteus.CommandError as ce:
+                    errors.append(line)
+
+        if len(errors):
+            print("\nSome config could not be set:")
+            for line in errors:
+                print(f" {line}")
+            print()
 
     async def do_write_config(self, config_file):
         fp = open(config_file, "rb")
@@ -754,9 +775,13 @@ class Stream:
         if await self.is_config_supported("motor.unwrapped_position_scale"):
             unwrapped_position_scale = \
                 await self.read_config_double("motor.unwrapped_position_scale")
+            motor_output_sign = 1.0
         elif await self.is_config_supported("motor_position.rotor_to_output_ratio"):
             unwrapped_position_scale = \
                 await self.read_config_double("motor_position.rotor_to_output_ratio")
+            motor_output_sign = \
+                await self.read_config_double("motor_position.output.sign")
+
 
         if await self.is_config_supported("servo.pwm_rate_hz"):
             pwm_rate_hz = await self.read_config_double("servo.pwm_rate_hz")
@@ -797,11 +822,9 @@ class Stream:
             input_V, winding_resistance)
         await self.check_for_fault()
 
-        # We use a larger voltage for inductance measurement to get a
-        # more accurate value.  Since we switch back and forth at a
-        # high rate, this doesn't actually use all that much power no
-        # matter what we choose.
-        inductance = await self.calibrate_inductance(2.0 * resistance_cal_voltage)
+        # Determine our inductance.
+        inductance = await self.calibrate_inductance(
+            resistance_cal_voltage, winding_resistance)
         await self.check_for_fault()
 
         kp, ki, torque_bw_hz = None, None, None
@@ -816,11 +839,12 @@ class Stream:
             await self.check_for_fault()
 
         enc_kp, enc_ki, enc_bw_hz = await self.set_encoder_filter(
-            torque_bw_hz, control_rate_hz=control_rate_hz)
+            torque_bw_hz, inductance,
+            control_rate_hz=control_rate_hz)
         await self.check_for_fault()
 
         v_per_hz = await self.calibrate_kv_rating(
-            input_V, unwrapped_position_scale)
+            input_V, unwrapped_position_scale, motor_output_sign)
         await self.check_for_fault()
 
         # Rezero the servo since we just spun it a lot.
@@ -852,7 +876,8 @@ class Stream:
             # We measure voltage to the center, not peak-to-peak, thus
             # the extra 0.5.
             'kv' : (0.5 * 60.0 / v_per_hz),
-            'unwrapped_position_scale' : unwrapped_position_scale
+            'unwrapped_position_scale' : unwrapped_position_scale,
+            'motor_position_output_sign' : motor_output_sign,
         }
 
         log_filename = f"moteus-cal-{device_info['serial_number']}-{now.strftime('%Y%m%dT%H%M%S.%f')}.log"
@@ -1114,12 +1139,25 @@ class Stream:
 
         return winding_resistance
 
-    async def calibrate_inductance(self, cal_voltage):
+    async def calibrate_inductance(self, cal_voltage, winding_resistance):
         print("Calculating motor inductance")
 
         try:
+            # High winding resistance motors typically have a much
+            # larger inductance, and therefore need a longer
+            # inductance period.  We still need to keep this low for
+            # low resistance/inductance motors, otherwise we can have
+            # excessive peak currents during the measurement process.
+
+            # For phase resistances of 0.2 ohm or less, stick with 8
+            # cycles, which for a 15kHz pwm rate would equal ~0.6ms of
+            # on time.  Increase that as phase resistance increases,
+            # until it maxes at 32/2ms around 0.8 ohms of phase
+            # resistance.
+            ind_period = max(8, min(32, int(winding_resistance / 0.2)))
+
             await asyncio.wait_for(
-                self.command(f"d ind {cal_voltage} 4"), 0.25)
+                self.command(f"d ind {cal_voltage} {ind_period}"), 0.25)
         except moteus.CommandError as e:
             # It is possible this is an old firmware that does not
             # support inductance measurement.
@@ -1147,7 +1185,7 @@ class Stream:
         print(f"Calculated inductance: {inductance}H")
         return inductance
 
-    async def set_encoder_filter(self, torque_bw_hz, control_rate_hz = None):
+    async def set_encoder_filter(self, torque_bw_hz, inductance, control_rate_hz = None):
         # Check to see if our firmware supports encoder filtering.
         motor_position_style = await self.is_config_supported("motor_position.sources.0.pll_filter_hz")
         servo_style = await self.is_config_supported("servo.encoder_filter.enabled")
@@ -1157,18 +1195,17 @@ class Stream:
         if self.args.encoder_bw_hz:
             desired_encoder_bw_hz = self.args.encoder_bw_hz
         else:
-            if self.args.cal_hall:
-                # Hall effect configurations require a low encoder BW
-                # if the hall effects are also used for position and
-                # velocity control.  Since that is one of the most
-                # common ways of using hall effects, we by default cap
-                # the bw at 20Hz and use a lower one if the torque bw
-                # would otherwise have been lower.
-                desired_encoder_bw_hz = min(20, 2 * torque_bw_hz)
-            else:
-                # We default to an encoder bandwidth of 50Hz, or 2x the
-                # torque bw, whichever is larger.
-                desired_encoder_bw_hz = max(50, 2 * torque_bw_hz)
+            # Don't let the encoder bandwidth be less than 10Hz by default.
+            desired_encoder_bw_hz = max(10, 2 * torque_bw_hz)
+
+            # However, we limit the maximum encoder bandwidth for high
+            # inductance motors, because they shouldn't be able to
+            # accelerate that fast anyways.
+            if inductance:
+                # This is just a random constant that seems to work
+                # well in practice.
+                desired_encoder_bw_hz = min(
+                    desired_encoder_bw_hz, 2e-2 / inductance)
 
         # And our bandwidth with the filter can be no larger than
         # 1/10th the control rate.
@@ -1187,7 +1224,8 @@ class Stream:
             await self.command(f"conf set servo.encoder_filter.kp {kp}")
             await self.command(f"conf set servo.encoder_filter.ki {ki}")
         elif motor_position_style:
-            await self.command(f"conf set motor_position.sources.0.pll_filter_hz {encoder_bw_hz}")
+            commutation_source = await self.read_config_int("motor_position.commutation_source")
+            await self.command(f"conf set motor_position.sources.{commutation_source}.pll_filter_hz {encoder_bw_hz}")
         else:
             assert False
         return kp, ki, encoder_bw_hz
@@ -1306,40 +1344,54 @@ class Stream:
         print()
         return maybe_result
 
-    async def calibrate_kv_rating(self, input_V, unwrapped_position_scale):
-        print("Calculating Kv rating")
+    async def calibrate_kv_rating(self, input_V, unwrapped_position_scale,
+                                  motor_output_sign):
+        if self.args.cal_force_kv is None:
+            print("Calculating Kv rating")
 
-        await self.ensure_valid_theta(self.encoder_cal_voltage)
+            await self.ensure_valid_theta(self.encoder_cal_voltage)
 
-        original_position_min = await self.read_config_double("servopos.position_min")
-        original_position_max = await self.read_config_double("servopos.position_max")
+            original_position_min = await self.read_config_double("servopos.position_min")
+            original_position_max = await self.read_config_double("servopos.position_max")
 
-        await self.command("conf set servopos.position_min NaN")
-        await self.command("conf set servopos.position_max NaN")
-        await self.command("d index 0")
+            await self.command("conf set servopos.position_min NaN")
+            await self.command("conf set servopos.position_max NaN")
+            await self.command("d index 0")
 
-        kv_cal_voltage = await self.find_kv_cal_voltage(input_V, unwrapped_position_scale)
-        await self.stop_and_idle()
+            kv_cal_voltage = await self.find_kv_cal_voltage(input_V, unwrapped_position_scale)
+            await self.stop_and_idle()
 
-        voltages = [x * kv_cal_voltage for x in [
-            0.0, 0.25, 0.5, 0.75, 1.0 ]]
-        speed_hzs = [ await self.find_speed_and_print(voltage, sleep_time=2)
-                      for voltage in voltages]
+            voltages = [x * kv_cal_voltage for x in [
+                0.0, 0.25, 0.5, 0.75, 1.0 ]]
+            speed_hzs = [ await self.find_speed_and_print(voltage, sleep_time=2)
+                          for voltage in voltages]
 
-        await self.stop_and_idle()
+            await self.stop_and_idle()
 
-        await asyncio.sleep(0.5)
+            await asyncio.sleep(0.5)
 
-        geared_v_per_hz = 1.0 / _calculate_slope(voltages, speed_hzs)
+            geared_v_per_hz = 1.0 / _calculate_slope(voltages, speed_hzs)
 
-        v_per_hz = geared_v_per_hz * unwrapped_position_scale
-        print(f"v_per_hz (pre-gearbox)={v_per_hz}")
+            v_per_hz = (geared_v_per_hz *
+                        unwrapped_position_scale *
+                        motor_output_sign)
+            print(f"v_per_hz (pre-gearbox)={v_per_hz}")
+
+            await self.command(f"conf set servopos.position_min {original_position_min}")
+            await self.command(f"conf set servopos.position_max {original_position_max}")
+
+            if v_per_hz < 0.0:
+                raise RuntimeError(
+                    f"v_per_hz measured as negative ({v_per_hz}), something wrong")
+        else:
+            v_per_hz = (0.5 * 60 / self.args.cal_force_kv)
+            print(f"Using forced Kv: {self.args.cal_force_kv}  v_per_hz={v_per_hz}")
 
         if not self.args.cal_no_update:
             await self.command(f"conf set motor.v_per_hz {v_per_hz}")
 
-        await self.command(f"conf set servopos.position_min {original_position_min}")
-        await self.command(f"conf set servopos.position_max {original_position_max}")
+        if v_per_hz < 0:
+            raise RuntimeError(f'v_per_hz value ({v_per_hz}) is negative')
 
         return v_per_hz
 
@@ -1501,6 +1553,8 @@ class Runner:
             await stream.do_set_offset(0.0)
         elif self.args.set_offset:
             await stream.do_set_offset(self.args.set_offset)
+        elif self.args.restore_config:
+            await stream.do_restore_config(self.args.restore_config)
         elif self.args.write_config:
             await stream.do_write_config(self.args.write_config)
         elif self.args.flash:
@@ -1538,6 +1592,8 @@ async def async_main():
                        help='create a serial console')
     group.add_argument('--dump-config', action='store_true',
                        help='emit all configuration to the console')
+    group.add_argument('--restore-config', metavar='FILE',
+                       help='restore a config saved with --dump-config')
     group.add_argument('--write-config', metavar='FILE',
                        help='write the given configuration')
     group.add_argument('--flash', metavar='FILE',
@@ -1623,6 +1679,9 @@ async def async_main():
     parser.add_argument('--cal-motor-poles', metavar='N', type=int,
                         default=None,
                         help='number of motor poles (2x pole pairs)')
+    parser.add_argument('--cal-force-kv', metavar='Kv', type=float,
+                        default=None,
+                        help='do not calibrate Kv, but use the specified value')
 
 
     parser.add_argument('--cal-max-remainder', metavar='F',

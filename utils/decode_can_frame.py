@@ -1,6 +1,6 @@
 #!/usr/bin/python3 -B
 
-# Copyright 2022 Josh Pieper, jjp@pobox.com.
+# Copyright 2023 mjbots Robotic Systems, LLC.  info@mjbots.com
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -167,7 +167,8 @@ SCALE_TYPES = [
                moteus.Register.VOLTAGE_PHASE_C,
                moteus.Register.VFOC_VOLTAGE,
                moteus.Register.VOLTAGEDQ_D,
-               moteus.Register.VOLTAGEDQ_Q],
+               moteus.Register.VOLTAGEDQ_Q,
+               moteus.Register.COMMAND_FIXED_VOLTAGE_OVERRIDE],
               0.5, 0.1, 0.001),
     ScaleType([moteus.Register.TEMPERATURE],
               1.0, 0.1, 0.001),

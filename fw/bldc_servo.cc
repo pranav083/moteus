@@ -1,4 +1,4 @@
-// Copyright 2018-2022 Josh Pieper, jjp@pobox.com.
+// Copyright 2023 mjbots Robotic Systems, LLC.  info@mjbots.com
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -425,6 +425,17 @@ class BldcServo::Impl {
     }
 
     telemetry_data_ = *next;
+
+    if (!!next->stop_position_relative_raw &&
+        (std::isfinite(next->accel_limit) ||
+         std::isfinite(next->velocity_limit))) {
+      // There is no valid use case for using a stop position along
+      // with an acceleration or velocity limit.
+      volatile auto* mode_volatile = &status_.mode;
+      volatile auto* fault_volatile = &status_.fault;
+      *fault_volatile = errc::kStopPositionDeprecated;
+      *mode_volatile = kFault;
+    }
 
     std::swap(current_data_, next_data_);
   }
@@ -1123,7 +1134,8 @@ class BldcServo::Impl {
         return true;
       }
       case kPositionTimeout: {
-        return config_.timeout_mode == BldcServoMode::kZeroVelocity;
+        return (config_.timeout_mode == BldcServoMode::kZeroVelocity ||
+                config_.timeout_mode == BldcServoMode::kPosition);
       }
     }
     return false;
@@ -1829,6 +1841,20 @@ class BldcServo::Impl {
   void ISR_DoPositionTimeout(const SinCos& sin_cos, CommandData* data) MOTEUS_CCM_ATTRIBUTE {
     if (config_.timeout_mode == kStopped) {
       ISR_DoStopped(sin_cos);
+    } else if (config_.timeout_mode == kPosition) {
+      CommandData timeout_data;
+      timeout_data.mode = kPosition;
+      timeout_data.position = std::numeric_limits<float>::quiet_NaN();
+      timeout_data.velocity_limit = config_.default_velocity_limit;
+      timeout_data.accel_limit = config_.default_accel_limit;
+      timeout_data.timeout_s = std::numeric_limits<float>::quiet_NaN();
+
+      PID::ApplyOptions apply_options;
+      ISR_DoPositionCommon(
+          sin_cos, &timeout_data, apply_options,
+          timeout_data.max_torque_Nm,
+          0.0f,
+          0.0f);
     } else if (config_.timeout_mode == kZeroVelocity) {
       ISR_DoZeroVelocity(sin_cos, data);
     } else if (config_.timeout_mode == kBrake) {
@@ -2063,6 +2089,9 @@ class BldcServo::Impl {
         MotorPosition::FloatToInt(*target_position) -
         absolute_relative_delta;
     data->velocity = 0.0;
+    status_.control_position_raw = data->position_relative_raw;
+    status_.control_position = *target_position;
+    status_.control_velocity = 0.0f;
 
     ISR_DoPositionCommon(
         sin_cos, data, apply_options,

@@ -1,6 +1,6 @@
 # -*- python -*-
 
-# Copyright 2018-2019 Josh Pieper, jjp@pobox.com.
+# Copyright 2023 mjbots Robotic Systems, LLC.  info@mjbots.com
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,6 +20,6 @@ def mjlib_repository(name):
     github_archive(
         name = name,
         repo = "mjbots/mjlib",
-        commit = "9e711b03517056a637e612cfd0e82e3bb663c195",
-        sha256 = "cb699cd262bc26c228be86dcbabc778d60a38dabf0566e7f26915c07bd72278b",
+        commit = "9ce0aeeab9dad44da79515864854eff74a9e46b1",
+        sha256 = "f0007a5934bdfb7dead58fcf4b52d67d6166555379ae7505185ab9af5b22c7f2",
     )

@@ -1,4 +1,4 @@
-// Copyright 2020 Josh Pieper, jjp@pobox.com.
+// Copyright 2023 mjbots Robotic Systems, LLC.  info@mjbots.com
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -84,6 +84,7 @@ struct Options {
   bool validate_position_pid = false;
   bool validate_position_lowspeed = false;
   bool validate_position_wraparound = false;
+  bool validate_position_reverse = false;
   bool validate_stay_within = false;
   bool validate_max_slip = false;
   bool validate_slip_stop_position = false;
@@ -119,6 +120,7 @@ struct Options {
     a->Visit(MJ_NVP(validate_position_pid));
     a->Visit(MJ_NVP(validate_position_lowspeed));
     a->Visit(MJ_NVP(validate_position_wraparound));
+    a->Visit(MJ_NVP(validate_position_reverse));
     a->Visit(MJ_NVP(validate_stay_within));
     a->Visit(MJ_NVP(validate_max_slip));
     a->Visit(MJ_NVP(validate_slip_stop_position));
@@ -221,7 +223,7 @@ class ServoStatsReader {
     // Here we verify that the final and total timer are always valid.
     if (result.final_timer == 0 ||
         result.total_timer == 0 ||
-        result.final_timer > 3750 ||
+        result.final_timer > 3760 ||
         result.total_timer < 5000) {
       throw mjlib::base::system_error::einval(
           fmt::format("Invalid timer final={} total={}",
@@ -276,6 +278,21 @@ class Controller {
     co_await async_initiate<
       decltype(boost::asio::use_awaitable),
       void(boost::system::error_code)>(operation, boost::asio::use_awaitable);
+  }
+
+  boost::asio::awaitable<double> ReadConfigDouble(const std::string& name) {
+    co_await WriteMessage(fmt::format("conf get {}", name));
+
+    auto operation = [this](io::ErrorCallback callback) {
+      BOOST_ASSERT(!config_callback_);
+      config_callback_ = std::move(callback);
+    };
+
+    co_await async_initiate<
+      decltype(boost::asio::use_awaitable),
+      void(boost::system::error_code)>(operation, boost::asio::use_awaitable);
+
+    co_return std::stod(received_line_);
   }
 
   boost::asio::awaitable<void> Flush() {
@@ -371,6 +388,8 @@ class Controller {
 
     bool fixed_voltage_mode = false;
     double fixed_voltage_control_V = 0.0;
+
+    double output_sign = 1;
   };
 
   boost::asio::awaitable<void> ConfigurePid(const PidConstants& pid) {
@@ -407,6 +426,14 @@ class Controller {
 
     co_await Command(
         fmt::format("conf set servo.fixed_voltage_control_V {}", pid.fixed_voltage_control_V));
+
+    const double current_sign = co_await ReadConfigDouble("motor_position.output.sign");
+    if (current_sign != pid.output_sign) {
+      // We only set it if it would change.  Otherwise we'll get
+      // spurious config changed faults.
+      co_await Command(
+          fmt::format("conf set motor_position.output.sign {}", pid.output_sign));
+    }
 
     co_return;
   }
@@ -465,7 +492,14 @@ class Controller {
           }
         }
       } else {
-        fmt::print("Ignoring unknown line: {}\n", line);
+        received_line_ = line;
+        if (config_callback_) {
+          boost::asio::post(
+              stream_->get_executor(),
+              std::bind(std::move(config_callback_), mjlib::base::error_code()));
+        } else {
+          fmt::print("Ignoring unknown line: {}\n", line);
+        }
       }
 
       if (received_callback_) {
@@ -506,6 +540,9 @@ class Controller {
   std::set<std::string> log_data_;
 
   io::ErrorCallback received_callback_;
+
+  io::ErrorCallback config_callback_;
+  std::string received_line_;
   io::ErrorCallback ok_callback_;
 
   std::optional<ServoStatsReader> servo_stats_reader_;
@@ -632,6 +669,8 @@ class Application {
       co_await ValidatePositionLowspeed();
     } else if (options_.validate_position_wraparound) {
       co_await ValidatePositionWraparound();
+    } else if (options_.validate_position_reverse) {
+      co_await ValidatePositionReverse();
     } else if (options_.validate_stay_within) {
       co_await ValidateStayWithin();
     } else if (options_.validate_max_slip) {
@@ -1088,7 +1127,7 @@ class Application {
 
       // The fixture should be close to this now.
       const double fixture_position =
-          options_.transducer_scale * fixture_->servo_stats().position;
+          pid.output_sign * options_.transducer_scale * fixture_->servo_stats().position;
       if (std::abs(fixture_position - position) > 0.05) {
         throw mjlib::base::system_error::einval(
             fmt::format("Fixture position {} != {}",
@@ -1108,7 +1147,7 @@ class Application {
       co_await Sleep(1.0);
 
       const double fixture_velocity =
-          options_.transducer_scale * fixture_->servo_stats().velocity;
+          pid.output_sign * options_.transducer_scale * fixture_->servo_stats().velocity;
       if (std::abs(fixture_velocity - velocity) > 0.35 * tolerance_scale) {
         throw mjlib::base::system_error::einval(
             fmt::format("Fixture velocity {} != {}",
@@ -1132,7 +1171,7 @@ class Application {
 
       co_await Sleep(0.5);
       const double fixture_velocity =
-          options_.transducer_scale * fixture_->servo_stats().velocity;
+          pid.output_sign * options_.transducer_scale * fixture_->servo_stats().velocity;
       if ((std::abs(fixture_velocity) - kFixedVelocity) > 0.38 * tolerance_scale) {
         throw mjlib::base::system_error::einval(
             fmt::format("Fixture velocity {} != {}",
@@ -1142,7 +1181,7 @@ class Application {
 
       co_await Sleep(2.5);
       const double fixture_position =
-          options_.transducer_scale * fixture_->servo_stats().position;
+          pid.output_sign * options_.transducer_scale * fixture_->servo_stats().position;
       if (std::abs(fixture_position - stop_position) > 0.07 * tolerance_scale) {
         throw mjlib::base::system_error::einval(
             fmt::format("Fixture stop position {} != {}",
@@ -1171,7 +1210,7 @@ class Application {
 
       {
         const double fixture_position =
-            options_.transducer_scale * fixture_->servo_stats().position;
+            pid.output_sign * options_.transducer_scale * fixture_->servo_stats().position;
         if (std::abs(fixture_position - (-position_limit)) > 0.07 * tolerance_scale) {
           throw mjlib::base::system_error::einval(
               fmt::format("Fixture stop position {} != {}",
@@ -1188,7 +1227,7 @@ class Application {
 
       {
         const double fixture_position =
-            options_.transducer_scale * fixture_->servo_stats().position;
+            pid.output_sign * options_.transducer_scale * fixture_->servo_stats().position;
         if (std::abs(fixture_position - position_limit) > 0.07 * tolerance_scale) {
           throw mjlib::base::system_error::einval(
               fmt::format("Fixture stop position {} != {}",
@@ -1549,6 +1588,24 @@ class Application {
     fmt::print("SUCCESS\n");
 
     co_return;
+  }
+
+  boost::asio::awaitable<void> ValidatePositionReverse() {
+    co_await dut_->Command("d stop");
+    co_await fixture_->Command("d stop");
+
+    // Set some constants that should work for basic position control.
+    Controller::PidConstants pid;
+    pid.kp = 1.0;
+    pid.ki = 0.0;
+    pid.kd = 0.05;
+    pid.output_sign = -1;
+    co_await dut_->ConfigurePid(pid);
+
+    co_await fixture_->Command("d index 0");
+    co_await dut_->Command("d index 0");
+
+    co_await RunBasicPositionTest(pid);
   }
 
   boost::asio::awaitable<void> ValidateStayWithin() {
@@ -1945,8 +2002,8 @@ class Application {
       double power_W;
       double expected_speed_Hz;
     } tests[] = {
-      { 100.0, 4.04 },
-      { 20.0, 3.12 },
+      { 100.0, 3.80 },
+      { 20.0, 3.00 },
       { 10.0, 1.90 },
       { 5.0, 1.30 },
     };

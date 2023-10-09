@@ -1,4 +1,4 @@
-// Copyright 2019-2020 Josh Pieper, jjp@pobox.com.
+// Copyright 2023 mjbots Robotic Systems, LLC.  info@mjbots.com
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -371,8 +371,15 @@ class BootloaderServer {
     CanFrame result;
 
     // Wait until there is a CAN frame available.
-    while ((fdcan_->RXF0S & FDCAN_RXF0S_F0FL) == 0) {
-      // Nothing in the FIFO yet.
+    while (true) {
+      // Do we have a frame?
+      if ((fdcan_->RXF0S & FDCAN_RXF0S_F0FL) != 0) { break; }
+
+      if (fdcan_->PSR & FDCAN_PSR_BO) {
+        // We went bus off.  Attempt to recover.
+        fdcan_->CCCR &= ~FDCAN_CCCR_INIT;
+        timer_.wait_us(10);
+      }
     }
 
     const auto get_index = (fdcan_->RXF0S & FDCAN_RXF0S_F0GI) >> FDCAN_RXF0S_F0GI_Pos;
@@ -469,11 +476,14 @@ class BootloaderServer {
     }
 
     if (query) {
-      WriteResponse(source_id & 0x7f, poll_only ? *maybe_bytes : -1);
+      WriteResponse(source_id & 0x7f,
+                    poll_only ? *maybe_bytes : -1,
+                    can_frame);
     }
   }
 
-  void WriteResponse(uint8_t id, int max_bytes) {
+  void WriteResponse(uint8_t id, int max_bytes,
+                     const CanFrame& source_frame) {
     // Formulate our out frame.
     out_frame_.pos = 0;
     auto buffer_stream = out_frame_.writer();
@@ -502,10 +512,11 @@ class BootloaderServer {
 
     // Now queue up the transfer.
 
-    WriteCanFrame(((id_ << 8) | id), out_frame_.view());
+    WriteCanFrame(((id_ << 8) | id), out_frame_.view(), source_frame);
   }
 
-  void WriteCanFrame(uint32_t identifier, std::string_view data) {
+  void WriteCanFrame(uint32_t identifier, std::string_view data,
+                     const CanFrame& source_frame) {
     // If the queue is full, something is going seriously wrong.
     if (fdcan_->TXFQS & FDCAN_TXFQS_TFQF) {
       // Just drop the frame for now. :(
@@ -533,7 +544,7 @@ class BootloaderServer {
         (message_marker << 24u) |
         FDCAN_NO_TX_EVENTS |
         FDCAN_FD_CAN |
-        FDCAN_BRS_ON |
+        (source_frame.bit_rate_switch ? FDCAN_BRS_ON : 0) |
         (dlc << 16u));
 
     auto* const tx_address_base = reinterpret_cast<uint32_t*>(
